@@ -12,10 +12,16 @@ Hình vẽ
 ![image:puzzle](/assets/images/nineDotsPuzzle.png)
 <details>
 <summary>Lời giải</summary>
-![image:solution](/assets/images/nineDotsSolution.jpg)
+  <figure align="center">
+    <img height='200' src="/assets/images/nineDotsSolution.jpg" />
+    <figcaption>  </figcaption>
+  </figure>
 </details>
 
 Puzzle 2. Cho 16 điểm được xếp thành một lưới vuông kích thước 4 $\times$ 4. Hãy vẽ một đường gấp khúc gồm 6 đoạn thẳng đi qua tất cả 16 điểm này.
+
+Puzzle 3. Cho một chiếc đồng hồ kim với kim giờ, kim phút, kim giây. Trong khoảng thời gian kim giờ quay đủ một vòng, kim giây đã quay được bao nhiêu vòng?
+
 
 Thử công thức toán học.
 $$ a^2 + b^2 = c^2$$

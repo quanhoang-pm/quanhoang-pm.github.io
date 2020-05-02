@@ -122,6 +122,8 @@ Click-to-expand section
 <details>
 <summary>Click to expand</summary>
 This is hidden
+Cannot render an image using markdown syntax here.
+![image](/assets/images/avatar.jpg)
 </details>
 
 **Manual line breaks**
