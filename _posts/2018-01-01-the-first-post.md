@@ -6,10 +6,10 @@ categories:
   - common
 tags:
   - markdown
-
-comments: true
-
+post_url: /hoanganhquan/
 ---
+
+Edited on May 2.
 
 ## Welcome to my site
 
