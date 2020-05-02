@@ -6,14 +6,12 @@ categories:
   - common
 tags:
   - markdown
-permalink: /hoanganhquan/
 ---
 
 
 ## Welcome to my site
 
 Edited on May 2, 15h35.
-
 
 _Xin chào_, my name is Quan.
 
