@@ -6,6 +6,9 @@ categories:
   - common
 tags:
   - markdown
+
+comments: true
+
 ---
 
 ## Welcome to my site
