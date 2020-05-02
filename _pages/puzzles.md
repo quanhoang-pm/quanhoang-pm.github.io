@@ -2,13 +2,11 @@
 title: "Puzzles"
 permalink: /puzzles/
 layout: postWithTex
+date: 2020-05-02 15:00:00
 last_modified_at: 2020-05-02 15:40:00
 ---
 
-
-Here is a list of puzzles.
-
-Bổ sung thêm layout postWithTex
+Puzzle 1. Cho 9 điểm được xếp thành một lưới vuông kích thước $3 \times 3$. Hãy vẽ một đường gấp khúc gồm 4 đoạn thẳng đi qua tất cả 9 điểm này.
 
 Thử công thức toán học.
 $$ a^2 + b^2 = c^2$$
