@@ -25,6 +25,6 @@ Hình vẽ
 
 **Puzzle 4.** Cho một chiếc eke với kích thước ba cạnh là 30cm, 40cm, 50cm. Biết rằng độ dày của eke (khoảng cách giữa hai cạnh song song của tam giác bên trong và tam giác bên ngoài) là 6cm. Tính diện tích của chiếc eke này (không tính phần tam giác rỗng ở phía bên trong).
 
-![image:eke](/assets/images/ekeImage.png)
+![image:setSquare](/assets/images/setSquareImage.png)
 
 <!-- **Puzzle 5.** -->
