@@ -87,6 +87,12 @@ footer:
 #       icon: "fab fa-fw fa-instagram"
 #       url: "https://instagram.com/"
 
+comments:
+  provider: "utterances"
+  utterances:
+    theme: "github-light" # "github-dark"
+    issue_term: "pathname"
+    
 defaults:
   # _posts
   - scope:
