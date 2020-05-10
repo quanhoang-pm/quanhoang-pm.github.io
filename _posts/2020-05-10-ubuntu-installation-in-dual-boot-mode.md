@@ -41,7 +41,7 @@ The overall process might be as follows:
 
 #### Side notes
 
-If you're not sure about the guide provided in English, here is [an article in Vietnamese][link:installation-in-vnm] presenting how to install Ubuntu OS alongside Windows OS.
+If you're not sure about the guide provided in English, here is [an article written in Vietnamese][link:installation-in-vnm] presenting how to install Ubuntu OS alongside Windows OS.
 
 You might want to name your USB with something like `Ubuntu20.04LTS`. It is relatively easy to rename a USB in Windows OS. As for this action in Ubuntu OS, you can use Disks application as mentioned in [this question][link:rename-USB] in askubuntu forum.
 
