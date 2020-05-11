@@ -1,7 +1,7 @@
 ---
 title: "Ubuntu installation in dual boot mode"
 date: 2020-05-10
-last_modified_at: 2020-05-10 15:15:00
+last_modified_at: 2020-05-11 09:20:00
 categories:
   - ubuntu
 tags:
@@ -40,6 +40,8 @@ The overall process might be as follows:
 [link:install-OS]: https://itsfoss.com/install-ubuntu-dual-boot-mode-windows/
 
 #### Side notes
+
+Before installation, it's best to know which partitions are mounted to which directories (`/`, `/boot`, `/home`, etc). You can acquire that kind of information via File Systems panel in System Monitor.
 
 If you're not sure about the guide provided in English, here is [an article written in Vietnamese][link:installation-in-vnm] presenting how to install Ubuntu OS alongside Windows OS.
 
