@@ -15,8 +15,8 @@ Chỉ còn vài ngày nữa là bước sang năm 2019, chuẩn bị một cuố
 Tuy nhiên, mua một quyển lịch để bàn / treo tường không phải là cách hiệu quả khiến não phải suy nghĩ và tay phải hoạt động. Tự viết tay 365 tờ lịch cũng không phải là một ý kiến hay. Vậy tại sao không làm một bộ lịch tối giản cho năm mới nhỉ?
 
 | ![](/assets/images/minimalCalendar/result.jpg) |
-|:---:|
-|Một bộ lịch tối giản|
+|:----------------------------------------------:|
+|              Một bộ lịch tối giản              |
 
 **Chuẩn bị**: 3 tờ giấy màu (khổ A4), 1 chiếc thước kẻ, 1 cây kéo, 1 lọ hồ, và bút màu.
 
@@ -25,8 +25,8 @@ Tuy nhiên, mua một quyển lịch để bàn / treo tường không phải l�
 **Bước 1:** Từ một tờ giấy, cắt hai mảnh giấy với hình dạng như trong hình dưới đây. Trong bài viết này, cạnh của mỗi hình vuông có độ dài a=4cm.
 
 | ![](/assets/images/minimalCalendar/figure.PNG) |
-|:---:|
-| Hình mẫu được vẽ bởi GeoGebra |
+|:----------------------------------------------:|
+|         Hình mẫu được vẽ bởi GeoGebra          |
 
 **Bước 2:** Viết số lên một mặt của mỗi mảnh giấy, mỗi số được viết vào một hình vuông. Hai bộ sáu số được viết trên hai mảnh giấy là (0, 1, 2, 3, 4, 5) và (0, 1, 2, 6, 7, 8). Chú ý số 6 cần được viết sao cho nó là số 9 khi nhìn theo chiều ngược lại.
 
@@ -47,8 +47,8 @@ Tuy nhiên, mua một quyển lịch để bàn / treo tường không phải l�
 **Bước 6:** Xếp 4 khối lập phương vào 2 khung vừa tạo ra. Hai khối cùng màu tạo ‘ngày’ và hai khối còn lại tạo ‘tháng’.
 
 | ![](/assets/images/minimalCalendar/step6.jpg) |
-|:---:|
-| Một trong số 365 ngày của năm 2019 |
+|:---------------------------------------------:|
+|      Một trong số 365 ngày của năm 2019       |
 
 Vậy là bạn đã có một bộ lịch tối giản đón năm mới rồi. Chúc bạn có một giáng sinh an lành và một năm mới hạnh phúc.
 

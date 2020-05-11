@@ -71,9 +71,9 @@ Link to [![Remember When - Alan Jackson](/assets/images/avatar.jpg)](https://www
 Table
 
 | Side | Area |
-|:---:|---:|
-| 2 | 4 |
-| 9 | 81 |
+|:----:|-----:|
+|  2   |    4 |
+|  9   |   81 |
 
 ### Some advanced formats in Markdown {#advanced-format}
 
