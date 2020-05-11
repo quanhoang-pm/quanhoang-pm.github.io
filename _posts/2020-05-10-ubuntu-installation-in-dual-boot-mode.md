@@ -1,7 +1,7 @@
 ---
 title: "Ubuntu installation in dual boot mode"
 date: 2020-05-10
-last_modified_at: 2020-05-11 09:20:00
+last_modified_at: 2020-05-11 20:50:00
 categories:
   - ubuntu
 tags:
@@ -48,6 +48,8 @@ If you're not sure about the guide provided in English, here is [an article writ
 You might want to name your USB with something like `Ubuntu20.04LTS`. It is relatively easy to rename a USB in Windows OS. As for this action in Ubuntu OS, you can use Disks application as mentioned in [this question][link:rename-USB] in askubuntu forum.
 
 After rebooting, your computer may go directly to Windows OS instead of prompting you to choose between Ubuntu OS and Windows OS. You need to get into the BIOS and make sure that the *ubuntu* device is above the *Windows* device in the OS boot manager. The detailed steps are in [an answer][link:OS-boot-manager] in askubuntu forum.
+
+As for the layout on the desktop, software icons on the left side bar are taken from `Show Applications` (the button in the bottom left corner of the screen), you just need to drag and drop them to appropriate locations. Moreover, for a clean desktop, the trash icon can be hidden by an option in GNOME Tweaks.
 
 Finally, just in case you break something while creating new partitions, the guide in [Ubuntu documentation][link:ubuntu-documentation] might be helpful.
 
