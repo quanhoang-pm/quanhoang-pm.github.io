@@ -102,7 +102,7 @@ defaults:
       layout: customPostLayout
       author_profile: false
       read_time: true
-      comments: true
+      comments: false
       share: true
       related: true
   # _pages
