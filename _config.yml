@@ -92,14 +92,14 @@ comments:
   utterances:
     theme: "github-light" # "github-dark"
     issue_term: "pathname"
-    
+
 defaults:
   # _posts
   - scope:
       path: ""
       type: posts
     values:
-      layout: postWithTex
+      layout: customPostLayout
       author_profile: false
       read_time: true
       comments: true
