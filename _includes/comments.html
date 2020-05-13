@@ -1,31 +1,10 @@
 <div class="js-comments"> Comment section
-
-  {% assign src = site.comments.utterances.src %}
-  {% assign repo = site.comments.utterances.repo %}
-  {% assign issure_term = site.comments.utterances.issure_term %}
-  {% assign label = site.comments.utterances.label %}
-  {% assign theme = site.comments.utterances.theme %}
-  {% assign crossorigin = site.comments.utterances.crossorigin %}
-
-  The source is {{ src }}
-
-  Repo {{ repo }}
-
-  issue-term {{ issue_term }}
-
-  label {{ label  }}
-
-  them {{ them }}
-
-  crossorigin {{ crossorigin }}
-
-
-  <script src={{ src }}
-          repo={{ repo }}
-          issue-term={{ issue_term }}
-          label={{ label }}
-          theme={{ theme }}
-          crossorigin={{ crossorigin }}
+  <script src={{ site.comments.utterances.src }}
+          repo={{ site.comments.utterances.repo }}
+          issue-term={{ site.comments.utterances.issue_term }}
+          label={{ site.comments.utterances.label }}
+          theme={{ site.comments.utterances.theme }}
+          crossorigin={{ site.comments.utterances.crossorigin }}
           async>
   </script>
 </div>
