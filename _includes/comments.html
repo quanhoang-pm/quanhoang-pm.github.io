@@ -7,12 +7,14 @@
   {% assign theme = site.comments.utterances.theme %}
   {% assign crossorigin = site.comments.utterances.crossorigin %}
 
-  <script src=src
-          repo=repo
-          issue-term=issue_term
-          label=label
-          theme=theme
-          crossorigin=crossorigin
+  The source is {{ src }}
+
+  <script src={{ src }}
+          repo={{ repo }}
+          issue-term={{ issue_term }}
+          label={{ label }}
+          theme={{ theme }}
+          crossorigin={{ crossorigin }}
           async>
   </script>
 </div>
