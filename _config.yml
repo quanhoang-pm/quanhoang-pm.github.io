@@ -90,8 +90,12 @@ footer:
 comments:
   provider: "utterances"
   utterances:
-    theme: "github-light" # "github-dark"
+    src: "https://utteranc.es/client.js"
+    repo: "quanhoang-pm/quanhoang-pm.github.io"
     issue_term: "pathname"
+    theme: "github-light" # "github-dark"
+    label: "blogComment"
+    crossorigin: "anonymous"
 
 defaults:
   # _posts
@@ -102,7 +106,7 @@ defaults:
       layout: customPostLayout
       author_profile: false
       read_time: true
-      comments: false
+      comments: true
       share: true
       related: true
   # _pages
