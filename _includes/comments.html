@@ -1,17 +1,18 @@
 <div class="js-comments"> Comment section
 
-   {% assign email = comment[1].email %}
-   {% assign name = comment[1].name %}
-   {% assign url = comment[1].url %}
-   {% assign date = comment[1].date %}
-   {% assign message = comment[1].message %}
+  {% assign src = site.comments.utterances.src %}
+  {% assign repo = site.comments.utterances.repo %}
+  {% assign issure_term = site.comments.utterances.issure_term %}
+  {% assign label = site.comments.utterances.label %}
+  {% assign theme = site.comments.utterances.theme %}
+  {% assign crossorigin = site.comments.utterances.crossorigin %}
 
-  <script src="https://utteranc.es/client.js"
-          repo="quanhoang-pm/quanhoang-pm.github.io"
-          issue-term="pathname"
-          label="blogComment"
-          theme="github-light"
-          crossorigin="anonymous"
+  <script src=src
+          repo=repo
+          issue-term=issue_term
+          label=label
+          theme=theme
+          crossorigin=crossorigin
           async>
   </script>
 </div>
