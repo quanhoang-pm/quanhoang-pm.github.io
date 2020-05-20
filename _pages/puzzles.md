@@ -1,7 +1,7 @@
 ---
 title: "Puzzles"
 permalink: /puzzles/
-layout: postWithTex
+layout: customPostLayout
 date: 2020-05-02 15:00:00
 last_modified_at: 2020-05-02 16:30:00
 ---

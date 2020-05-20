@@ -1,7 +1,7 @@
 ---
 title: "Origami"
 permalink: /origami/
-layout: postWithTex
+layout: customPostLayout
 date: 2020-05-20 22:50:00
 last_modified_at: 2020-05-20 22:50:00
 ---
