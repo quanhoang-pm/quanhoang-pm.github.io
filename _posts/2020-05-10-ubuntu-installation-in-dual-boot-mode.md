@@ -1,7 +1,7 @@
 ---
 title: "Ubuntu installation in dual boot mode"
 date: 2020-05-10
-last_modified_at: 2020-05-11 20:50:00
+last_modified_at: 2020-05-23 14:40:00
 categories:
   - ubuntu
 tags:
@@ -23,6 +23,7 @@ My custom setting worth noticing is shown in the table below.
 | Custom keywords in Atom              | ~/.atom/packages/language-todo-extra-words/grammars/todo-extra-words.cson |
 | Custom shortcuts in Jupyter notebook | None                                                                      |
 | Git global configuration             | ~/.gitconfig                                                              |
+| Configuration in Atom                | ~/.atom/config.cson                                                       |
 | Keyboards remapping in Atom          | ~/.atom/keymap.cson                                                       |
 | Startup Applications                 | None                                                                      |
 
