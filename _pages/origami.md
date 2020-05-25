@@ -3,7 +3,7 @@ title: "Origami"
 permalink: /origami/
 layout: customPostLayout
 date: 2020-05-20 22:50:00
-last_modified_at: 2020-05-20 22:50:00
+last_modified_at: 2020-05-26 00:15:00
 ---
 
 It is *well-known* that all straightedge-and-compass constructions can be done using paperfolding (origami).
@@ -15,3 +15,7 @@ Let's verify the statement above by executing three tasks below using paperfoldi
 - Given four points $E, F, G,$ and $H$. Construct the intersection of the straight line $EF$ and the circle $(G, GH)$ (if it exists).
 
 - Given four points $M, N, P$ and $Q$. Construct the intersection of the circle $(M, MN)$ and the circle $(P, PQ)$ (if it exists).
+
+Two Geogebra programs for solving cubics using Origami
+- [Lill & Beloch's method](/assets/temp/LillMethod.ggb)
+- [Edwards & Shurman's general parabol equation](/assets/temp/twoParabolas.ggb)
