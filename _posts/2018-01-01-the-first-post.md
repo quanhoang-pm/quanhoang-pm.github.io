@@ -102,15 +102,15 @@ In `HTML`,
 
 ### Math equations
 
-Example of inline equation $\frac{1}{2} + \frac{1}{3} = \frac{5}{6}$ and \( a + b = c\)
+Example of inline equation $\frac{1}{2} + \frac{1}{3} = \frac{5}{6}$ and \\( a + b = c \\)
 
 Example of an equation in a new line
 
 $$ a^2 + b^2 = c^2$$
 
-\[ \sum_{i=1}^{n} \]
+\\[ \sum_{i=1}^{n} \\]
 
-and this one with `\begin{equation}`
+and this one with `\begin{equation}` environment
 
 \begin{equation}
   \sum_{1}^{n} i = \dfrac{n(n+1)}{2}
