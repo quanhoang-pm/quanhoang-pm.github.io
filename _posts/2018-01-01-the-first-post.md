@@ -115,14 +115,14 @@ and this one with `\begin{equation}` environment
 \end{equation}
 
 We examine some environment in LaTeX below
-`align` environment
+`align` environment (not working)
 \begin{align}
   1 &+ 2 + 3 = 6 \\
   1 + 2 &+ 3 = 6 \\
   1 + 2 + 3 &= 6 \\
 \end{align}
 
-`itemize` environment
+`itemize` environment (not working)
 \begin{itemize}
   \item Foo
   \item Bar
@@ -130,7 +130,7 @@ We examine some environment in LaTeX below
   \item Egg
 \end{itemize}
 
-`enumerate` environment
+`enumerate` environment (not working)
 \begin{enumerate}
   \item Python
   \item Java
