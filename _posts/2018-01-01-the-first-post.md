@@ -1,7 +1,7 @@
 ---
 title: "The first post"
 date: 2018-01-01 00:00:00
-last_modified_at: 2020-05-11 17:25:00
+last_modified_at: 2020-05-28 08:30:00
 categories:
   - common
 tags:
@@ -113,6 +113,31 @@ and this one with `\begin{equation}` environment
 \begin{equation}
   \sum_{1}^{n} i = \dfrac{n(n+1)}{2}
 \end{equation}
+
+We examine some environment in LaTeX below
+`align` environment
+\begin{align}
+  1 &+ 2 + 3 = 6 \\
+  1 + 2 &+ 3 = 6 \\
+  1 + 2 + 3 &= 6 \\
+\end{align}
+
+`itemize` environment
+\begin{itemize}
+  \item Foo
+  \item Bar
+  \item Ham
+  \item Egg
+\end{itemize}
+
+`enumerate` environment
+\begin{enumerate}
+  \item Python
+  \item Java
+  \item R
+  \item SageMath
+\end{enumerate}
+
 
 ### Final section
 
