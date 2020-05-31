@@ -30,10 +30,11 @@ Trò chơi kết thúc khi xác định được người thua cuộc hoặc ng�
 - Nếu ba quân cờ của một người chơi được xếp thẳng hàng thì người chơi đó thắng cuộc.
 - Nếu một người chơi không thể thực hiện một nước đi hợp lệ thì người chơi đó thua cuộc.
 
-Chú ý, trò chơi có thể không kết thúc khi hai điều kiện trên không thỏa mãn _sau một sốlượng lớn các nước đi_. Khi đó hai người chơi cần thỏa thuận để chấp nhận kết quả hòa, hoặc tiếp tục chơi để tìm ra người chiến thắng.
+Chú ý, trò chơi có thể không kết thúc khi hai điều kiện trên không thỏa mãn _sau một số lượng lớn các nước đi_. Khi đó hai người chơi cần thỏa thuận để chấp nhận kết quả hòa, hoặc tiếp tục chơi để tìm ra người chiến thắng.
 
 Những ảnh dưới đây thể hiện một lần chơi kết thúc sau 5 nước đi với chiến thắng thuộc về người đi sau (với quân cờ màu xanh).
 
+![](/assets/ninePointsGame/ninePointsGame_move_1.png)
 ![](/assets/ninePointsGame/ninePointsGame_move_2.png)
 ![](/assets/ninePointsGame/ninePointsGame_move_3.png)
 ![](/assets/ninePointsGame/ninePointsGame_move_4.png)
@@ -45,9 +46,9 @@ Những biến thể của trò chơi này có thể được xây dựng bằng
 - Sơ đồ sử dụng để đặt các quân cờ.
 - Vị trí khởi đầu / số lượng của các quân cờ.
 - Quy tắc di chuyển các quân cờ trong một nước đi hợp lệ.
-- Điều kiện thắng cuộc / thua cuộc.
+- Điều kiện thắng cuộc / thua cuộc của trò chơi.
 
 ### Phụ lục
-Tác giả sử dụng ngôn ngữ lập trình Python để vẽ những ảnh minh họa trong bài đăng này. Chương trình vẽ ảnh này có thể được tìm thấy tại [đây](/assets/ninePointsGame/aNinePointGame.py)
+Những ảnh minh họa trong bài đăng này được vẽ bằng ngôn ngữ lập trình Python. Chương trình vẽ ảnh có thể được tìm thấy tại [đây](/assets/ninePointsGame/aNinePointGame.py)
 
 **Câu hỏi.** Trong trò chơi này, người đi trước hay người đi sau là người có chiến thuật để luôn giành chiến thắng?
