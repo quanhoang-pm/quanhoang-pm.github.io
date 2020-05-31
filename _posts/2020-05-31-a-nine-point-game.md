@@ -18,7 +18,7 @@ Một trò chơi chiến thuật đơn giản dành cho hai người.
 ![](/assets/ninePointsGame/ninePointsGame_move_0.png)
 
 ### Luật chơi
-Hai người chơi đặt những quân cờ vào 6 ô trên sơ đồ như trong ảnh dưới.
+Sáu quân cờ của hai người chơi được đặt vào sơ đồ theo vị trí được mô tả trong ảnh dưới.
 
 | ![](/assets/ninePointsGame/ninePointsGame_move_1.png) |
 |:-----------------------------------------------------:|
