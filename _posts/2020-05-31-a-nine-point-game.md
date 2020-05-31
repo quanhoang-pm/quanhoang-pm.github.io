@@ -1,7 +1,7 @@
 ---
 title: "A nine-point game"
 date: 2020-05-31 20:00:00
-last_modified_at: 2020-05-31 20:45:00
+last_modified_at: 2020-05-31 21:00:00
 categories:
   - mathematics
 tags:
@@ -12,7 +12,7 @@ tags:
 
 Một trò chơi chiến thuật đơn giản dành cho hai người.
 
-### Chuẩn bị.
+### Chuẩn bị
 - Hai bộ quân cờ, mỗi bộ gồm ba quân cờ có cùng màu.
 - Một sơ đồ như ảnh dưới.
 ![](/assets/ninePointsGame/ninePointsGame_move_0.png)
@@ -41,7 +41,7 @@ Những ảnh dưới đây thể hiện một lần chơi kết thúc sau 5 nư
 ![](/assets/ninePointsGame/ninePointsGame_move_5.png)
 ![](/assets/ninePointsGame/ninePointsGame_move_6.png)
 
-### Biến thể.
+### Biến thể
 Những biến thể của trò chơi này có thể được xây dựng bằng cách thay đổi những yếu tố sau:
 - Sơ đồ sử dụng để đặt các quân cờ.
 - Vị trí khởi đầu / số lượng của các quân cờ.
