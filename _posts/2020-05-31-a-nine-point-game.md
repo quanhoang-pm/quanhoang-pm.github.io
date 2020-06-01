@@ -1,7 +1,7 @@
 ---
 title: "A nine-point game"
 date: 2020-05-31 20:00:00
-last_modified_at: 2020-05-31 21:00:00
+last_modified_at: 2020-06-01 09:00:00
 categories:
   - mathematics
 tags:
@@ -48,7 +48,10 @@ Những biến thể của trò chơi này có thể được xây dựng bằng
 - Quy tắc di chuyển các quân cờ trong một nước đi hợp lệ.
 - Điều kiện thắng cuộc / thua cuộc của trò chơi.
 
-### Phụ lục
+### Chú thích
+Trò chơi này được mình sưu tầm.
+
 Những ảnh minh họa trong bài đăng này được vẽ bằng ngôn ngữ lập trình Python. Chương trình vẽ ảnh có thể được tìm thấy tại [đây](/assets/ninePointsGame/aNinePointGame.py)
 
-**Câu hỏi.** Trong trò chơi này, người đi trước hay người đi sau là người có chiến thuật để luôn giành chiến thắng?
+### Câu hỏi mở
+Trong trò chơi này, người đi trước hay người đi sau là người có chiến thuật để luôn giành chiến thắng?
