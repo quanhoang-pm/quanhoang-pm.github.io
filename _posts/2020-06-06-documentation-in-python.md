@@ -84,7 +84,7 @@ The docstring styles of Numpy and Google are the two potential candidates for yo
 ).
 
 In addition, here is the [docstring](https://numpy.org/doc/stable/reference/generated/numpy.mean.html#numpy.mean
-) of `np.mean` method.
+) of `numpy.mean` method.
 
 ### Documenting Your Python Projects
 The section is about the layout of your projects. It mostly depends on the project's type (private, shared, or public one). Please refer to the original article for the information.
