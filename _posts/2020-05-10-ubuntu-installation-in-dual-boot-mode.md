@@ -1,7 +1,7 @@
 ---
 title: "Ubuntu installation in dual boot mode"
 date: 2020-05-10
-last_modified_at: 2020-05-23 14:40:00
+last_modified_at: 2020-06-06 21:30:00
 categories:
   - ubuntu
 tags:
