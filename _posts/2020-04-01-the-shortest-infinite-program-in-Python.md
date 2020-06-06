@@ -7,6 +7,7 @@ categories:
 tags:
   - infinite
   - shortest
+  - Python
 ---
 
 Let's find out what it is and how it can be constructed.
