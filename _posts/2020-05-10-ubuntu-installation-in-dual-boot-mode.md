@@ -15,7 +15,7 @@ Ubuntu 20.04 LTS has been released since April 2020. The post is about what shou
 
 Personally, I prefer a new fresh operating system for a new start. Therefore I backup only four directories Documents, Musics, Pictures, and Templates. Softwares can be installed after the installation has finished.
 
-My custom setting worth noticing is shown in the table below.
+My custom setting worth noticing is shown in the table below. Neglect Atom settings if you are not a fan of Atom like me.
 
 | Setting                              | Directory                                                                 |
 |:-------------------------------------|:--------------------------------------------------------------------------|
@@ -25,6 +25,7 @@ My custom setting worth noticing is shown in the table below.
 | Git global configuration             | ~/.gitconfig                                                              |
 | Configuration in Atom                | ~/.atom/config.cson                                                       |
 | Keyboards remapping in Atom          | ~/.atom/keymap.cson                                                       |
+| Code snippets in Atom                | ~/.atom/snippets.cson                                                     |
 | Startup Applications                 | None                                                                      |
 
 [link:nautilus-bookmarks]: https://askubuntu.com/questions/503162/where-does-nautilus-store-its-bookmarks
