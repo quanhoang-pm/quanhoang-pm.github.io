@@ -84,7 +84,7 @@ The docstring styles of Numpy and Google are the two potential candidates for yo
 ).
 
 In addition, here are [a guide to numpy/scipy documentation](https://numpy.org/doc/stable/docs/howto_document.html) and the [docstring](https://numpy.org/doc/stable/reference/generated/numpy.mean.html#numpy.mean
-) of `numpy.mean` method.
+) of `numpy.mean` method. Consensus of the relation between class docstrings and `__init__` method docstrings can be found [here](https://stackoverflow.com/questions/37019744/is-there-a-consensus-what-should-be-documented-in-the-classes-and-init-docst).
 
 ### Documenting Your Python Projects
 The section is about the layout of your projects. It mostly depends on the project's type (private, shared, or public one). Please refer to the original article for the information.
