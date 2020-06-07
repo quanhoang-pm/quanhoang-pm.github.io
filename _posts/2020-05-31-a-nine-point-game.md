@@ -1,5 +1,6 @@
 ---
 title: "A nine-point game"
+permalink: /a-nine-point-game/
 date: 2020-05-31 20:00:00
 last_modified_at: 2020-06-01 09:00:00
 categories:
