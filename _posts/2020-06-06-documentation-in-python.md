@@ -83,7 +83,7 @@ The docstring styles of Numpy and Google are the two potential candidates for yo
 ) styles. You can see the comparison between them [here](https://sphinxcontrib-napoleon.readthedocs.io/en/latest/#google-vs-numpy
 ).
 
-In addition, here is the [docstring](https://numpy.org/doc/stable/reference/generated/numpy.mean.html#numpy.mean
+In addition, here are [a guide to numpy/scipy documentation](https://numpy.org/doc/stable/docs/howto_document.html) and the [docstring](https://numpy.org/doc/stable/reference/generated/numpy.mean.html#numpy.mean
 ) of `numpy.mean` method.
 
 ### Documenting Your Python Projects
