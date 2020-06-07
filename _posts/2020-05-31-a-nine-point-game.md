@@ -2,7 +2,7 @@
 title: "A nine-point game"
 permalink: /a-nine-point-game/
 date: 2020-05-31 20:00:00
-last_modified_at: 2020-06-01 09:00:00
+last_modified_at: 2020-06-07 14:30:00
 categories:
   - mathematics
 tags:
@@ -42,7 +42,7 @@ Những ảnh dưới đây thể hiện một lần chơi kết thúc sau 5 nư
 ![](/assets/ninePointsGame/ninePointsGame_move_5.png)
 ![](/assets/ninePointsGame/ninePointsGame_move_6.png)
 
-### Biến thể
+### Những biến thể của trò chơi
 Những biến thể của trò chơi này có thể được xây dựng bằng cách thay đổi những yếu tố sau:
 - Sơ đồ sử dụng để đặt các quân cờ.
 - Vị trí khởi đầu / số lượng của các quân cờ.
