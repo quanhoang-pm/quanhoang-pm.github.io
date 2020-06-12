@@ -34,9 +34,14 @@ My custom setting worth noticing is shown in the table below. Neglect Atom setti
 #### Installation process
 
 The overall process might be as follows:
-- [Create a live USB stick][link:create-live-usb] by Startup Disk Creator.
+- [Create a live USB stick][link:create-live-usb] by Startup Disk Creator (in Ubuntu OS).
 - [Remove / resize the obsolete operating systems][link:GParted] (e.g., Windows OS) by GParted.
 - Install the new Ubuntu OS by following [the instruction][link:install-OS].
+
+Just in case Startup Disk Creator is not installed by default, you can install it by running the command below.
+```sh
+sudo apt install usb-creator-gtk
+```
 
 [link:create-live-usb]: https://ubuntu.com/tutorials/tutorial-create-a-usb-stick-on-ubuntu
 [link:GParted]: https://www.howtogeek.com/114503/how-to-resize-your-ubuntu-partitions/
