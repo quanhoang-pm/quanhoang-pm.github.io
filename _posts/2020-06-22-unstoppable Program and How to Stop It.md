@@ -84,7 +84,7 @@ except KeyboardInterrupt:
         except KeyboardInterrupt:
             ...
 ```
-Our program must contain a finite number of characters, hence we can not naively implement the idea above. However, there is some kind of repetition here, it suggests us define a function to somehow shift the second `try` statement (at $4^\text{th}$ line) to the first `try` statement (at $1^\text{st}$ line). By some logical thinking, I can obtain the code below.
+Our program must contain a finite number of characters, hence we can not naively implement the idea above. However, there is some kind of repetition here, it suggests us define a function to somehow shift the second `try` statement (at $4^\text{th}$ line) to the first `try` statement (at $1^\text{st}$ line). By some logical thinking, I can come up with the code below.
 ```py
 def properInfiniteLoop():
     try:
