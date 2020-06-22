@@ -8,6 +8,7 @@ categories:
 tags:
   - installation
   - ubuntu
+  - terminal
 ---
 
 Ubuntu 20.04 LTS has been released since April 2020. The post is about what should be taken into account during installation process. This is mostly written for my own reference in the future.
