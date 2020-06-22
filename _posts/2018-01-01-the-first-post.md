@@ -157,6 +157,10 @@ End a line with
 two or more spaces
 
 Edited at 16h44
+
+### Static link to a post
+[The article](/the-shortest-infinite-program-in-Python/)
+
 ---
 
 [^footnote]: The detailed description in one paragraph.
