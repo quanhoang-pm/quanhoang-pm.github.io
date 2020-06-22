@@ -1,5 +1,6 @@
 ---
 title: "The shortest infinite program in Python"
+permalink: /the-shortest-infinite-program-in-Python/
 date: 2020-04-01
 last_modified_at: 2020-04-06 13:22:00
 categories:
