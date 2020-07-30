@@ -12,11 +12,12 @@ tags:
 Optimizing your program is important. However, knowing where to optimize differentiate good developers and bad ones.
 
 > Premature optimization is the root of all evil (or at least most of it) in programming.
->> Donald Knuth.
+>
+> --- Donald Knuth ---
 
 In Python programming language, one can use `cProfile` module to profile a program to know where the bottleneck is. You can either export the profiled result to a file or have it printed directly in the terminal. The two options are shown below.
 ```sh
-python -m cProfile -o profiled_result.pstats hello.py
+python -m cProfile -o result.pstats hello.py
 python -m cProfile hello.py
 ```
 
@@ -42,11 +43,11 @@ pip install gprof2dot
 
 One can create a graph of execution time either in `png` or `pdf` file format, then preview them by appropriate software programs.
 ```sh
-gprof2dot -f pstats profiled_result.pstats | dot -Tpng -o profiled_result.png
-eog profiled_result.png
+gprof2dot -f pstats result.pstats | dot -Tpng -o result.png
+eog result.png
 
-gprof2dot -f pstats profiled_result.pstats | dot -Tpdf -o profiled_result.pdf
-evince profiled_result.pdf
+gprof2dot -f pstats result.pstats | dot -Tpdf -o result.pdf
+evince result.pdf
 ```
 
 
@@ -55,7 +56,7 @@ evince profiled_result.pdf
 Snakeviz, which can be installed via pip, is a browser-based visualization tool. Its usage is shown as follows:
 ```
 pip install snakeviz --user
-snakeviz profiled_result.pstats
+snakeviz result.pstats
 ```
 
 #### References
