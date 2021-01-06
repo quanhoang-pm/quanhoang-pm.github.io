@@ -54,7 +54,7 @@ Before installation, it's best to know which partitions are mounted to which dir
 
 If you're not sure about the guide provided in English, here is [an article written in Vietnamese][link:installation-in-vnm] presenting how to install Ubuntu OS alongside Windows OS.
 
-You might want to name your USB with something like `Ubuntu20.04LTS`. It is relatively easy to rename a USB in Windows OS. As for this action in Ubuntu OS, you can use Disks application as mentioned in [this question][link:rename-USB] in askubuntu forum.
+You might want to name your USB with something like `Ubuntu20.04LTS`. It is relatively easy to rename a USB on Windows OS. As for this action on Ubuntu OS, you can use Disks application as mentioned in [this question][link:rename-USB] in askubuntu forum.
 
 After rebooting, your computer may go directly to Windows OS instead of prompting you to choose between Ubuntu OS and Windows OS. You need to get into the BIOS and make sure that the *ubuntu* device is above the *Windows* device in the OS boot manager. The detailed steps are in [an answer][link:OS-boot-manager] in askubuntu forum.
 
