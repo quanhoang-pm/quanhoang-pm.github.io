@@ -1,7 +1,7 @@
 ---
 title: "Tips and tricks in Python"
 date: 2020-12-27 21:50:00
-last_modified_at: 2021-01-15 11:50:00
+last_modified_at: 2021-02-08 22:30:00
 categories:
   - programming
 tags:
@@ -43,6 +43,35 @@ pip freeze > requirements.txt
 pip install -r requirements.txt
 pip install -r PythonPackages.txt --upgrade;
 ```
+
+### Accessing elements in a numpy array
+
+Given a numpy array, one need to provide the value of element in a given coordinate.
+
+```py
+import numpy as np
+# input
+arr = np.array([
+    [1, 2, 3],
+    [4, 5, 6],
+])
+coor = (1, 2)
+# output 6
+```
+A solution to this exercise is quite simple
+```py
+def getElement(arr, coor):
+    x, y = coor
+    return arr[x, y]
+```
+But what if the array dimension is not pre-provided? We then do not know the number of indices to unpack correctly in the line `x, y = coor`. In addition, the approach `return arr[*coor]` is not syntactically correct. Luckily, I have found out a workaround by using `item` method as follows
+```py
+def getElement2(arr, coor):
+    # coor must be a tuple, not a list
+    return arr.item(coor)
+```
+
+One last note is about the try/catch block. The IndexError error is raised when given indices are invalid (out of array's bounds). Negative indices may not be what you're dealing with, they are valid in numpy arrays though. Make sure that you know exactly what indices values you're passing to the method.
 
 ### More tricks to be appended ...
 
