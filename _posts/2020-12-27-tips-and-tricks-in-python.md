@@ -1,7 +1,7 @@
 ---
 title: "Tips and tricks in Python"
 date: 2020-12-27 21:50:00
-last_modified_at: 2021-02-08 22:30:00
+last_modified_at: 2021-02-09 22:00:00
 categories:
   - programming
 tags:
@@ -72,6 +72,23 @@ def getElement2(arr, coor):
 ```
 
 One last note is about the try/catch block. The IndexError error is raised when given indices are invalid (out of array's bounds). Negative indices may not be what you're dealing with, they are valid in numpy arrays though. Make sure that you know exactly what indices values you're passing to the method.
+
+### Coding without if statements
+
+```py
+def withIfStatement(bool_):
+    if bool_:
+        print('Hello')
+    return None
+
+def withoutIfStatements(bool_):
+    for _ in filter(lambda x: bool_, [None]):
+        print('Hello')
+    return None
+
+withIfStatement(True)
+withoutIfStatements(True)
+```
 
 ### More tricks to be appended ...
 
