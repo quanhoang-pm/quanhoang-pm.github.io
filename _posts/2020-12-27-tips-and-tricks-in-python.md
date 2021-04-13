@@ -1,7 +1,7 @@
 ---
 title: "Tips and tricks in Python"
 date: 2020-12-27 21:50:00
-last_modified_at: 2021-02-09 22:00:00
+last_modified_at: 2021-04-13 11:45:00
 categories:
   - programming
 tags:
@@ -72,6 +72,24 @@ def getElement2(arr, coor):
 ```
 
 One last note is about the try/catch block. The IndexError error is raised when given indices are invalid (out of array's bounds). Negative indices may not be what you're dealing with, they are valid in numpy arrays though. Make sure that you know exactly what indices values you're passing to the method.
+
+### Negative indices in numpy arrays
+
+Given a 1-dimensional numpy array, suppose you want to extract the last _m_ elements of the array. The most naive approach would be
+```py
+import numpy as np
+m = 2
+arr = np.array([10, 20, 30, 40, 50])
+print(arr[-m:])
+```
+However, when _m_ equals to 0, the code above returns the entire array instead of returns nothing as expected (... extract the last 0 elements ...). Of course if we know _m_ is a non negative number beforehand, we would have come up with something different or at least being aware of the approach's downsides. The lesson here is trying to identify as many edge cases as possible.
+
+Back to our problem, the fix is relatively easy to find out
+```py
+length = arr.size
+assert 0 <= m <= length
+print(arr[length-m:])
+```
 
 ### Coding without if statements
 
