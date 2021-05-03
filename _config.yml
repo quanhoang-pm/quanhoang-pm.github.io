@@ -13,7 +13,8 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: A blog on Maths and related topics
+# title: A blog on Maths and related topics
+title: A blog of a mathematician, c., and f.
 email: quanhoang.pm@gmail.com
 description: Maths should be fun, so should my blog
 # twitter_username: username
