@@ -1,7 +1,7 @@
 ---
 title: "Tips and tricks in Python"
 date: 2020-12-27 21:50:00
-last_modified_at: 2021-04-13 11:45:00
+last_modified_at: 2021-07-23 00:00:00
 categories:
   - programming
 tags:
@@ -106,6 +106,22 @@ def withoutIfStatements(bool_):
 
 withIfStatement(True)
 withoutIfStatements(True)
+```
+
+### Parsing arguments
+
+```py
+import argparse
+parser = argparse.ArgumentParser()
+parser.add_argument('-n', '--nItems', type = int, default = 12, help = 'TBA')
+args = parser.parse_args()
+print(args.nItems)
+```
+
+```sh
+python main.py -n 42
+python main.py --nItems 43
+python main.py -h # show help message and exit
 ```
 
 ### More tricks to be appended ...
