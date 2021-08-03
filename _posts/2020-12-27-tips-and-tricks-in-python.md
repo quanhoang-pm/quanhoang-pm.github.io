@@ -1,7 +1,7 @@
 ---
 title: "Tips and tricks in Python"
 date: 2020-12-27 21:50:00
-last_modified_at: 2021-07-23 00:00:00
+last_modified_at: 2021-08-03 00:00:00
 categories:
   - programming
 tags:
@@ -122,6 +122,17 @@ print(args.nItems)
 python main.py -n 42
 python main.py --nItems 43
 python main.py -h # show help message and exit
+```
+
+### Time formatting
+
+```py
+import time
+foo = time.strftime('%Y%m%d_%Hh%Mm%Ss')
+```
+It can also be done in a bash script as below
+```sh
+foo=$(date +'%Y%m%d_%Hh%Mm%Ss')
 ```
 
 ### More tricks to be appended ...
