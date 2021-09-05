@@ -135,6 +135,21 @@ It can also be done in a bash script as below
 foo=$(date +'%Y%m%d_%Hh%Mm%Ss')
 ```
 
+### Read files
+
+```py
+# my old method
+with open(path, 'r') as f:
+    lines = [x.replace('\n', '') for x in f.readlines()]
+
+# a better method
+with open(path, 'r') as f:
+    lines = f.read().splitlines()
+
+# perhaps it's the best method
+lines = open(path, 'r').read().splitlines()
+```
+
 ### More tricks to be appended ...
 
 Hope you enjoyed the post. Please leave a comment if you have any useful tricks in Python to share with others.
