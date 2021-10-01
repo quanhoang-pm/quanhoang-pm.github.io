@@ -1,7 +1,7 @@
 ---
 title: "Tips and tricks in LaTeX"
 date: 2021-10-01 15:30:00
-last_modified_at: 2021-10-01 15:30:00
+last_modified_at: 2021-10-01 22:30:00
 categories:
   - programming
 tags:
@@ -26,3 +26,15 @@ do
   echo ${myString// /_}
 done
 ```
+
+
+### Types of parentheses
+
+| Command (in math mode)   | Meaning          |
+|:-------------------------|:-----------------|
+| `\left( a + b \right)`   | Parentheses      |
+| `\left[ a + b \right]`   | SquareBrackets   |
+| `\left\{ a + b \right\}` | CurlyBrackets    |
+| `here`                   | AbsoluteBrackets |
+
+`here` = `\left| a + b \right|`
