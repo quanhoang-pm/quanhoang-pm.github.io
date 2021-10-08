@@ -47,10 +47,16 @@ pip install -r PythonPackages.txt --upgrade;
 
 ### Built-in int method in Python
 Mathematically, it is easy to see that
-$$x = sgn(x) * abs(x)$$
+
+\begin{equation}
+  x = \sgn(x) * \abs(x)
+\end{equation}
 
 In Python, built-in `int` method is defined as
-$$ int(x) = sgn(x) * floor(abs(x))$$
+\begin{equation}
+  \int(x) = \sgn(x) * \floor(\abs(x))
+\end{equation}
+
 For example, `int(-2.2) = -2`.
 
 
