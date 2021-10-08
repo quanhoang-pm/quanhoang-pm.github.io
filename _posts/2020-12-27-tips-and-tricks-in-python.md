@@ -57,7 +57,7 @@ In Python, built-in `int` method is defined as
   \text{int}(x) = \text{sgn}(x) * \text{floor}(\text{abs}(x))
 \end{equation}
 
-For example, `int(-2.2) = -2`.
+For example, `int(-2.2) = -2`
 
 
 ### Determine the largest value in a numpy array
@@ -191,31 +191,27 @@ lines = open(path, 'r').read().splitlines()
 ```
 
 
-
-
 ### Pandas
-
-aaa = combinedDf.groupby(['itemcode', 'shopcode'])['docdate'].min()
-aaa.name = 'earliestDocdate'
-
+A slow approach
+```py
 def extractDataMethod(series):
     dict_ = {
-        'earliestDocdate': series.docdate.min(),
-        'localLatestDocdate': series.docdate.max(),
+        'open': series.date.min(),
+        'closed': series.date.max(),
     }
     return pd.Series(dict_)
+resultDf = combinedDf.groupby(['itemcode', 'shopcode'], as_index = False).apply(extractDataMethod)
+```
 
-aaa = combinedDf.groupby(['itemcode', 'shopcode'])['docdate'].min()
-bbb = combinedDf.groupby(['itemcode', 'shopcode'])['docdate'].max()
-
-aaa.name = 'earliestDocdate'
-bbb.name = 'localLatestDocdate'
-
-resultDf = pd.concat([aaa, bbb], axis = 1)
+A faster approach
+```
+openDf = combinedDf.groupby(['itemcode', 'shopcode'])['date'].min()
+closedDf = combinedDf.groupby(['itemcode', 'shopcode'])['date'].max()
+openDf.name = 'open'
+closedDf.name = 'closed'
+resultDf = pd.concat([openDf, closedDf], axis = 1)
 resultDf.reset_index(inplace = True)
-# resultDf = combinedDf.groupby(['itemcode', 'shopcode'], as_index = False).apply(extractDataMethod)
-
-
+```
 
 
 ### More tricks to be appended ...
