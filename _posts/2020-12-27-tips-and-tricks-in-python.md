@@ -49,12 +49,12 @@ pip install -r PythonPackages.txt --upgrade;
 Mathematically, it is easy to see that
 
 \begin{equation}
-  x = \sgn(x) * \text{abs}(x)
+  x = \text{sgn}(x) * \text{abs}(x)
 \end{equation}
 
 In Python, built-in `int` method is defined as
 \begin{equation}
-  \int(x) = \sgn(x) * \floor(\abs(x))
+  \text{int}(x) = \text{sgn}(x) * \text{floor}(\text{abs}(x))
 \end{equation}
 
 For example, `int(-2.2) = -2`.
