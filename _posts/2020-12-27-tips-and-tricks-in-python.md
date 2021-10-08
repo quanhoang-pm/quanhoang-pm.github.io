@@ -67,11 +67,10 @@ However, the first naive approach `value = arr.max()` is not correct since it re
 
 ```py
 arr = np.array([1, 2, np.nan])
-# value = arr.max() # wrong
 value = arr[~np.isnan(arr)].max()
 ```
 
-By doing so, you have reinvented the wheel. See [`nanmax` method](https://numpy.org/doc/stable/reference/generated/numpy.nanmax.html) for the _existing_ wheel `np.nanmax(arr)`.
+By doing so, you have reinvented the wheel. Just simply use `np.nanmax(arr)` to achieve the goal, see [nanmax documentation](https://numpy.org/doc/stable/reference/generated/numpy.nanmax.html).
 
 One more thing to notice, if a value is suspected to be a `np.nan` value, one should not compare it with `np.nan` to get the answer since
 ```py
