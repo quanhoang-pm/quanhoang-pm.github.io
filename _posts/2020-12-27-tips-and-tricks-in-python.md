@@ -44,6 +44,41 @@ pip install -r requirements.txt
 pip install -r PythonPackages.txt --upgrade;
 ```
 
+
+### Built-in int method in Python
+Mathematically, it is easy to see that
+$$x = sgn(x) * abs(x)$$
+
+In Python, built-in `int` method is defined as
+$$ int(x) = sgn(x) * floor(abs(x))$$
+For example, `int(-2.2) = -2`.
+
+
+### Determine the largest value in a numpy array
+A question needs to be answered: what to do when the given array contains `np.nan` values? Most of the time, we do not care about these `np.nan` values. That means the maximum value should be chosen from the values excluding `np.nan` in the array.
+
+However, the first naive approach `value = arr.max()` is not correct since it returns `np.nan` if `np.nan` exists in the array. A workaround would be
+
+```py
+arr = np.array([1, 2, np.nan])
+# value = arr.max() # wrong
+value = arr[~np.isnan(arr)].max()
+```
+
+By doing so, you have reinvented the wheel. See [`nanmax` method](https://numpy.org/doc/stable/reference/generated/numpy.nanmax.html) for the _existing_ wheel `np.nanmax(arr)`.
+
+One more thing to notice, if a value is suspected to be a `np.nan` value, one should not compare it with `np.nan` to get the answer since
+```py
+value = np.nan
+value == np.nan # False
+```
+The correct way to to use `isnan` method
+
+```py
+np.isnan(value) # True
+```
+
+
 ### Accessing elements in a numpy array
 
 Given a numpy array, one need to provide the value of element in a given coordinate.
@@ -149,6 +184,34 @@ with open(path, 'r') as f:
 # perhaps it's the best method
 lines = open(path, 'r').read().splitlines()
 ```
+
+
+
+
+### Pandas
+
+aaa = combinedDf.groupby(['itemcode', 'shopcode'])['docdate'].min()
+aaa.name = 'earliestDocdate'
+
+def extractDataMethod(series):
+    dict_ = {
+        'earliestDocdate': series.docdate.min(),
+        'localLatestDocdate': series.docdate.max(),
+    }
+    return pd.Series(dict_)
+
+aaa = combinedDf.groupby(['itemcode', 'shopcode'])['docdate'].min()
+bbb = combinedDf.groupby(['itemcode', 'shopcode'])['docdate'].max()
+
+aaa.name = 'earliestDocdate'
+bbb.name = 'localLatestDocdate'
+
+resultDf = pd.concat([aaa, bbb], axis = 1)
+resultDf.reset_index(inplace = True)
+# resultDf = combinedDf.groupby(['itemcode', 'shopcode'], as_index = False).apply(extractDataMethod)
+
+
+
 
 ### More tricks to be appended ...
 
