@@ -1,7 +1,7 @@
 ---
 title: "Tips and tricks in Python"
 date: 2020-12-27 21:50:00
-last_modified_at: 2021-08-03 00:00:00
+last_modified_at: 2021-10-09 00:00:00
 categories:
   - programming
 tags:
