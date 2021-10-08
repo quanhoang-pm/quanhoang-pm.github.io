@@ -49,7 +49,7 @@ pip install -r PythonPackages.txt --upgrade;
 Mathematically, it is easy to see that
 
 \begin{equation}
-  x = \sgn(x) * \abs(x)
+  x = \sgn(x) * \text{abs}(x)
 \end{equation}
 
 In Python, built-in `int` method is defined as
