@@ -5,7 +5,7 @@ title: "About"
 
 Hi everyone,
 
-I'm Quan, an undergraduate student in Vietnam. I'm interested in Mathematics because of its beauty and rigorous. I also enjoy other things, but that is the story for another time.
+I'm Quan Hoang. I was an undergraduate student at Vietnam National University in Vietnam. I'm interested in Mathematics because of its beauty and rigorous. I also enjoy other things, but that is the story for another time.
 
 There are ideas that have inspired me, most of them are in mathematics. I'm willing to introduce them to you. Perhaps they will motivate you to get to know about the topics, or at least realize that they exist.
 
