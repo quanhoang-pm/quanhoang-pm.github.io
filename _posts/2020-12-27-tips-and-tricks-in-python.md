@@ -1,7 +1,7 @@
 ---
 title: "Tips and tricks in Python"
 date: 2020-12-27 21:50:00
-last_modified_at: 2021-10-09 00:00:00
+last_modified_at: 2021-11-06 00:00:00
 categories:
   - programming
 tags:
@@ -9,10 +9,11 @@ tags:
 ---
 
 
-### Divmod built-in method
+### Interesting utilities
 
 ```py
-divmod(a, b) # returns tuple (a // b, a % b)
+divmod(a, b) # built-in method returns tuple (a // b, a % b)
+np.isclose(a, b) # avoid numerical errors
 ```
 
 ### Number formatting
