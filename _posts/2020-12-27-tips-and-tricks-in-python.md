@@ -221,6 +221,37 @@ resultDf = pd.concat([openDf, closedDf], axis = 1)
 resultDf.reset_index(inplace = True)
 ```
 
+### Read params
+Suppose we have a line read from a given file with the following convention
+> For each line, the key and the value are separated by a colon.
+
+```txt
+# data.txt
+projectFolder:/path/to/project/
+dataFolder:/path/to/data/
+```
+```py
+with open('data.txt', 'r') as f:
+    allLines = f.readlines()
+    line = allLines[0]
+```
+
+The task is to convert then given line to a (key, value) pair for further processing. The straight-forward way to handle it would be
+```py
+line = line.replace('\n', '')
+key, value = line.split(':')
+```
+I was happy with that approach until a Windows-user come by and report an error when using the program. His/her `data.txt` contains
+```txt
+dataFolder:C:/path/to/data/
+```
+Unsurprisingly, a path can contain colons, especially in Windows. It leads to the following implementation
+```py
+line = line.replace('\n', '')
+firstIndexOfColon = line.find(':')
+key = line[:firstIndexOfColon]
+value = line[firstIndexOfColon + 1:]
+```
 
 ### More tricks to be appended ...
 
