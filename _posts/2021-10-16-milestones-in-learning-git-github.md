@@ -1,7 +1,7 @@
 ---
 title: "Milestones in learning git/github"
-date: 2021-10-16 14:00:00
-last_modified_at: 2021-10-16 15:00:00
+date: 2021-10-16
+last_modified_at: 2021-11-07 13:30:00
 categories:
   - programming
 tags:
@@ -24,7 +24,7 @@ Github provides a platform for developers to extend git's utilities online. Firs
 
 ### Stage 3. Teamwork on Github
 
-Now you are in an organization, and you collaborate on a repository with your teammates. Then you should take advantage of issues and pull requests to improve your work. Especially, learn to mention _anything_ in conversation. It includes issues, pull requests, commits, even team members.
+Now you are in an organization, and you collaborate on a repository with your teammates. Then you should take advantage of issues and pull requests to improve your work. Especially, make sure that you have [your notifications](https://github.com/settings/notifications) turned on and learn to mention _anyone/anything_ in conversation. The mentioning includes issues, pull requests, commits, even team members.
 
 ### Stage 4. Github CLI
 
