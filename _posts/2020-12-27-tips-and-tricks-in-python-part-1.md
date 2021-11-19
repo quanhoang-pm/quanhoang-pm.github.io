@@ -1,5 +1,5 @@
 ---
-title: "Tips and tricks in Python"
+title: "Tips and tricks in Python (part 1)"
 date: 2020-12-27 21:50:00
 last_modified_at: 2021-11-06 15:00:00
 categories:
@@ -10,14 +10,12 @@ tags:
 
 
 ### Interesting utilities
-
 ```py
 divmod(a, b) # built-in method returns tuple (a // b, a % b)
 np.isclose(a, b) # avoid numerical errors
 ```
 
 ### Number formatting
-
 I read two tricks about number formatting in a [Medium article](https://levelup.gitconnected.com/10-python-tips-for-better-code-1bbffde3b44d). The first trick is that underscores can be placed anywhere you prefer in a given number, but of course you should use them to separate the number the every three digits for better readability. The second one is a way to add commas in f-string literals. Here are how the tricks work.
 ```python
 value = 12_34_5678_9
@@ -26,7 +24,6 @@ print(f'{value:,}')
 ```
 
 ### Virtual environments in Python
-
 See comparison between tools managing virtual environments in [a Realpython article](https://realpython.com/python-virtual-environments-a-primer/). Also see [a guide to create a virtual environments](https://packaging.python.org/guides/installing-using-pip-and-virtual-environments/).
 
 ```sh
@@ -93,7 +90,6 @@ np.isnan(value) # True
 
 
 ### Accessing elements in a numpy array
-
 Given a numpy array, one need to provide the value of element in a given coordinate.
 
 ```py
@@ -122,7 +118,6 @@ def getElement2(arr, coor):
 One last note is about the try/catch block. The IndexError error is raised when given indices are invalid (out of array's bounds). Negative indices may not be what you're dealing with, they are valid in numpy arrays though. Make sure that you know exactly what indices values you're passing to the method.
 
 ### Negative indices in numpy arrays
-
 Given a 1-dimensional numpy array, suppose you want to extract the last _m_ elements of the array. The most naive approach would be
 ```py
 import numpy as np
@@ -140,7 +135,6 @@ print(arr[length-m:])
 ```
 
 ### Coding without if statements
-
 ```py
 def withIfStatement(bool_):
     if bool_:
@@ -157,7 +151,6 @@ withoutIfStatements(True)
 ```
 
 ### Parsing arguments
-
 ```py
 import argparse
 parser = argparse.ArgumentParser()
@@ -173,7 +166,6 @@ python main.py -h # show help message and exit
 ```
 
 ### Time formatting
-
 ```py
 import time
 foo = time.strftime('%Y%m%d_%Hh%Mm%Ss')
@@ -182,77 +174,3 @@ It can also be done in a bash script as below
 ```sh
 foo=$(date +'%Y%m%d_%Hh%Mm%Ss')
 ```
-
-### Read files
-
-```py
-# my old method
-with open(path, 'r') as f:
-    lines = [x.replace('\n', '') for x in f.readlines()]
-
-# a better method
-with open(path, 'r') as f:
-    lines = f.read().splitlines()
-
-# perhaps it's the best method
-lines = open(path, 'r').read().splitlines()
-```
-
-
-### Pandas
-A slow approach
-```py
-def extractDataMethod(series):
-    dict_ = {
-        'open': series.date.min(),
-        'closed': series.date.max(),
-    }
-    return pd.Series(dict_)
-resultDf = combinedDf.groupby(['itemcode', 'shopcode'], as_index = False).apply(extractDataMethod)
-```
-
-A faster approach
-```
-openDf = combinedDf.groupby(['itemcode', 'shopcode'])['date'].min()
-closedDf = combinedDf.groupby(['itemcode', 'shopcode'])['date'].max()
-openDf.name = 'open'
-closedDf.name = 'closed'
-resultDf = pd.concat([openDf, closedDf], axis = 1)
-resultDf.reset_index(inplace = True)
-```
-
-### Read params
-Suppose we have a line read from a given file with the following convention
-> For each line, the key and the value are separated by a colon.
-
-```txt
-# data.txt
-projectFolder:/path/to/project/
-dataFolder:/path/to/data/
-```
-```py
-with open('data.txt', 'r') as f:
-    allLines = f.readlines()
-    line = allLines[0]
-```
-
-The task is to convert then given line to a (key, value) pair for further processing. The straight-forward way to handle it would be
-```py
-line = line.replace('\n', '')
-key, value = line.split(':')
-```
-I was happy with that approach until a Windows-user come by and report an error when using the program. His/her `data.txt` contains
-```txt
-dataFolder:C:/path/to/data/
-```
-Unsurprisingly, a path can contain colons, especially in Windows. It leads to the following implementation
-```py
-line = line.replace('\n', '')
-firstIndexOfColon = line.find(':')
-key = line[:firstIndexOfColon]
-value = line[firstIndexOfColon + 1:]
-```
-
-### More tricks to be appended ...
-
-Hope you enjoyed the post. Please leave a comment if you have any useful tricks in Python to share with others.
