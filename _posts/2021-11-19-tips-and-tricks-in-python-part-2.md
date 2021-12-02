@@ -1,7 +1,7 @@
 ---
 title: "Tips and tricks in Python (part 2)"
 date: 2021-11-19 21:30:00
-last_modified_at: 2021-11-19
+last_modified_at: 2021-12-02
 categories:
   - programming
 tags:
@@ -93,6 +93,22 @@ ham: Tuple[int, float, str] = (1, 2.0, 'three')
 qux: Optional[str] = None
 qux: Optional[str] = 'None'
 ```
+
+
+### Working with zip files in Python
+[References](https://docs.python.org/3/library/zipfile.html)
+```py
+from zipfile import ZipFile
+
+with ZipFile('/path/to/data.zip') as zipObj:
+    zipObj.printdir()
+    # zipObj.extractall()
+    for fileObj in zipObj.infolist():
+        print(fileObj, fileObj.filename)
+    with zipObj.open('subPath/to/file.txt', 'r') as f:
+        data = f.readlines()
+```
+
 
 ### More tricks to be appended ...
 Hope you enjoyed the post. Please leave a comment if you have any useful tricks in Python to share with others.
