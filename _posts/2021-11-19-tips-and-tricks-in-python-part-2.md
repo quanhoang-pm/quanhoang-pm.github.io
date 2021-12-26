@@ -109,6 +109,27 @@ with ZipFile('/path/to/data.zip') as zipObj:
         data = f.readlines()
 ```
 
+### Sorting an numpy array by its column
+[The question and solution](https://stackoverflow.com/questions/2828059/sorting-arrays-in-numpy-by-column). [A solution](https://stackoverflow.com/a/2828371/11037273) to sort by multiple columns.
+
+```py
+arr = array([
+  [9, 2, 3],
+  [4, 5, 6],
+  [7, 0, 5],
+])
+arr[arr[:, 1].argsort()] # sort by the second column
+```
+
+### Extract single member in a set
+[References](https://stackoverflow.com/questions/1619514/how-to-extract-the-member-from-single-member-set-in-python)
+```py
+mySet = {27}
+(element, ) = mySet
+element = next(iter(myset))
+```
+
+
 
 ### More tricks to be appended ...
 Hope you enjoyed the post. Please leave a comment if you have any useful tricks in Python to share with others.
