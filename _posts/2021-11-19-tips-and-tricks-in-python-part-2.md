@@ -137,6 +137,5 @@ not M.isdisjoint(L) # it's better for (very) small list sizes
 any(x in M for x in L) # better way, where len(L) < len(M)
 ```
 
-
 ### More tricks to be appended ...
 Hope you enjoyed the post. Please leave a comment if you have any useful tricks in Python to share with others.
