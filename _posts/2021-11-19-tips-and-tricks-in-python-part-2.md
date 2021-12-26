@@ -129,6 +129,13 @@ mySet = {27}
 element = next(iter(myset))
 ```
 
+### Verify non-empty intersections
+[References](https://stackoverflow.com/questions/3170055/test-if-lists-share-any-items-in-python)
+```py
+len(set(M) & set(L)) >= 1 # naive way
+not M.isdisjoint(L) # it's better for (very) small list sizes
+any(x in M for x in L) # better way, where len(L) < len(M)
+```
 
 
 ### More tricks to be appended ...
