@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+</head>
+<body>
+
+
+<p id="sum"></p>
+
+<script>
+
+num1 = prompt("What is 1st number");
+num2 = prompt("What is 2nd number");
+// numbers can be used as is for all calculations except addition. Use parseInt to specify the type.
+answer = parseInt(num1) + parseInt(num2);
+
+document.getElementById("sum").innerHTML = "The sum is " + answer;
+</script>
+</body>
+</html>
