@@ -1,7 +1,7 @@
 ---
 title: "Tips and tricks in Python (part 2)"
 date: 2021-11-19 21:30:00
-last_modified_at: 2021-12-02
+last_modified_at: 2022-01-01
 categories:
   - programming
 tags:
@@ -135,6 +135,16 @@ element = next(iter(myset))
 len(set(M) & set(L)) >= 1 # naive way
 not M.isdisjoint(L) # it's better for (very) small list sizes
 any(x in M for x in L) # better way, where len(L) < len(M)
+```
+
+### Itertools library
+```py
+itertools.product([1, 2], repeat = 3) # 8 elements
+itertools.product([1, 2], [3, 4, 5]) # 6 elements
+itertools.combinations([1, 2, 3, 4, 5], r = 3) # 10 elements
+itertools.permutations([1, 2, 3, 4, 5], r = 3) # 60 elements
+itertools.permutations([1, 2, 3, 4, 5]) # 120 elements
+itertools.chain.from_iterable([[1, 2], [3, 4, 5]]) # iterator of [1, 2, 3, 4, 5]
 ```
 
 ### More tricks to be appended ...

@@ -1,0 +1,6 @@
+file:///home/quanhoang/Documents/PersonalBlog/temp/test.html
+https://www.w3schools.com/html/html_css.asp
+https://www.tutorialrepublic.com/css-tutorial/css-get-started.php
+https://www.google.com/search?q=print+in+html&oq=print+in+html&aqs=chrome..69i57j0i20i263i512j0i512l3j0i22i30l5.3535j1j7&sourceid=chrome&ie=UTF-8
+https://www.w3schools.com/jsref/tryit.asp?filename=tryjsref_confirm3
+https://www.w3schools.com/js/js_output.asp
