@@ -1,7 +1,7 @@
 ---
 title: "Tips and tricks in Python (part 2)"
 date: 2021-11-19 21:30:00
-last_modified_at: 2022-01-01
+last_modified_at: 2022-01-15
 categories:
   - programming
 tags:
@@ -145,6 +145,21 @@ itertools.combinations([1, 2, 3, 4, 5], r = 3) # 10 elements
 itertools.permutations([1, 2, 3, 4, 5], r = 3) # 60 elements
 itertools.permutations([1, 2, 3, 4, 5]) # 120 elements
 itertools.chain.from_iterable([[1, 2], [3, 4, 5]]) # iterator of [1, 2, 3, 4, 5]
+```
+
+### Environment variables
+Export variables in a terminal
+```sh
+# export FOO=$PWD
+export FOO=/path/to/folder/output
+export FOO="/path/to/folder/out put" # use quotation marks if space characters are included
+```
+
+Make use of them inside a Python script
+```py
+import os
+print(*os.environ.items(), sep = '\n')
+value = os.environ.get('FOO') # string
 ```
 
 ### More tricks to be appended ...
