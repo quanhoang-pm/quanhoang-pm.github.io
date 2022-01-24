@@ -162,5 +162,15 @@ print(*os.environ.items(), sep = '\n')
 value = os.environ.get('FOO') # string
 ```
 
+### Latin characters
+
+```py
+nLetter = 26
+lowerCaseA = 97
+lowerCaseAlphabet = [chr(x) for x in range(lowerCaseA, lowerCaseA + nLetter)]
+upperCaseA = 65
+upperCaseAlphabet = [chr(x) for x in range(upperCaseA, upperCaseA + nLetter)]
+```
+
 ### More tricks to be appended ...
 Hope you enjoyed the post. Please leave a comment if you have any useful tricks in Python to share with others.
