@@ -12,16 +12,19 @@ Trình bày tất cả trong một file jupyter notebook (mẫu dưới đây)
 Bài 1. a, b, c,
 Bài 2. ....
 
-# --------------------------------------------------------------------------- #
 Với tất cả những ý yêu cầu viết hàm/chương trình, cần bổ sung một số ví dụ ngay trong cell của notebook
 
 
-# Chess-related problems
+# --------------------------------------------------------------------------- #
 
-Giới thiệu cờ vua.
-có thể xem tại [đây](https://en.wikipedia.org/wiki/Rules_of_chess)
+[Cờ vua](https://en.wikipedia.org/wiki/Chess) là một trò chơi hai người trên một bàn cờ hình vuông kích thước $8\times 8$ với các quân cờ có đặc điểm khác nhau. Luật chơi cờ vua có thể xem tại [đây](https://en.wikipedia.org/wiki/Rules_of_chess).
 
-Bàn cờ vua gồm 64 ô vuông xếp thành hình vuông kích thước 8x8
+Mục tiêu của chuỗi bài tập dưới đây, ngoài việc là bài tập lần thứ hai của lớp Tối ưu hóa HKII 2021-2022, còn là một dịp để giới thiệu về một câu đố liên quan tới cờ vua:
+
+> Khi đặt đủ 8 quân cờ: 1 vua, 1 hậu, 2 xe, 2 tượng, 2 mã lên trên bàn cờ thì số ô không bị KIỂM SOÁT cực đại/cực tiểu lần lượt là bao nhiêu?
+
+
+
 
 Tọa độ được quy ước là
 cột a đến cột h, hàng 1 đến hàng 8.
@@ -131,7 +134,11 @@ Cho loạt các con xe, hậu, tượng, mã, vua vào, chỉ để trống vài
 
 ## Bài 9.
 Định nghĩa free. nếu nó trống và không bị tấn công.
-Chỉ ra một config đủ 8 quân, sao cho số ô free là ít nhất có thể
+Chỉ ra một config đủ 8 quân, sao cho số ô free
+- ít nhất có thể
+- nhiều nhất có thể
+
+là ít nhất có thể
 a) ít hơn 32 ô
 b) ít hơn 16 ô
 c) ít hơn 8 ô
