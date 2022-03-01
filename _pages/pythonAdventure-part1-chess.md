@@ -20,6 +20,10 @@ Khi viết hàm xong thì cần viết các lệnh để test phía sau.
 
 Hàm có thể gọi các hàm con khác
 
+Trả về đối tượng,
+không in.
+
+
 # --------------------------------------------------------------------------- #
 
 [Cờ vua](https://en.wikipedia.org/wiki/Chess) là một trò chơi hai người trên một bàn cờ hình vuông kích thước $8\times 8$ với các quân cờ có đặc điểm khác nhau. Luật chơi cờ vua có thể xem tại [đây](https://en.wikipedia.org/wiki/Rules_of_chess).
@@ -74,8 +78,17 @@ bar('a1', 'a8') # True
 
 
 ## Bài 4. Nước đi của quân xe
+Ta bắt đầu quan tâm tới các quân cờ, bắt đầu với quân xe (`rook`). Đặt một quân xe lên một bài cờ trống, ta cần liệt kê tất cả những tọa độ mà quân xe có thể di chuyển tới trong một nước đi hợp lệ. Hãy viết một hàm thực hiện việc này
+
 Cho vào `Rb3`, trả về những ô có thể đi được. trên bàn cờ trống
-Gợi ý. Sử dụng bài 3 + bài 2
+Gợi ý. Sử dụng những bài tập phía trước.
+
+- Input:
+- Output: một list các ô mà quân xe có thể di chuyển tới
+- Ví dụ:
+```py
+ham('Ra2') # ['a1', 'a3', 'a4', 'a5', 'a6', 'a7', 'a8', 'b2', 'c2', 'd2', 'e2', 'f2', 'g2', 'h2']
+```
 
 
 ## Bài 5. Nước đi của quân tượng
