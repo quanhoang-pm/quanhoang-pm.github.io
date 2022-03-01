@@ -18,6 +18,8 @@ Tên hàm cần đặt một cách phù hợp. Tên hàm trong ví dụ chỉ ma
 
 Khi viết hàm xong thì cần viết các lệnh để test phía sau.
 
+Hàm có thể gọi các hàm con khác
+
 # --------------------------------------------------------------------------- #
 
 [Cờ vua](https://en.wikipedia.org/wiki/Chess) là một trò chơi hai người trên một bàn cờ hình vuông kích thước $8\times 8$ với các quân cờ có đặc điểm khác nhau. Luật chơi cờ vua có thể xem tại [đây](https://en.wikipedia.org/wiki/Rules_of_chess).
@@ -42,6 +44,7 @@ foo('1a') # False
 foo('a1.') # False
 foo('a1') # True
 ```
+
 Điểm thưởng. Viết một hàm kiểm tra tính hợp lệ của tọa độ, trong đó _không khai báo_ các string chữ cái. Gợi ý: sử dụng ASCII code.
 
 ## Bài 2. Tọa độ quân xe
@@ -57,29 +60,29 @@ Gợi ý
 - List comprehension
 - itertools
 
-## Bài 3.
-Viết một chương trình kiểm tra xem hai ô đưa vào có cùng hàng ngang hoặc cột dọc hay không
-Input: hai string tọa độ trên bàn cờ vua
-Output: True/False
-Ví dụ:
+## Bài 3. Kiểm tra thẳng hàng
+Viết một hàm kiểm tra xem hai ô đưa vào có cùng hàng ngang hoặc cột dọc hay không
+- Input: hai string tọa độ trên bàn cờ vua
+- Output: `True` / `False`
+- Ví dụ:
 ```py
 bar('a1', 'c2') # False
 bar('a1', 'a8') # True
 ```
 
-Điểm thưởng. Bổ sung tính năng báo lỗi khi input không hợp lệ.
+Điểm thưởng. Bổ sung vào hàm vừa viết tính năng báo lỗi khi input là không hợp lệ.
 
-## Bài 4.
+
+## Bài 4. Nước đi của quân xe
 Cho vào `Rb3`, trả về những ô có thể đi được. trên bàn cờ trống
 Gợi ý. Sử dụng bài 3 + bài 2
-hoặc tự viết logic mới.
 
 
-## Bài 5.
+## Bài 5. Nước đi của quân tượng
 Cho vào `Bb3`, trả về những ô có thể đi được. trên bàn cờ trống
 Gợi ý. dựa theo ý tưởng của bài 3 đối với quân xe, viết hàm tương tự cho quân tượng.
 
-## Bài 6. Hậu, vua, mã.
+## Bài 6. Những quân cờ còn lại
 Giải quyết tương tự cho 3 quân
 giống bài 4 cho quân xe và bài 5 cho quân tượng.
 
@@ -111,7 +114,7 @@ Cho list quân cờ, liệt kê tất cả ô bị tấn công
 Ví dụ:
 Cho loạt các con xe, hậu, tượng, mã, vua vào, chỉ để trống vài quân.    Cố tình để nó chắn nhau
 
-## Bài 9.
+## Bài 9. Câu hỏi cuối cùng
 Định nghĩa free. nếu nó trống và không bị tấn công.
 Chỉ ra một config đủ 8 quân, sao cho số ô free
 - ít nhất có thể
@@ -133,6 +136,48 @@ Cách 1.
 Cách 2. kết hợp tính chất X và Y thành Z
 Kiểm tra m có tính chất Z hay không.
 
+
+
+Điều chỉnh bàn cờ tại [đây](https://lichess.org/editor)
+
+Sao chép [FEN notation](https://en.wikipedia.org/wiki/Forsyth%E2%80%93Edwards_Notation)
+
+Trước tiên cần cài đặt thư viện `chess` trong Python bằng câu lệnh
+```sh
+pip install chess
+```
+
+Rồi chạy đoạn code dưới đây
+
+```py
+import chess
+import chess.svg
+
+board = chess.Board('8/8/8/8/8/8/8/RNBQKBNR w - - 0 1')
+boardsvg = chess.svg.board(board = board)
+with open('foobar.svg', 'w') as f:
+    f.write(boardsvg)
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# --------------------------------------------------------------------------- #
+
+## Tài liệu tham khảo
+Chuỗi bài tập này được truyền cảm hứng từ mục **7.4 War Story: Covering Chessboards** trong cuốn sách _The algorithm design manual_ (2nd edition, 2008, Springer-Verlag London) của tác giả Steven S. Skiena.
+
+Chúc mọi người tìm được nguồn cảm hứng với toán học, Python, và cờ vua.
 
 # --------------------------------------------------------------------------- #
 
@@ -161,36 +206,3 @@ với mối ô, thì nó và tất cả ô kề nó phải có ít nhất 1 hậ
 xe: dễ nhất. 8 con. Nếu có 7 thì sẽ thiếu 1 hàng 1 cột, giao chúng sẽ không phủ được.
 vua: 9 con, bằng cách chỉ ra 9 ô mà 1 vua không thể phủ cùng lúc 2 ô
 mã, tượng, hậu có vẻ khó.
-
-
-7.4 War Story: Covering Chessboards
-Chỗ này định nghĩa: một quân cờ KHÔNG tấn công ô mà nó đang đứng.
---> sẽ khác với quan niệm của mình là chỉ tất công những ô còn lại.
-
-
-Second edition
-Trang 244
-The algorithm design manual_Steven S. Skiena (auth.) - (2008_ Springer-Verlag London).pdf
-
-
-
-Điều chỉnh bàn cờ tại [đây](https://lichess.org/editor)
-
-Sao chép [FEN notation](https://en.wikipedia.org/wiki/Forsyth%E2%80%93Edwards_Notation)
-
-Trước tiên cần cài đặt thư viện `chess` trong Python bằng câu lệnh
-```sh
-pip install chess
-```
-
-Rồi chạy đoạn code dưới đây
-
-```py
-import chess
-import chess.svg
-
-board = chess.Board('8/8/8/8/8/8/8/RNBQKBNR w - - 0 1')
-boardsvg = chess.svg.board(board = board)
-with open('foobar.svg', 'w') as f:
-    f.write(boardsvg)
-```
