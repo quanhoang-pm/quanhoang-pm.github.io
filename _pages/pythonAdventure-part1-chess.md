@@ -37,7 +37,7 @@ Tọa độ trên bàn cờ vua được quy ước dựa trên tọa độ hàn
 - ký tự đầu tiên chỉ thứ tự cột, nhận một trong các giá trị `a`, `b`, `c`,  `d`, `e`, `f`, `g`, `h`.
 - ký tự thứ hai chỉ thứ tự hàng, nhận một trong các giá trị `1`, `2`, `3`, `4`, `5`, `6`, `7`, `8`.
 
-Viết một hàm kiểm tra tính hợp lệ của tọa độ trên bàn cờ vua với mô tả sau:
+1. Viết một hàm kiểm tra tính hợp lệ của tọa độ trên bàn cờ vua với mô tả sau:
 - Input: một `string`
 - Output: `True` / `False`
 - Ví dụ:
@@ -49,23 +49,28 @@ foo('a1.') # False
 foo('a1') # True
 ```
 
-Điểm thưởng. Viết một hàm kiểm tra tính hợp lệ của tọa độ, trong đó _không khai báo_ các string chữ cái. Gợi ý: sử dụng ASCII code.
+2. (Bonus) Viết một hàm kiểm tra tính hợp lệ của tọa độ, trong đó _không khai báo_ các string chữ cái. Gợi ý: sử dụng ASCII code.
 
-## Bài 2. Tọa độ quân xe
+## Bài 2. Tọa độ trên bàn cờ
 1. Viết một hàm trả về tọa độ của những quân xe trong [vị trí khởi đầu tiêu chuẩn](https://lichess.org/editor) trong một ván cờ vua.
 2. Viết một hàm trả về tọa độ của 64 ô của bàn cờ
 3. Viết một hàm trả về tọa độ của 32 ô trắng của bàn cờ
+4. (Bonus) Viết một hàm in ra 64 tọa độ của bàn cờ đặt trong các ô của bàn cờ theo góc nhìn của bên cầm quân trắng. Tức là
+```txt
+a8 b8 ... g8 h8
+.. .. ... .. ..
+.. .. ... .. ..
+a1 b1 ... g1 h1
+```
 
-Điểm thưởng. Viết một hàm trả về tọa độ của 32 ô trắng của bàn cờ, trong đó các ô được sắp xếp theo khoảng cách Euclid tăng dần từ ô đó tới ô `a1`. Trong hai ô có cùng khoảng cách tới `a1`, ô nào có chỉ số hàng thấp hơn thì xếp trước.
+Gợi ý công cụ sử dụng
+- Hai vòng lặp `for`
+- [List comprehension](https://realpython.com/list-comprehension-python/)
+- Thư viện [itertools](https://docs.python.org/3/library/itertools.html)
 
-Gợi ý
-- In thông thường
-- Hai vòng lặp for
-- List comprehension
-- itertools
 
 ## Bài 3. Kiểm tra thẳng hàng
-Viết một hàm kiểm tra xem hai ô đưa vào có cùng hàng ngang hoặc cột dọc hay không
+1. Viết một hàm kiểm tra xem hai ô đưa vào có cùng hàng ngang hoặc cột dọc hay không
 - Input: hai string tọa độ trên bàn cờ vua
 - Output: `True` / `False`
 - Ví dụ:
@@ -74,55 +79,58 @@ bar('a1', 'c2') # False
 bar('a1', 'a8') # True
 ```
 
-Điểm thưởng. Bổ sung vào hàm vừa viết tính năng báo lỗi khi input là không hợp lệ.
+2. (Bonus) Bổ sung vào hàm vừa viết tính năng báo lỗi khi input không hợp lệ.
 
 
-## Bài 4. Nước đi của quân xe
-Ta bắt đầu quan tâm tới các quân cờ, bắt đầu với quân xe (`rook`). Đặt một quân xe lên một bài cờ trống, ta cần liệt kê tất cả những tọa độ mà quân xe có thể di chuyển tới trong một nước đi hợp lệ. Hãy viết một hàm thực hiện việc này
-
-Cho vào `Rb3`, trả về những ô có thể đi được. trên bàn cờ trống
-Gợi ý. Sử dụng những bài tập phía trước.
-
-- Input:
+## Bài 4. Nước đi của quân xe (Rook's moves)
+Ta bắt đầu quan tâm tới các quân cờ, bắt đầu với quân xe. Đặt một quân xe lên một bài cờ trống, ta cần liệt kê tất cả những tọa độ mà quân xe có thể di chuyển tới trong một nước đi hợp lệ. Hãy viết một hàm thực hiện việc này với mô tả như sau:
+- Input: một string gồm ba ký tự, ký tự đầu là `R` và hai ký tự sau là tọa độ hiện tại của quân xe.
 - Output: một list các ô mà quân xe có thể di chuyển tới
 - Ví dụ:
 ```py
 ham('Ra2') # ['a1', 'a3', 'a4', 'a5', 'a6', 'a7', 'a8', 'b2', 'c2', 'd2', 'e2', 'f2', 'g2', 'h2']
 ```
 
+Điểm thưởng. Sắp xếp các tọa độ trả về của hàm này theo khoảng cách Euclid tăng dần từ ô xuất phát tới ô đang xét. Trong hai ô có cùng khoảng cách tới ô xuất phát, ô nào có chỉ số hàng thấp hơn thì xếp trước.
 
-## Bài 5. Nước đi của quân tượng
-Cho vào `Bb3`, trả về những ô có thể đi được. trên bàn cờ trống
+
+## Bài 5. Nước đi của quân tượng (bishop)
+
+- Input: một string gồm ba ký tự, ký tự đầu là `B` và hai ký tự sau là tọa độ hiện tại của quân tượng.
+- Output: một list các ô mà quân tượng có thể di chuyển tới
+- Ví dụ:
+```py
+ham('Ba2') # ['b1', 'b3', 'c4', 'd5', 'e6', 'f7', 'g8']
+```
 Gợi ý. dựa theo ý tưởng của bài 3 đối với quân xe, viết hàm tương tự cho quân tượng.
 
-## Bài 6. Những quân cờ còn lại
-Giải quyết tương tự cho 3 quân
-giống bài 4 cho quân xe và bài 5 cho quân tượng.
 
-Q, K, N
-Cho ví dụ hàm
-foo, bar, ham, egg,
-qux,
-yas
-bar
-sor
-zer
-
+## Bài 6. Những quân cờ còn lại (king, queen, knight)
+Ngoài xe và tượng, cờ vua còn có ba loại quân khác, lần lượt là vua, hậu, và mã. Hãy viết các hàm thực hiện công việc tương tự mô tả trong bài 4 và bài 5 cho những quân cờ này. Ví dụ
+```py
+bar('Kf4')
+sor('Qa1')
+zer('Nb2')
+```
 
 ## Bài 7.
-Cho hai ô được gọi là XXX nếu chúng chung hàng, cột, hoặc đường chéo.
-Input: hai ô XXX nhau
-Trả về những ô nằm giữa chúng.
-Ví dụ
+Hai ô trên bàn cờ vua được gọi là liên kết với nhau nếu chúng phân biệt và có chung hàng, cột, hoặc đường chéo. Cho hai ô `A` và `B`  liên kết với nhau, một ô `C` được gọi là nằm giữa `A` và `B` nếu ô đó thỏa mãn
+- Khác hai ô `Á` và `B`
+- Nằm trên đoạn thẳng nối hai ô `A` và `B`.
+
+1. Viết một hàm kiểm tra tính liên kết của hai tọa độ nhập vào
+2. Viết một hàm liệt kê tất cả những ô nằm giữa hai ô liên kết nhập vào.
 ```py
-ham('a1', 'a4') # ['a2', 'a3']
-ham('a1', 'a2') # []
+ham1('a1', 'a4') # True
+egg2('a1', 'a3') # ['a2']
+egg2('a1', 'a2') # []
 ```
 
 ## Bài 8.
 Di chuyển hợp lệ theo luật cờ vua.
 Một ô trống nếu nó không bị chiếm
-Một ô bị tấn công nếu nó trống và một quân cờ có thể di chuyển hợp lệ đến đó.
+Một ô bị tấn công nếu nó trống và một quân cờ có thể thực hiện một nước đi hợp lệ để tấn công ô đó.
+
 Cho list quân cờ, liệt kê tất cả ô bị tấn công
 Ví dụ:
 Cho loạt các con xe, hậu, tượng, mã, vua vào, chỉ để trống vài quân.    Cố tình để nó chắn nhau
@@ -138,18 +146,6 @@ a) ít hơn 32 ô
 b) ít hơn 16 ô
 c) ít hơn 8 ô
 NOTE. Cái mình có là sót 3 ô.
-
-
-Bình luận:
-yêu cầu: Trong tập A tất cả phần tử thỏa mãn tính chất X, kiểm tra phần tử m có thỏa mãn tính chất Y hay không
-Cách 1.
-- Liệt kê mọi phần tử trong A thỏa mãn tính chất X
-- Kiểm tra xem phần tử m có thuộc tập đó không.
-
-Cách 2. kết hợp tính chất X và Y thành Z
-Kiểm tra m có tính chất Z hay không.
-
-
 
 Điều chỉnh bàn cờ tại [đây](https://lichess.org/editor)
 
@@ -173,16 +169,16 @@ with open('foobar.svg', 'w') as f:
 ```
 
 
+# --------------------------------------------------------------------------- #
+## Bình luận
 
+yêu cầu: Trong tập A tất cả phần tử thỏa mãn tính chất X, kiểm tra phần tử m có thỏa mãn tính chất Y hay không
+Cách 1.
+- Liệt kê mọi phần tử trong A thỏa mãn tính chất X
+- Kiểm tra xem phần tử m có thuộc tập đó không.
 
-
-
-
-
-
-
-
-
+Cách 2. kết hợp tính chất X và Y thành Z
+Kiểm tra m có tính chất Z hay không.
 
 
 # --------------------------------------------------------------------------- #
