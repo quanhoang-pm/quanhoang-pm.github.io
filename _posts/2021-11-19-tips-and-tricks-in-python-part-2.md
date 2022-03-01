@@ -172,5 +172,11 @@ upperCaseA = 65
 upperCaseAlphabet = [chr(x) for x in range(upperCaseA, upperCaseA + nLetter)]
 ```
 
+
+
+def intersectionAmongList(list_):
+    return set(list_[0]).intersection(*list_[1:])
+
+
 ### More tricks to be appended ...
 Hope you enjoyed the post. Please leave a comment if you have any useful tricks in Python to share with others.
