@@ -2,8 +2,8 @@
 title: "Chess-related problems"
 permalink: /pythonAdventure-part1-chess/
 layout: customPostLayout
-date: 2020-05-20 22:50:00
-last_modified_at: 2020-05-26 00:15:00
+date: 2022-03-01 21:45:00
+last_modified_at: 2020-03-01
 ---
 
 Trình bày tất cả trong một file jupyter notebook (mẫu dưới đây)
