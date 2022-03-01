@@ -14,6 +14,9 @@ Bài 2. ....
 
 Với tất cả những ý yêu cầu viết hàm/chương trình, cần bổ sung một số ví dụ ngay trong cell của notebook
 
+Tên hàm cần đặt một cách phù hợp. Tên hàm trong ví dụ chỉ mang tính chất minh hoạ
+
+Khi viết hàm xong thì cần viết các lệnh để test phía sau.
 
 # --------------------------------------------------------------------------- #
 
@@ -23,24 +26,15 @@ Mục tiêu của chuỗi bài tập dưới đây, ngoài việc là bài tập
 
 > Khi đặt đủ 8 quân cờ: 1 vua, 1 hậu, 2 xe, 2 tượng, 2 mã lên trên bàn cờ thì số ô không bị KIỂM SOÁT cực đại/cực tiểu lần lượt là bao nhiêu?
 
-
-
-
-Tọa độ được quy ước là
-cột a đến cột h, hàng 1 đến hàng 8.
-
-cột là file, hàng là rank
-
-## Bài 1.
-Một tọa độ được gọi là hợp lệ nếu nó gồm hai ký tự, trong đó
+## Bài 1. Tọa độ trên bàn cờ
+Tọa độ trên bàn cờ vua được quy ước dựa trên tọa độ hàng (gọi là rank) và tọa độ cột (gọi là file). Một tọa độ gồm hai ký tự, trong đó
 - ký tự đầu tiên chỉ thứ tự cột, nhận một trong các giá trị `a`, `b`, `c`,  `d`, `e`, `f`, `g`, `h`.
 - ký tự thứ hai chỉ thứ tự hàng, nhận một trong các giá trị `1`, `2`, `3`, `4`, `5`, `6`, `7`, `8`.
 
-Viết một hàm kiểm tra tính hợp lệ của tọa độ.
-Input: một string
-Output: True/False
-Ví dụ
-
+Viết một hàm kiểm tra tính hợp lệ của tọa độ trên bàn cờ vua với mô tả sau:
+- Input: một `string`
+- Output: `True` / `False`
+- Ví dụ:
 ```py
 foo('Aone') # False
 foo('A1') # False
@@ -48,35 +42,20 @@ foo('1a') # False
 foo('a1.') # False
 foo('a1') # True
 ```
-
 Điểm thưởng. Viết một hàm kiểm tra tính hợp lệ của tọa độ, trong đó _không khai báo_ các string chữ cái. Gợi ý: sử dụng ASCII code.
 
+## Bài 2. Tọa độ quân xe
+1. Viết một hàm trả về tọa độ của những quân xe trong [vị trí khởi đầu tiêu chuẩn](https://lichess.org/editor) trong một ván cờ vua.
+2. Viết một hàm trả về tọa độ của 64 ô của bàn cờ
+3. Viết một hàm trả về tọa độ của 32 ô trắng của bàn cờ
 
-## Bài 2.
-a) Viết một hàm in ra tọa độ của những quân xe trong [vị trí khởi đầu tiêu chuẩn](https://lichess.org/editor).
-Mục đích câu này là để viết mẫu một ý
-```py
-def getRockLocations():
-    return ['a1', 'a8', 'h1', 'h8']
+Điểm thưởng. Viết một hàm trả về tọa độ của 32 ô trắng của bàn cờ, trong đó các ô được sắp xếp theo khoảng cách Euclid tăng dần từ ô đó tới ô `a1`. Trong hai ô có cùng khoảng cách tới `a1`, ô nào có chỉ số hàng thấp hơn thì xếp trước.
 
-getRockLocations()
-
-# better method
-def getRockLocationsVersion2():
-    locationsList = []
-    for file in ['a', 'h']:
-        for rank in ['1', '8']:
-            location = file + rank
-            locationsList.append(location)
-    return locationsList
-
-getRockLocationsVersion2()
-```
-b) Viết chương trình in ra tọa độ của 64 ô của bàn cờ
-c) Viết chương trình in ra tọa độ của 32 ô trắng của bàn cờ
-d) Viết chương trình in ra tọa độ của 32 ô trắng của bàn cờ, trong đó các ô được sắp xếp theo khoảng cách Euclid tới ô `a1` tăng dần. Trong hai ô có cùng khoảng cách tới `a1`, ô nào có chỉ số hàng thấp hơn thì xếp trước.
-
-
+Gợi ý
+- In thông thường
+- Hai vòng lặp for
+- List comprehension
+- itertools
 
 ## Bài 3.
 Viết một chương trình kiểm tra xem hai ô đưa vào có cùng hàng ngang hoặc cột dọc hay không
