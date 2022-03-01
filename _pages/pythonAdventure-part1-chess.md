@@ -15,11 +15,12 @@ Mục tiêu của chuỗi bài tập dưới đây, ngoài việc là bài tập
 
 ## Yêu cầu chung
 - Trình bày tất cả câu trả lời của những bài tập dưới đây trong **một file jupyter notebook duy nhất** với phần mở đầu ghi đầy đủ thông tin sinh viên (họ và tên, mã sinh viên, lớp đại học, lớp học phần).
-- Sinh viên đạt **điểm tối đa** cho bài tập lần thứ hai nếu **làm trọn vẹn 5 bài đầu tiên của chuỗi bài, bỏ qua những ý bonus**. Có những cách khác để đạt điểm tối đa cho bài tập lần thứ hai.
+- Sinh viên đạt **điểm tối đa** cho bài tập lần này nếu **làm trọn vẹn 5 bài đầu tiên của chuỗi bài, bỏ qua những ý bonus**. Có những cách khác để đạt điểm tối đa.
 - Cần đặt tên hàm trong lời giải một cách phù hợp. Tên hàm trong ví dụ chỉ mang tính chất minh hoạ.
 - Chỉ thực hiện hàm `print()` nếu có yêu cầu. Hầu hết các hàm trong chuỗi bài đều yêu cầu trả về đối tượng (kiểu `list`, `string`, `int`, ...)
 - Trong quá trình làm bài, nên sử dụng lại những hàm đã viết trước đó để tránh trùng lặp code.
 - Phải **bổ sung ví dụ** sau khi viết một hàm theo yêu cầu của đề bài để **kiểm tra tính đúng đắn của hàm**. Ví dụ như:
+
 ```py
 def getArea(length, width):
     return length * width
@@ -54,7 +55,7 @@ foo('a1') # True
 1. Viết một hàm trả về tọa độ của những quân xe trong [vị trí khởi đầu tiêu chuẩn](https://lichess.org/editor) của một ván cờ vua.
 2. Viết một hàm trả về tọa độ của 64 ô trên bàn cờ.
 3. Viết một hàm trả về tọa độ của 32 ô trắng trên bàn cờ.
-4. (Bonus) Viết một hàm **in ra màn hình** tọa độ của các ô trên bàn cờ, sắp xếp theo góc nhìn của bên cầm quân trắng. Thông tin in ra màn hình có dạng
+4. (Bonus) Viết một hàm **in ra màn hình** tọa độ của tất cả các ô trên bàn cờ, sắp xếp theo góc nhìn của bên cầm quân trắng. Thông tin in ra màn hình có dạng
 ```txt
 a8 b8 ... g8 h8
 .. .. ... .. ..
