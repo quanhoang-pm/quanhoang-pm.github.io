@@ -3,29 +3,23 @@ title: "Chess-related problems"
 permalink: /pythonAdventure-part1-chess/
 layout: customPostLayout
 date: 2022-03-01 21:45:00
-last_modified_at: 2020-03-01
+last_modified_at: 2022-03-02
 ---
 
-Trình bày tất cả trong một file jupyter notebook, trong đó ghi đầy đủ thông tin sinh viên.
+[Cờ vua](https://en.wikipedia.org/wiki/Chess) là một trò chơi hai người trên một bàn cờ hình vuông kích thước $8\times 8$ với các quân cờ có đặc điểm khác nhau. Luật chơi cờ vua có thể xem tại [đây](https://en.wikipedia.org/wiki/Rules_of_chess).
 
-Được 10 điểm nếu làm những ý sau:
-Bài 1. a, b, c,
-Bài 2. ....
+Mục tiêu của chuỗi bài tập dưới đây, ngoài việc là bài tập lần thứ hai của lớp Tối ưu hóa HKII 2021-2022, còn là một dịp để giới thiệu về một câu đố liên quan tới cờ vua:
 
-Với tất cả những ý yêu cầu viết hàm/chương trình, cần bổ sung một số ví dụ ngay trong cell của notebook
-
-Tên hàm cần đặt một cách phù hợp. Tên hàm trong ví dụ chỉ mang tính chất minh hoạ.
-
-Trả về đối tượng,
-Chỉ thực hiện hàm `print()` trong hàm nếu có yêu cầu.
+> Khi đặt đủ 8 quân cờ bao gồm 1 vua, 1 hậu, 2 xe, 2 tượng, 2 mã lên trên bàn cờ thì số ô tự do cực đại/cực tiểu là bao nhiêu?
 
 
-
-
-Một hàm có thể sử dụng những hàm có trước đó để tránh trùng lặp code.
-
-
-Bổ sung ví dụ sau khi viết một hàm để kiểm tra tính đúng đắn của hàm. Ví dụ
+## Yêu cầu chung
+- Trình bày tất cả câu trả lời của những bài tập dưới đây trong **một file jupyter notebook** với phần mở đầu ghi đầy đủ thông tin sinh viên (họ và tên, mã sinh viên, lớp đại học, lớp học phần).
+- Sinh viên đạt **điểm tối đa** cho bài tập lần thứ hai nếu **làm trọn vẹn 5 bài đầu tiên của chuỗi bài, bỏ qua những ý bonus**.
+- Cần đặt tên hàm trong lời giải một cách phù hợp. Tên hàm trong ví dụ chỉ mang tính chất minh hoạ.
+- Chỉ thực hiện hàm `print()` nếu có yêu cầu. Hầu hết các hàm trong chuỗi bài đều yêu cầu trả về đối tượng (kiểu list, string, int, ...)
+- Trong quá trình làm bài, nên sử dụng lại những hàm đã viết trước đó để tránh trùng lặp code.
+- Phải **bổ sung ví dụ** sau khi viết một hàm theo yêu cầu của đề bài để **kiểm tra tính đúng đắn của hàm**. Ví dụ như:
 ```py
 def getArea(length, width):
     return length * width
@@ -34,14 +28,6 @@ print(getArea(10, 4)) # 40
 print(getArea(7, 5)) # 35
 print(getArea(6, 6)) # 36
 ```
-
-# --------------------------------------------------------------------------- #
-
-[Cờ vua](https://en.wikipedia.org/wiki/Chess) là một trò chơi hai người trên một bàn cờ hình vuông kích thước $8\times 8$ với các quân cờ có đặc điểm khác nhau. Luật chơi cờ vua có thể xem tại [đây](https://en.wikipedia.org/wiki/Rules_of_chess).
-
-Mục tiêu của chuỗi bài tập dưới đây, ngoài việc là bài tập lần thứ hai của lớp Tối ưu hóa HKII 2021-2022, còn là một dịp để giới thiệu về một câu đố liên quan tới cờ vua:
-
-> Khi đặt đủ 8 quân cờ bao gồm 1 vua, 1 hậu, 2 xe, 2 tượng, 2 mã lên trên bàn cờ thì số ô tự do cực đại/cực tiểu là bao nhiêu?
 
 
 ## Bài 1. Tọa độ trên bàn cờ
@@ -147,10 +133,8 @@ egg2('a1', 'a2') # []
 
 ## Bài 8. Free squares enumeration
 - Một ô trống nếu nó không bị chiếm
-- Một ô bị tấn công nếu nó trống và một quân cờ có thể thực hiện một nước đi hợp lệ để di chuyển đến ô đó.
+- Một ô bị tấn công nếu nó trống và một quân cờ có thể thực hiện một nước đi hợp lệ để di chuyển đến ô đó. Cần chú ý tình huống khi các hướng tấn công/di chuyển của một quân cờ bị chặn bởi một quân cờ khác.
 - Một ô được gọi là tự do nếu nó trống và không bị tấn công.
-
-Cần chú ý tình huống khi các 
 
 Viết hàm tính số lượng các ô tự do trên bàn cờ dựa theo tọa độ các quân cờ cho trước.
 - Input: một list các quân cờ kèm theo tọa độ của chúng
@@ -163,84 +147,29 @@ qux(['Qa1', 'Ra2', 'Rb1', 'Rb2']) # 36
 qux(['Qa1', 'Ra2', 'Rb1']) # 42
 ```
 
+
 ## Bài 9. The last question
-
 > Khi đặt đủ 8 quân cờ bao gồm 1 vua, 1 hậu, 2 xe, 2 tượng, 2 mã lên trên bàn cờ thì số ô tự do cực đại/cực tiểu là bao nhiêu?
-
-Chỉ ra một config đủ 8 quân, sao cho số ô free
 
 Sử dụng 8 quân cờ như trong câu hỏi trên, đặt chúng lên một bàn cờ trống sao cho số ô tự do là:
 1. Ít nhất có thể
 2. Nhiều nhất có thể
 
-
-
-
-Điều chỉnh bàn cờ tại [đây](https://lichess.org/editor)
-
-Sao chép [FEN notation](https://en.wikipedia.org/wiki/Forsyth%E2%80%93Edwards_Notation) ở mục ngay dưới.
-
-Trước tiên cần cài đặt thư viện `chess` trong Python bằng câu lệnh
-```sh
-pip install chess
-```
-
-Rồi chạy đoạn code dưới đây
+Với câu hỏi này, bạn có thể thử nghiệm với bàn cờ tại [đây](https://lichess.org/editor). Khi đã hài lòng với cách sắp xếp các quân cờ, hãy sao chép [FEN notation](https://en.wikipedia.org/wiki/Forsyth%E2%80%93Edwards_Notation) ở ngay dưới bàn cờ, rồi dán `string` này vào đoạn code Python dưới đây
 
 ```py
 import chess
 import chess.svg
 
-board = chess.Board('8/8/8/8/8/8/8/RNBQKBNR w - - 0 1')
+FENNotationStr = '8/8/8/8/8/8/8/RNBQKBNR w - - 0 1'
+board = chess.Board(FENNotationStr)
 boardsvg = chess.svg.board(board = board)
 with open('foobar.svg', 'w') as f:
     f.write(boardsvg)
 ```
 
 
-# --------------------------------------------------------------------------- #
-## Bình luận
-
-yêu cầu: Trong tập A tất cả phần tử thỏa mãn tính chất X, kiểm tra phần tử m có thỏa mãn tính chất Y hay không
-Cách 1.
-- Liệt kê mọi phần tử trong A thỏa mãn tính chất X
-- Kiểm tra xem phần tử m có thuộc tập đó không.
-
-Cách 2. kết hợp tính chất X và Y thành Z
-Kiểm tra m có tính chất Z hay không.
-
-
-# --------------------------------------------------------------------------- #
-
 ## Tài liệu tham khảo
 Chuỗi bài tập này được truyền cảm hứng từ mục **7.4 War Story: Covering Chessboards** trong cuốn sách _The algorithm design manual_ (2nd edition, 2008, Springer-Verlag London) của tác giả Steven S. Skiena.
 
-Chúc mọi người tìm được nguồn cảm hứng với toán học, Python, và cờ vua.
-
-# --------------------------------------------------------------------------- #
-
-Một ô được gọi là bị kiểm soát nếu nó bị chiếm hoặc bị tấn công.
-
-Bài cuối sẽ là đặt 8 quân mạnh
-vào bàn cờ
-sao cho kiểm soát nhiều ô nhất có thể.
-
-https://lichess.org/editor/R7/2K2N2/5B2/8/2B1Q3/1N6/8/7R_w_-_-_0_1
-Sót. b4, f2, g3
-Vậy nên yêu cầu phủ được 30 ô là không khó khăn.
-
-
-Another kind of mathematical chess problems is a domination problem (or covering). This is a special case of the vertex cover problem. In these problems it is requested to find a minimum number of pieces of the given kind and place them on a chess board in such a way, that all free squares of the board are attacked by at least one piece.
-
-
-
-https://en.wikipedia.org/wiki/Mathematical_chess_problem
-
-Domination problems
-Another kind of mathematical chess problems is a domination problem (or covering). This is a special case of the vertex cover problem. In these problems it is requested to find a minimum number of pieces of the given kind and place them on a chess board in such a way, that all free squares of the board are attacked by at least one piece. The minimal number of dominating kings is 9, queens - 5, rooks - 8, bishops - 8, knights - 12. To get 8 dominating rooks it is sufficient to place them on any rank, one for each file. Solutions for other pieces are provided on diagrams below.
---> the case for queen is interesting, able to solve by IP
-với mối ô, thì nó và tất cả ô kề nó phải có ít nhất 1 hậu.
-
-xe: dễ nhất. 8 con. Nếu có 7 thì sẽ thiếu 1 hàng 1 cột, giao chúng sẽ không phủ được.
-vua: 9 con, bằng cách chỉ ra 9 ô mà 1 vua không thể phủ cùng lúc 2 ô
-mã, tượng, hậu có vẻ khó.
+Chúc mọi người tìm được cảm hứng với toán học, Python, và cờ vua.
