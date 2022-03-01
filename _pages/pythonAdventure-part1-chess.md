@@ -40,6 +40,7 @@ Tọa độ trên bàn cờ vua được quy ước dựa trên chỉ số hàng
 - Input: một `string`
 - Output: `True` / `False`
 - Ví dụ:
+
 ```py
 foo('Aone') # False
 foo('A1') # False
@@ -52,10 +53,10 @@ foo('a1') # True
 
 
 ## Bài 2. Tọa độ trên bàn cờ
-1. Viết một hàm trả về tọa độ của những quân xe trong [vị trí khởi đầu tiêu chuẩn](https://lichess.org/editor) trong một ván cờ vua.
-2. Viết một hàm trả về tọa độ của 64 ô trên bàn cờ
-3. Viết một hàm trả về tọa độ của 32 ô trắng trên bàn cờ
-4. (Bonus) Viết một hàm **in ra màn hình** tọa độ của các ô trên bàn cờ, đặt trong các ô theo góc nhìn của bên cầm quân trắng. Thông tin in ra màn hình có dạng
+1. Viết một hàm trả về tọa độ của những quân xe trong [vị trí khởi đầu tiêu chuẩn](https://lichess.org/editor) của một ván cờ vua.
+2. Viết một hàm trả về tọa độ của 64 ô trên bàn cờ.
+3. Viết một hàm trả về tọa độ của 32 ô trắng trên bàn cờ.
+4. (Bonus) Viết một hàm **in ra màn hình** tọa độ của các ô trên bàn cờ, sắp xếp theo góc nhìn của bên cầm quân trắng. Thông tin in ra màn hình có dạng
 ```txt
 a8 b8 ... g8 h8
 .. .. ... .. ..
