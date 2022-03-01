@@ -20,7 +20,6 @@ Mục tiêu của chuỗi bài tập dưới đây, ngoài việc là bài tập
 - Chỉ thực hiện hàm `print()` nếu có yêu cầu. Hầu hết các hàm trong chuỗi bài đều yêu cầu trả về đối tượng (kiểu `list`, `string`, `int`, ...)
 - Trong quá trình làm bài, nên sử dụng lại những hàm đã viết trước đó để tránh trùng lặp code.
 - Phải **bổ sung ví dụ** sau khi viết một hàm theo yêu cầu của đề bài để **kiểm tra tính đúng đắn của hàm**. Ví dụ như:
-
 ```py
 def getArea(length, width):
     return length * width
@@ -40,7 +39,6 @@ Tọa độ trên bàn cờ vua được quy ước dựa trên chỉ số hàng
 - Input: một `string`
 - Output: `True` / `False`
 - Ví dụ:
-
 ```py
 foo('Aone') # False
 foo('A1') # False
@@ -65,7 +63,7 @@ a1 b1 ... g1 h1
 ```
 
 Gợi ý về công cụ sử dụng
-- Hai vòng lặp `for`
+- Vòng lặp `for` (hai vòng lặp)
 - [List comprehension](https://realpython.com/list-comprehension-python/)
 - Thư viện [itertools](https://docs.python.org/3/library/itertools.html)
 
@@ -87,7 +85,7 @@ Bonus. Bổ sung vào hàm vừa viết tính năng báo lỗi khi input không 
 ## Bài 4. Nước đi của quân xe (rook's moves)
 Ta quan tâm tới các quân cờ, bắt đầu với quân xe. Đặt một quân xe lên một bài cờ trống, ta cần liệt kê tất cả những tọa độ mà quân xe này có thể di chuyển tới trong một nước đi hợp lệ. Hãy viết một hàm thực hiện việc này với mô tả như sau:
 - Input: một `string` gồm ba ký tự, ký tự đầu là `R` và hai ký tự sau là tọa độ hiện tại của quân xe.
-- Output: một list các ô mà quân xe có thể di chuyển tới trong một nước đi hợp lệ.
+- Output: một `list` các ô mà quân xe có thể di chuyển tới trong một nước đi hợp lệ.
 - Ví dụ:
 ```py
 ham('Ra2') # ['a1', 'a3', 'a4', 'a5', 'a6', 'a7', 'a8', 'b2', 'c2', 'd2', 'e2', 'f2', 'g2', 'h2']
@@ -97,9 +95,10 @@ Bonus. Sắp xếp các tọa độ trả về của hàm này theo khoảng cá
 
 
 ## Bài 5. Nước đi của quân tượng (bishop's moves)
-Hãy viết một hàm liệt kê các vị trí mà quân tượng có thể di chuyển tới trên bàn cờ không có chướng ngại vật:
+
+Đặt một quân tượng lên một bàn cờ trống. Hãy viết một hàm liệt kê các vị trí mà quân tượng này có thể di chuyển tới, hàm cần viết có mô tả như sau:
 - Input: một string gồm ba ký tự, ký tự đầu là `B` và hai ký tự sau là tọa độ hiện tại của quân tượng.
-- Output: một list các ô mà quân tượng có thể di chuyển tới trong một nước đi hợp lệ.
+- Output: một `list` các ô mà quân tượng có thể di chuyển tới trong một nước đi hợp lệ.
 - Ví dụ:
 ```py
 ham('Ba2') # ['b1', 'b3', 'c4', 'd5', 'e6', 'f7', 'g8']
@@ -109,7 +108,7 @@ Gợi ý. Dựa theo ý tưởng của bài 3 và bài 4.
 
 
 ## Bài 6. Những quân cờ còn lại (king, queen, knight)
-Ngoài xe và tượng, cờ vua còn có ba loại quân nặng khác, lần lượt là vua, hậu, và mã. Hãy viết hàm với yêu cầu tương tự bài 5 cho từng quân trong số ba quân cờ này.
+Ngoài xe và tượng, cờ vua còn có ba loại quân khác, lần lượt là vua, hậu, và mã. Hãy viết hàm với yêu cầu tương tự bài 5 cho từng quân trong số ba quân cờ này.
 ```py
 bar('Kf4')
 sor('Qa1')
@@ -117,11 +116,10 @@ zer('Nb2')
 ```
 
 ## Bài 7. Sự liên kết giữa các tọa độ
-Hai ô trên bàn cờ vua được gọi là liên kết với nhau nếu chúng phân biệt và có chung hàng, cột, hoặc đường chéo. Cho hai ô `A` và `B` liên kết với nhau, một ô `C` được gọi là nằm giữa `A` và `B` nếu ô đó khác ô `Á`, ô `B` và nằm trên đoạn thẳng nối ô `A` và ô `B`.
+Hai ô trên bàn cờ vua được gọi là liên kết với nhau nếu chúng phân biệt và có chung hàng, cột, hoặc đường chéo. Cho hai ô `A` và `B` liên kết với nhau, một ô `C` được gọi là nằm giữa `A` và `B` nếu ô đó khác hai ô `Á, B` và nằm trên đoạn thẳng nối ô `A` và ô `B`.
 
-1. Viết một hàm (trả về `True`/`False`) kiểm tra tính liên kết của hai tọa độ được cung cấp
+1. Viết một hàm (trả về `True`/`False`) kiểm tra tính liên kết của hai tọa độ được cung cấp.
 2. Viết một hàm liệt kê tất cả những ô nằm giữa hai ô liên kết.
-
 
 ```py
 ham1('a1', 'a4') # True
@@ -137,7 +135,7 @@ egg2('a1', 'a2') # []
 Một ô bị tấn công nếu nó trống và một quân cờ có thể thực hiện một nước đi hợp lệ để di chuyển đến ô đó. Cần chú ý tình huống khi các hướng tấn công/di chuyển của một quân cờ bị chặn bởi một quân cờ khác. Ta quy ước một quân cờ luôn có thể tấn công chính ô nó đang đứng.
 
 Viết hàm tính số lượng các ô không bị tấn công trên bàn cờ dựa theo tọa độ các quân cờ cho trước.
-- Input: một list các quân cờ kèm theo tọa độ của chúng
+- Input: một `list` các quân cờ kèm theo tọa độ của chúng
 - Output: số ô không bị tấn công trên bàn cờ
 - Ví dụ:
 ```py
