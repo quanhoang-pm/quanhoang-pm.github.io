@@ -8,18 +8,19 @@ last_modified_at: 2022-03-02
 
 [Cờ vua](https://en.wikipedia.org/wiki/Chess) là một trò chơi hai người trên một bàn cờ hình vuông kích thước $8\times 8$ với các quân cờ có đặc điểm khác nhau. Luật chơi cờ vua có thể xem tại [đây](https://en.wikipedia.org/wiki/Rules_of_chess).
 
-Mục tiêu của chuỗi bài tập dưới đây, ngoài việc là bài tập lần thứ hai của lớp Tối ưu hóa HKII 2021-2022, còn là một dịp để giới thiệu về một câu đố liên quan tới cờ vua:
+Mục tiêu của chuỗi bài tập dưới đây, ngoài việc là bài tập lần thứ hai của [lớp Tối ưu hóa HKII 2021-2022](http://seminar.optima.vn/opt), còn là một dịp để giới thiệu về một câu đố liên quan tới cờ vua:
 
-> Khi đặt đủ 8 quân cờ bao gồm 1 vua, 1 hậu, 2 xe, 2 tượng, 2 mã lên trên bàn cờ thì số ô tự do cực đại/cực tiểu là bao nhiêu?
+> Khi đặt đủ 8 quân cờ bao gồm 1 vua, 1 hậu, 2 xe, 2 tượng, 2 mã lên trên bàn cờ thì số ô không bị tấn công cực đại/cực tiểu là bao nhiêu?
 
 
 ## Yêu cầu chung
-- Trình bày tất cả câu trả lời của những bài tập dưới đây trong **một file jupyter notebook** với phần mở đầu ghi đầy đủ thông tin sinh viên (họ và tên, mã sinh viên, lớp đại học, lớp học phần).
-- Sinh viên đạt **điểm tối đa** cho bài tập lần thứ hai nếu **làm trọn vẹn 5 bài đầu tiên của chuỗi bài, bỏ qua những ý bonus**.
+- Trình bày tất cả câu trả lời của những bài tập dưới đây trong **một file jupyter notebook duy nhất** với phần mở đầu ghi đầy đủ thông tin sinh viên (họ và tên, mã sinh viên, lớp đại học, lớp học phần).
+- Sinh viên đạt **điểm tối đa** cho bài tập lần thứ hai nếu **làm trọn vẹn 5 bài đầu tiên của chuỗi bài, bỏ qua những ý bonus**. Có những cách khác để đạt điểm tối đa cho bài tập lần thứ hai.
 - Cần đặt tên hàm trong lời giải một cách phù hợp. Tên hàm trong ví dụ chỉ mang tính chất minh hoạ.
-- Chỉ thực hiện hàm `print()` nếu có yêu cầu. Hầu hết các hàm trong chuỗi bài đều yêu cầu trả về đối tượng (kiểu list, string, int, ...)
+- Chỉ thực hiện hàm `print()` nếu có yêu cầu. Hầu hết các hàm trong chuỗi bài đều yêu cầu trả về đối tượng (kiểu `list`, `string`, `int`, ...)
 - Trong quá trình làm bài, nên sử dụng lại những hàm đã viết trước đó để tránh trùng lặp code.
 - Phải **bổ sung ví dụ** sau khi viết một hàm theo yêu cầu của đề bài để **kiểm tra tính đúng đắn của hàm**. Ví dụ như:
+
 ```py
 def getArea(length, width):
     return length * width
@@ -132,13 +133,11 @@ egg2('a1', 'a2') # []
 
 
 ## Bài 8. Free squares enumeration
-- Một ô trống nếu nó không bị chiếm
-- Một ô bị tấn công nếu nó trống và một quân cờ có thể thực hiện một nước đi hợp lệ để di chuyển đến ô đó. Cần chú ý tình huống khi các hướng tấn công/di chuyển của một quân cờ bị chặn bởi một quân cờ khác.
-- Một ô được gọi là tự do nếu nó trống và không bị tấn công.
+Một ô bị tấn công nếu nó trống và một quân cờ có thể thực hiện một nước đi hợp lệ để di chuyển đến ô đó. Cần chú ý tình huống khi các hướng tấn công/di chuyển của một quân cờ bị chặn bởi một quân cờ khác. Ta quy ước một quân cờ luôn có thể tấn công chính ô nó đang đứng.
 
-Viết hàm tính số lượng các ô tự do trên bàn cờ dựa theo tọa độ các quân cờ cho trước.
+Viết hàm tính số lượng các ô không bị tấn công trên bàn cờ dựa theo tọa độ các quân cờ cho trước.
 - Input: một list các quân cờ kèm theo tọa độ của chúng
-- Output: số ô tự do trên bàn cờ
+- Output: số ô không bị tấn công trên bàn cờ
 - Ví dụ:
 ```py
 qux(['Ra1', 'Rb2', 'Rc3', 'Rd4', 'Re5', 'Rf6', 'Rg7', 'Rh8']) # 0
@@ -149,11 +148,11 @@ qux(['Qa1', 'Ra2', 'Rb1']) # 42
 
 
 ## Bài 9. The last question
-> Khi đặt đủ 8 quân cờ bao gồm 1 vua, 1 hậu, 2 xe, 2 tượng, 2 mã lên trên bàn cờ thì số ô tự do cực đại/cực tiểu là bao nhiêu?
+> Khi đặt đủ 8 quân cờ bao gồm 1 vua, 1 hậu, 2 xe, 2 tượng, 2 mã lên trên bàn cờ thì số ô không bị tấn công cực đại/cực tiểu là bao nhiêu?
 
-Sử dụng 8 quân cờ như trong câu hỏi trên, đặt chúng lên một bàn cờ trống sao cho số ô tự do là:
-1. Ít nhất có thể
-2. Nhiều nhất có thể
+Sử dụng 8 quân cờ như trong câu hỏi trên, đặt chúng lên một bàn cờ trống sao cho số ô không bị tấn công là:
+1. Ít nhất có thể.
+2. Nhiều nhất có thể.
 
 Với câu hỏi này, bạn có thể thử nghiệm với bàn cờ tại [đây](https://lichess.org/editor). Khi đã hài lòng với cách sắp xếp các quân cờ, hãy sao chép [FEN notation](https://en.wikipedia.org/wiki/Forsyth%E2%80%93Edwards_Notation) ở ngay dưới bàn cờ, rồi dán `string` này vào đoạn code Python dưới đây
 
