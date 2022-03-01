@@ -6,7 +6,7 @@ date: 2022-03-01 21:45:00
 last_modified_at: 2020-03-01
 ---
 
-Trình bày tất cả trong một file jupyter notebook (mẫu dưới đây)
+Trình bày tất cả trong một file jupyter notebook, trong đó ghi đầy đủ thông tin sinh viên.
 
 Được 10 điểm nếu làm những ý sau:
 Bài 1. a, b, c,
@@ -14,15 +14,26 @@ Bài 2. ....
 
 Với tất cả những ý yêu cầu viết hàm/chương trình, cần bổ sung một số ví dụ ngay trong cell của notebook
 
-Tên hàm cần đặt một cách phù hợp. Tên hàm trong ví dụ chỉ mang tính chất minh hoạ
-
-Khi viết hàm xong thì cần viết các lệnh để test phía sau.
-
-Hàm có thể gọi các hàm con khác
+Tên hàm cần đặt một cách phù hợp. Tên hàm trong ví dụ chỉ mang tính chất minh hoạ.
 
 Trả về đối tượng,
-không in.
+Chỉ thực hiện hàm `print()` trong hàm nếu có yêu cầu.
 
+
+
+
+Một hàm có thể sử dụng những hàm có trước đó để tránh trùng lặp code.
+
+
+Bổ sung ví dụ sau khi viết một hàm để kiểm tra tính đúng đắn của hàm. Ví dụ
+```py
+def getArea(length, width):
+    return length * width
+
+print(getArea(10, 4)) # 40
+print(getArea(7, 5)) # 35
+print(getArea(6, 6)) # 36
+```
 
 # --------------------------------------------------------------------------- #
 
@@ -30,10 +41,11 @@ không in.
 
 Mục tiêu của chuỗi bài tập dưới đây, ngoài việc là bài tập lần thứ hai của lớp Tối ưu hóa HKII 2021-2022, còn là một dịp để giới thiệu về một câu đố liên quan tới cờ vua:
 
-> Khi đặt đủ 8 quân cờ: 1 vua, 1 hậu, 2 xe, 2 tượng, 2 mã lên trên bàn cờ thì số ô không bị KIỂM SOÁT cực đại/cực tiểu lần lượt là bao nhiêu?
+> Khi đặt đủ 8 quân cờ bao gồm 1 vua, 1 hậu, 2 xe, 2 tượng, 2 mã lên trên bàn cờ thì số ô tự do cực đại/cực tiểu là bao nhiêu?
+
 
 ## Bài 1. Tọa độ trên bàn cờ
-Tọa độ trên bàn cờ vua được quy ước dựa trên tọa độ hàng (gọi là rank) và tọa độ cột (gọi là file). Một tọa độ gồm hai ký tự, trong đó
+Tọa độ trên bàn cờ vua được quy ước dựa trên chỉ số hàng (gọi là rank) và chỉ số cột (gọi là file). Một tọa độ gồm hai ký tự, trong đó
 - ký tự đầu tiên chỉ thứ tự cột, nhận một trong các giá trị `a`, `b`, `c`,  `d`, `e`, `f`, `g`, `h`.
 - ký tự thứ hai chỉ thứ tự hàng, nhận một trong các giá trị `1`, `2`, `3`, `4`, `5`, `6`, `7`, `8`.
 
@@ -49,13 +61,14 @@ foo('a1.') # False
 foo('a1') # True
 ```
 
-2. (Bonus) Viết một hàm kiểm tra tính hợp lệ của tọa độ, trong đó _không khai báo_ các string chữ cái. Gợi ý: sử dụng ASCII code.
+2. (Bonus) Viết một hàm với yêu cầu như trên, trong đó _không khai báo_ các string chữ cái. Gợi ý: sử dụng ASCII code.
+
 
 ## Bài 2. Tọa độ trên bàn cờ
 1. Viết một hàm trả về tọa độ của những quân xe trong [vị trí khởi đầu tiêu chuẩn](https://lichess.org/editor) trong một ván cờ vua.
-2. Viết một hàm trả về tọa độ của 64 ô của bàn cờ
-3. Viết một hàm trả về tọa độ của 32 ô trắng của bàn cờ
-4. (Bonus) Viết một hàm in ra 64 tọa độ của bàn cờ đặt trong các ô của bàn cờ theo góc nhìn của bên cầm quân trắng. Tức là
+2. Viết một hàm trả về tọa độ của 64 ô trên bàn cờ
+3. Viết một hàm trả về tọa độ của 32 ô trắng trên bàn cờ
+4. (Bonus) Viết một hàm **in ra màn hình** tọa độ của các ô trên bàn cờ, đặt trong các ô theo góc nhìn của bên cầm quân trắng. Thông tin in ra màn hình có dạng
 ```txt
 a8 b8 ... g8 h8
 .. .. ... .. ..
@@ -63,93 +76,109 @@ a8 b8 ... g8 h8
 a1 b1 ... g1 h1
 ```
 
-Gợi ý công cụ sử dụng
+Gợi ý về công cụ sử dụng
 - Hai vòng lặp `for`
 - [List comprehension](https://realpython.com/list-comprehension-python/)
 - Thư viện [itertools](https://docs.python.org/3/library/itertools.html)
 
 
 ## Bài 3. Kiểm tra thẳng hàng
-1. Viết một hàm kiểm tra xem hai ô đưa vào có cùng hàng ngang hoặc cột dọc hay không
-- Input: hai string tọa độ trên bàn cờ vua
+Viết một hàm kiểm tra xem hai ô đưa vào có cùng hàng ngang hoặc cột dọc hay không, trong đó
+- Input: hai `string` tọa độ trên bàn cờ vua
 - Output: `True` / `False`
 - Ví dụ:
 ```py
 bar('a1', 'c2') # False
 bar('a1', 'a8') # True
+bar('c3', 'e3') # True
 ```
 
-2. (Bonus) Bổ sung vào hàm vừa viết tính năng báo lỗi khi input không hợp lệ.
+Bonus. Bổ sung vào hàm vừa viết tính năng báo lỗi khi input không hợp lệ.
 
 
-## Bài 4. Nước đi của quân xe (Rook's moves)
-Ta bắt đầu quan tâm tới các quân cờ, bắt đầu với quân xe. Đặt một quân xe lên một bài cờ trống, ta cần liệt kê tất cả những tọa độ mà quân xe có thể di chuyển tới trong một nước đi hợp lệ. Hãy viết một hàm thực hiện việc này với mô tả như sau:
-- Input: một string gồm ba ký tự, ký tự đầu là `R` và hai ký tự sau là tọa độ hiện tại của quân xe.
-- Output: một list các ô mà quân xe có thể di chuyển tới
+## Bài 4. Nước đi của quân xe (rook's moves)
+Ta quan tâm tới các quân cờ, bắt đầu với quân xe. Đặt một quân xe lên một bài cờ trống, ta cần liệt kê tất cả những tọa độ mà quân xe này có thể di chuyển tới trong một nước đi hợp lệ. Hãy viết một hàm thực hiện việc này với mô tả như sau:
+- Input: một `string` gồm ba ký tự, ký tự đầu là `R` và hai ký tự sau là tọa độ hiện tại của quân xe.
+- Output: một list các ô mà quân xe có thể di chuyển tới trong một nước đi hợp lệ.
 - Ví dụ:
 ```py
 ham('Ra2') # ['a1', 'a3', 'a4', 'a5', 'a6', 'a7', 'a8', 'b2', 'c2', 'd2', 'e2', 'f2', 'g2', 'h2']
 ```
 
-Điểm thưởng. Sắp xếp các tọa độ trả về của hàm này theo khoảng cách Euclid tăng dần từ ô xuất phát tới ô đang xét. Trong hai ô có cùng khoảng cách tới ô xuất phát, ô nào có chỉ số hàng thấp hơn thì xếp trước.
+Bonus. Sắp xếp các tọa độ trả về của hàm này theo khoảng cách Euclid tăng dần từ ô xuất phát tới ô đang xét. Trong hai ô có cùng khoảng cách tới ô xuất phát, ô nào có chỉ số hàng thấp hơn thì xếp trước.
 
 
-## Bài 5. Nước đi của quân tượng (bishop)
-
+## Bài 5. Nước đi của quân tượng (bishop's moves)
+Hãy viết một hàm liệt kê các vị trí mà quân tượng có thể di chuyển tới trên bàn cờ không có chướng ngại vật:
 - Input: một string gồm ba ký tự, ký tự đầu là `B` và hai ký tự sau là tọa độ hiện tại của quân tượng.
-- Output: một list các ô mà quân tượng có thể di chuyển tới
+- Output: một list các ô mà quân tượng có thể di chuyển tới trong một nước đi hợp lệ.
 - Ví dụ:
 ```py
 ham('Ba2') # ['b1', 'b3', 'c4', 'd5', 'e6', 'f7', 'g8']
 ```
-Gợi ý. dựa theo ý tưởng của bài 3 đối với quân xe, viết hàm tương tự cho quân tượng.
+
+Gợi ý. Dựa theo ý tưởng của bài 3 và bài 4.
 
 
 ## Bài 6. Những quân cờ còn lại (king, queen, knight)
-Ngoài xe và tượng, cờ vua còn có ba loại quân khác, lần lượt là vua, hậu, và mã. Hãy viết các hàm thực hiện công việc tương tự mô tả trong bài 4 và bài 5 cho những quân cờ này. Ví dụ
+Ngoài xe và tượng, cờ vua còn có ba loại quân nặng khác, lần lượt là vua, hậu, và mã. Hãy viết hàm với yêu cầu tương tự bài 5 cho từng quân trong số ba quân cờ này.
 ```py
 bar('Kf4')
 sor('Qa1')
 zer('Nb2')
 ```
 
-## Bài 7.
-Hai ô trên bàn cờ vua được gọi là liên kết với nhau nếu chúng phân biệt và có chung hàng, cột, hoặc đường chéo. Cho hai ô `A` và `B`  liên kết với nhau, một ô `C` được gọi là nằm giữa `A` và `B` nếu ô đó thỏa mãn
-- Khác hai ô `Á` và `B`
-- Nằm trên đoạn thẳng nối hai ô `A` và `B`.
+## Bài 7. Sự liên kết giữa các tọa độ
+Hai ô trên bàn cờ vua được gọi là liên kết với nhau nếu chúng phân biệt và có chung hàng, cột, hoặc đường chéo. Cho hai ô `A` và `B` liên kết với nhau, một ô `C` được gọi là nằm giữa `A` và `B` nếu ô đó khác ô `Á`, ô `B` và nằm trên đoạn thẳng nối ô `A` và ô `B`.
 
-1. Viết một hàm kiểm tra tính liên kết của hai tọa độ nhập vào
-2. Viết một hàm liệt kê tất cả những ô nằm giữa hai ô liên kết nhập vào.
+1. Viết một hàm (trả về `True`/`False`) kiểm tra tính liên kết của hai tọa độ được cung cấp
+2. Viết một hàm liệt kê tất cả những ô nằm giữa hai ô liên kết.
+
+
 ```py
 ham1('a1', 'a4') # True
+ham1('c2', 'h8') # False
+ham1('a1', 'h8') # True
+
 egg2('a1', 'a3') # ['a2']
 egg2('a1', 'a2') # []
 ```
 
-## Bài 8.
-Di chuyển hợp lệ theo luật cờ vua.
-Một ô trống nếu nó không bị chiếm
-Một ô bị tấn công nếu nó trống và một quân cờ có thể thực hiện một nước đi hợp lệ để tấn công ô đó.
 
-Cho list quân cờ, liệt kê tất cả ô bị tấn công
-Ví dụ:
-Cho loạt các con xe, hậu, tượng, mã, vua vào, chỉ để trống vài quân.    Cố tình để nó chắn nhau
+## Bài 8. Free squares enumeration
+- Một ô trống nếu nó không bị chiếm
+- Một ô bị tấn công nếu nó trống và một quân cờ có thể thực hiện một nước đi hợp lệ để di chuyển đến ô đó.
+- Một ô được gọi là tự do nếu nó trống và không bị tấn công.
 
-## Bài 9. Câu hỏi cuối cùng
-Định nghĩa free. nếu nó trống và không bị tấn công.
+Cần chú ý tình huống khi các 
+
+Viết hàm tính số lượng các ô tự do trên bàn cờ dựa theo tọa độ các quân cờ cho trước.
+- Input: một list các quân cờ kèm theo tọa độ của chúng
+- Output: số ô tự do trên bàn cờ
+- Ví dụ:
+```py
+qux(['Ra1', 'Rb2', 'Rc3', 'Rd4', 'Re5', 'Rf6', 'Rg7', 'Rh8']) # 0
+qux(['Ra1', 'Rb2', 'Rc3', 'Rd4', 'Re5', 'Rf6']) # 4
+qux(['Qa1', 'Ra2', 'Rb1', 'Rb2']) # 36
+qux(['Qa1', 'Ra2', 'Rb1']) # 42
+```
+
+## Bài 9. The last question
+
+> Khi đặt đủ 8 quân cờ bao gồm 1 vua, 1 hậu, 2 xe, 2 tượng, 2 mã lên trên bàn cờ thì số ô tự do cực đại/cực tiểu là bao nhiêu?
+
 Chỉ ra một config đủ 8 quân, sao cho số ô free
-- ít nhất có thể
-- nhiều nhất có thể
 
-là ít nhất có thể
-a) ít hơn 32 ô
-b) ít hơn 16 ô
-c) ít hơn 8 ô
-NOTE. Cái mình có là sót 3 ô.
+Sử dụng 8 quân cờ như trong câu hỏi trên, đặt chúng lên một bàn cờ trống sao cho số ô tự do là:
+1. Ít nhất có thể
+2. Nhiều nhất có thể
+
+
+
 
 Điều chỉnh bàn cờ tại [đây](https://lichess.org/editor)
 
-Sao chép [FEN notation](https://en.wikipedia.org/wiki/Forsyth%E2%80%93Edwards_Notation)
+Sao chép [FEN notation](https://en.wikipedia.org/wiki/Forsyth%E2%80%93Edwards_Notation) ở mục ngay dưới.
 
 Trước tiên cần cài đặt thư viện `chess` trong Python bằng câu lệnh
 ```sh
