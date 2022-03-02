@@ -165,16 +165,14 @@ value = os.environ.get('FOO') # string
 ### Latin characters
 
 ```py
-nLetter = 26
-lowerCaseA = 97
-lowerCaseAlphabet = [chr(x) for x in range(lowerCaseA, lowerCaseA + nLetter)]
-upperCaseA = 65
-upperCaseAlphabet = [chr(x) for x in range(upperCaseA, upperCaseA + nLetter)]
+lowerCaseCharacters = [chr(x) for x in range(ord('a'), ord('z') + 1)]
+upperCaseCharacters = [chr(x) for x in range(ord('A'), ord('Z') + 1)]
+allCharacters = lowerCaseCharacters + upperCaseCharacters
 ```
 
 
-
-def intersectionAmongList(list_):
+### Intersection among lists
+def intersectionAmongLists(list_):
     return set(list_[0]).intersection(*list_[1:])
 
 
