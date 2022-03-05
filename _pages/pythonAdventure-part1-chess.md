@@ -10,7 +10,7 @@ last_modified_at: 2022-03-05
 
 Mục tiêu của chuỗi bài tập dưới đây, ngoài việc là bài tập lần thứ hai của [lớp Tối ưu hóa HKII 2021-2022](http://seminar.optima.vn/opt), còn là một dịp để giới thiệu về một câu đố liên quan tới cờ vua:
 
-> Khi đặt đủ 8 quân cờ bao gồm 1 vua, 1 hậu, 2 xe, 2 tượng, 2 mã lên trên bàn cờ thì số ô không bị tấn công cực đại/cực tiểu là bao nhiêu?
+> Khi đặt đủ 8 quân cờ bao gồm 1 vua, 1 hậu, 2 xe, 2 tượng (khác màu), 2 mã lên trên bàn cờ thì số ô không bị tấn công cực đại/cực tiểu là bao nhiêu?
 
 
 ## Yêu cầu chung
@@ -148,11 +148,11 @@ qux(['Qa1', 'Ra2', 'Rb1']) # 42
 
 
 ## Bài 9. The last question
-> Khi đặt đủ 8 quân cờ bao gồm 1 vua, 1 hậu, 2 xe, 2 tượng, 2 mã lên trên bàn cờ thì số ô không bị tấn công cực đại/cực tiểu là bao nhiêu?
+> Khi đặt đủ 8 quân cờ bao gồm 1 vua, 1 hậu, 2 xe, 2 tượng (khác màu), 2 mã lên trên bàn cờ thì số ô không bị tấn công cực đại/cực tiểu là bao nhiêu?
 
-Sử dụng 8 quân cờ như trong câu hỏi trên, đặt chúng lên một bàn cờ trống sao cho số ô không bị tấn công là:
-1. Ít nhất có thể.
-2. Nhiều nhất có thể.
+Đặt 8 quân cờ như mô tả trong câu hỏi trên lên một bàn cờ trống sao cho mỗi ô có tối đa một quân cờ. Tìm giá trị lớn nhất và giá trị nhỏ nhất của số ô không bị tấn công trên bàn cờ.
+
+**Ghi chú.** Bài toán này _có thể được giải quyết_ bởi mô hình tối ưu nguyên (IP model).
 
 Với câu hỏi này, bạn có thể thử nghiệm với bàn cờ tại [đây](https://lichess.org/editor). Khi đã hài lòng với cách sắp xếp các quân cờ, hãy sao chép [FEN notation](https://en.wikipedia.org/wiki/Forsyth%E2%80%93Edwards_Notation) ở ngay dưới bàn cờ, rồi dán `string` này vào đoạn code Python dưới đây
 
@@ -172,3 +172,9 @@ with open('foobar.svg', 'w') as f:
 Chuỗi bài tập này được truyền cảm hứng từ mục **7.4 War Story: Covering Chessboards** trong cuốn sách _The algorithm design manual_ (2nd edition, 2008, Springer-Verlag London) của tác giả Steven S. Skiena.
 
 Chúc mọi người tìm được cảm hứng với toán học, Python, và cờ vua.
+
+
+### Update 2022/03/05
+- Bổ sung điều kiện _hai quân tượng khác màu_ trong bài 9.
+- Thay đổi cách hỏi trong bài 9, vẫn giữ nguyên ý nghĩa về cực trị của số ô không bị tấn công.
+- Bổ sung ghi chú trong bài 9
