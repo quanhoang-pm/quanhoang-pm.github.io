@@ -3,7 +3,7 @@ title: "Chess-related problems"
 permalink: /pythonAdventure-part1-chess/
 layout: customPostLayout
 date: 2022-03-01 21:45:00
-last_modified_at: 2022-03-02
+last_modified_at: 2022-03-05
 ---
 
 [Cờ vua](https://en.wikipedia.org/wiki/Chess) là một trò chơi hai người trên một bàn cờ hình vuông kích thước $8\times 8$ với các quân cờ có đặc điểm khác nhau. Luật chơi cờ vua có thể xem tại [đây](https://en.wikipedia.org/wiki/Rules_of_chess).
@@ -135,7 +135,7 @@ egg2('a1', 'a2') # []
 ## Bài 8. Free squares enumeration
 Một ô bị tấn công nếu nó trống và một quân cờ có thể thực hiện một nước đi hợp lệ để di chuyển đến ô đó. Cần chú ý tình huống khi các hướng tấn công/di chuyển của một quân cờ bị chặn bởi một quân cờ khác. Ta quy ước một quân cờ luôn có thể tấn công chính ô nó đang đứng.
 
-Viết hàm tính số lượng các ô không bị tấn công trên bàn cờ dựa theo tọa độ các quân cờ cho trước.
+Đặt các quân cờ _cùng màu_ vào các tọa độ trên một bàn cờ trống. Viết hàm tính số lượng các ô không bị tấn công trên bàn cờ này.
 - Input: một `list` các quân cờ kèm theo tọa độ của chúng
 - Output: số ô không bị tấn công trên bàn cờ
 - Ví dụ:
