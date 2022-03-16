@@ -3,7 +3,7 @@ title: "Chess-related problems"
 permalink: /pythonAdventure-part1-chess/
 layout: customPostLayout
 date: 2022-03-01 21:45:00
-last_modified_at: 2022-03-05
+last_modified_at: 2022-03-16
 ---
 
 [Cờ vua](https://en.wikipedia.org/wiki/Chess) là một trò chơi hai người trên một bàn cờ hình vuông kích thước $8\times 8$ với các quân cờ có đặc điểm khác nhau. Luật chơi cờ vua có thể xem tại [đây](https://en.wikipedia.org/wiki/Rules_of_chess).
@@ -14,7 +14,7 @@ Mục tiêu của chuỗi bài tập dưới đây, ngoài việc là bài tập
 
 
 ## Yêu cầu chung
-- Trình bày tất cả câu trả lời của những bài tập dưới đây trong **một file jupyter notebook duy nhất** với phần mở đầu ghi đầy đủ thông tin sinh viên (họ và tên, mã sinh viên, lớp đại học, lớp học phần). Tên file đặt theo đúng hướng dẫn, chỉ thay đổi phần đuôi từ `pdf` sang `ipynb`.
+- Trình bày tất cả câu trả lời của những bài tập dưới đây trong **một file jupyter notebook duy nhất** với phần mở đầu ghi đầy đủ thông tin sinh viên (họ và tên, mã sinh viên, lớp đại học, lớp học phần) và mục lục liệt kê những bài tập đã làm được. Tên file đặt theo đúng hướng dẫn, chỉ thay đổi phần đuôi từ `pdf` sang `ipynb`.
 - Nhóm sinh viên đạt **điểm tối đa** cho bài tập lần này nếu **làm trọn vẹn 5 bài đầu tiên của chuỗi bài, bỏ qua những ý bonus**. Có những cách khác để đạt điểm tối đa.
 - Cần đặt tên hàm trong lời giải một cách phù hợp. Tên hàm trong ví dụ chỉ mang tính chất minh hoạ.
 - Chỉ thực hiện hàm `print()` nếu có yêu cầu. Hầu hết các hàm trong chuỗi bài đều yêu cầu trả về đối tượng (kiểu `list`, `string`, `int`, ...)
