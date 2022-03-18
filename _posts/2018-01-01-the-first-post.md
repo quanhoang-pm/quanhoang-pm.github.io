@@ -156,7 +156,7 @@ Click-to-expand section
 <details>
 <summary>Click to expand</summary>
 This is hidden
-Cannot render an image using markdown syntax here.
+Cannot render an image using markdown syntax here. What about an equation $a^2$?
 ![image](/assets/images/avatar.jpg)
 </details>
 
