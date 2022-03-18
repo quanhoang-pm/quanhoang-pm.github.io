@@ -10,7 +10,7 @@ Mô hình hóa (modeling) là một trong ba kỹ năng quan trọng để giả
 
 Xét một bài toán nổi tiếng:
 
->	Đặt 8 quân hậu trên bàn cờ vua tiêu chuẩn $8\times 8$ sao cho không có hai quân hậu nào tấn công nhau.
+<center>Đặt 8 quân hậu trên bàn cờ vua tiêu chuẩn $8\times 8$ sao cho không có hai quân hậu nào tấn công nhau.</center>
 
 Bàn cờ vua tiêu chuẩn có 8 hàng và 8 cột. Ta định nghĩa một đường chéo là một tập hợp gồm ít nhất hai tọa độ, các tọa độ cùng nằm trên một đường thẳng tọa với trục ngang (cũng như trục dọc) một góc $45^\circ$. Có tất cả 26 đường chéo trên bàn cờ vua. Một quân hậu có thể tấn công một ô cùng hàng ngang, cột dọc, hoặc đường chéo nếu những ô ở giữa là trống.
 
@@ -22,13 +22,9 @@ a) Dựa theo mô tả trên, có tất cả bao nhiêu biến có dạng này? 
 
 b) Nêu biểu thức thể hiện số quân hậu trên bàn cờ. Nêu ràng buộc (tuyến tính) thể hiện việc trên bàn cờ có đúng 8 quân hậu.
 
-Tiếp theo ta quan tâm tới ràng buộc quan trọng nhất của bài toán - không có hai quân hậu nào tấn công nhau. Bằng suy luận toán học, ta có thể chứng minh rằng điều này tương đương với điều kiện
+c) Tiếp theo ta quan tâm tới ràng buộc quan trọng nhất của bài toán: không có hai quân hậu nào tấn công nhau. Chứng minh điều đó tương đương với điều kiện **mỗi hàng, mỗi cột, mỗi đường chéo của bàn cờ chỉ có tối đa một quân hậu.**
 
-> (*) Mỗi hàng, mỗi cột, mỗi đường chéo của bàn cờ chỉ có tối đa một quân hậu.
-
-c) Chứng minh sự tương đương trên.
-
-d) Liệt kê tất cả ràng buộc (tuyến tính) thể hiện điều kiện (*).
+d) Liệt kê tất cả ràng buộc (tuyến tính) thể hiện điều kiện (AAA).
 
 e) Trình bày mô hình tối ưu nguyên giải quyết bài toán đặt ra ở đầu bài.
 
@@ -36,7 +32,4 @@ f) (Câu hỏi nâng cao) Liệt kê tất cả các cách đặt 8 quân hậu 
 
 ### Lời giải
 
-<details>
-<summary>Lời giải</summary>
 Nhóm sinh viên [Quý Anh](https://github.com/QuyAnh2005), [Văn Quân](https://github.com/quanpersie2001), [Thanh Tùng](https://github.com/thanhtung1005) đã trả lời tương đối tốt những câu hỏi đặt ra ở trên. Phần trình bày của nhóm có thể xem tại [đây](https://github.com/thanhtung1005/Optimization-Homework).
-</details>
