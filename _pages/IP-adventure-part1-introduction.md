@@ -8,9 +8,10 @@ last_modified_at: 2022-03-19
 
 Mô hình hóa (modeling) là một trong ba kỹ năng quan trọng để giải quyết những vấn đề thực tế, bên cạnh mô phỏng (simulation) và tối ưu hóa (optimization). Kỹ năng mô hình hóa giúp chuyển một mô hình thực tế thành một mô hình toán học, từ đó cho phép áp dụng những công cụ toán học (ví dụ như tối ưu nguyên) để giải quyết vấn đề. Bài tập dưới đây giúp người đọc làm quen với những suy luận đặc trưng của mô hình hóa.
 
-Xét một bài toán nổi tiếng:
+Xét [bài toán tám quân hậu](https://en.wikipedia.org/wiki/Eight_queens_puzzle) với phát biểu như sau:
 
 <center>Đặt 8 quân hậu trên bàn cờ vua tiêu chuẩn $8\times 8$ sao cho không có hai quân hậu nào tấn công nhau.</center>
+<br>
 
 Bàn cờ vua tiêu chuẩn có 8 hàng và 8 cột. Ta định nghĩa một đường chéo là một tập hợp gồm ít nhất hai tọa độ, các tọa độ cùng nằm trên một đường thẳng tọa với trục ngang (cũng như trục dọc) một góc $45^\circ$. Có tất cả 26 đường chéo trên bàn cờ vua. Một quân hậu có thể tấn công một ô cùng hàng ngang, cột dọc, hoặc đường chéo nếu những ô ở giữa là trống.
 
