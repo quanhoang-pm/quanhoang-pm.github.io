@@ -6,7 +6,7 @@ date: 2022-03-19 21:30:00
 last_modified_at: 2022-03-19
 ---
 
-Câu đố thứ 533 trong cuốn **The Big Book of Brain Games: 1,000 PlayThinks of Art, Mathematics & Science** (tựa tiếng Việt: 1000 câu đó tự duy về Toán, Khoa học & Nghệ thuật) của tác giả Ivan Moscovich được tóm tắt như sau:
+Câu đố thứ 533 trong cuốn [The Big Book of Brain Games: 1,000 PlayThinks of Art, Mathematics & Science](https://www.amazon.com/Big-Book-Brain-Games-Mathematics/dp/0761134662) (tựa tiếng Việt: 1000 câu đó tự duy về Toán, Khoa học & Nghệ thuật) của tác giả Ivan Moscovich được tóm tắt như sau:
 
 > Điền các số tự nhiên từ 1 đến 15 vào các ô trong lưới tam giác cạnh 5 (như hình vẽ) sao cho mỗi số là hiệu của hai số nằm ngay phía trên nó.
 
@@ -123,9 +123,9 @@ Với $N = 4$, có đúng bốn nghiệm thỏa mãn yêu cầu của đề bài
 
 Với $N = 5$, có duy nhất một nghiệm thỏa mãn yêu cầu của đề bài.
 ```
-6  14  15   3    13
+6  14   15   3   13
   8   1   12   10
     7   11   2
-       4   9
+      4    9
          5
 ```
