@@ -65,10 +65,12 @@ Sau khi đã có mô hình tối ưu nguyên hoàn chỉnh, việc giải quyế
 
 Có tất cả 12 nghiệm với những giá trị $N$ thỏa mãn $1\le N \le 5$. Những nghiệm đối xứng với nhau qua trục thẳng đứng được coi là giống nhau.
 
-Với $N = 1$, có duy nhất một nghiệm hiển nhiên chỉ gồm số `1`.
+Với $N = 1$, có duy nhất một nghiệm hiển nhiên.
+```
+1
+```
 
 Với $N = 2$, có chính xác hai nghiệm thỏa mãn yêu cầu của đề bài.
-
 ```
 1 3
  2
@@ -97,7 +99,7 @@ Với $N = 3$, có tất cả bốn nghiệm thỏa mãn yêu cầu của đề 
 ```
 
 Với $N = 4$, có đúng bốn nghiệm thỏa mãn yêu cầu của đề bài.
-```txt
+```
 6   1  10   8
   5   9   2
     4   7
@@ -120,7 +122,7 @@ Với $N = 4$, có đúng bốn nghiệm thỏa mãn yêu cầu của đề bài
 ```
 
 Với $N = 5$, có duy nhất một nghiệm thỏa mãn yêu cầu của đề bài.
-```txt
+```
 6  14  15   3    13
   8   1   12   10
     7   11   2
