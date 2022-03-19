@@ -1,0 +1,131 @@
+---
+title: "Triangular differences"
+permalink: /problemOfTheWeek/
+layout: customPostLayout
+date: 2022-03-19 03:00:00
+last_modified_at: 2022-03-16
+---
+
+## Mô tả bài toán
+
+Câu đố thứ 533 trong cuốn **The Big Book of Brain Games: 1,000 PlayThinks of Art, Mathematics & Science** (tựa tiếng Việt: 1000 câu đó tự duy về Toán, Khoa học & Nghệ thuật) của tác giả Ivan Moscovich được tóm tắt như sau:
+
+> Điền các số tự nhiên từ 1 đến 15 vào các ô trong lưới tam giác cạnh 5 (trong hình vẽ) sao cho mỗi số là hiệu của hai số nằm ngay phía trên nó.
+
+![Câu đố Các tam giác hiệu](/assets/images/triangularDifference.jpg)
+
+Một cách tổng quát, ta có thể đặt câu hỏi tương tự cho mọi lưới tam giác có độ dài cạnh bằng $N$ với $N$ là một số nguyên dương.
+
+Bằng những kỹ thuật đơn giản, tất cả nghiệm của bài toán trong trường hợp $N \le 5$ đã được xác định đầy đủ và liệt kê trong phần cuối của bài viết này. Bài toán đặt ra là hãy tìm nghiệm hoặc chỉ ra sự vô nghiệm trong những trường hợp lớn hơn, cụ thể là $N\ge 6$. **Với mỗi giá trị của tham số $N \ge 6$, một phần thưởng sẽ được trao cho cá nhân/nhóm đầu tiên chỉ ra được một nghiệm của bài toán.**
+
+Không có giới hạn đối với những phương pháp được phép sử dụng để giải quyết bài toán này. Đặc biệt, được phép sử dụng kết quả đã có của người khác và cần trích dẫn nguồn đầy đủ.
+
+Bảng dưới đây theo dõi trạng thái của bài toán đối với những giá trị $N$ cụ thể
+
+| $N$ | #sols | Credit   |
+|:----|------:|:---------|
+| 1   |     1 | obivious |
+| 2   |     2 | obivious |
+| 3   |     4 | obivious |
+| 4   |     4 | obivious |
+| 5   |     1 | obivious |
+| ... |   ... | ...      |
+| ... |   ... | ...      |
+
+
+## Một số cách tiếp cận bài toán
+
+Trong phần này, tác giả liệt kê hai cách tiếp cận bài toán. Đây chỉ là gợi ý, có thể có nhiều cách tiếp cận khác hiệu quả hơn.
+
+### Phương pháp vét cạn (exhaustive search)
+
+Ta nhận thấy rằng bảng số hoàn toàn được xác định khi biết giá trị của những ô số trong hàng đầu tiên của bảng. Với nhận xét như vậy, cách tiếp cận ngây thơ nhất là duyệt qua tất cả mọi bộ giá trị mà hàng thứ nhất có thể nhận được, rồi xác định giá trị trong toàn bảng, cuối cùng là kiểm tra xem các giá trị này có hợp lệ hay không.
+
+Về phần thực thi chương trình, thư viện [itertools](https://docs.python.org/3/library/itertools.html) giúp ta liệt kê tất cả bộ giá trị như ví dụ dưới đây.
+```py
+import itertools
+
+for bar in itertools.permutations([4, 5, 6], r = 3):
+    print(bar)
+# (4, 5)
+# (4, 6)
+# (5, 4)
+# (5, 6)
+# (6, 4)
+# (6, 5)
+```
+
+Ngoài ra, thư viện [tqdm](https://github.com/tqdm/tqdm) theo dõi tốc độ thực thi trong vòng lặp rất hiệu quả. Từ đó ta đánh giá được về thời gian chạy của thuật toán.
+
+### Mô hình tối ưu nguyên (IP model)
+
+Hướng tiếp cận mô hình tối ưu nguyên là tự nhiên vì phương pháp này giải quyết tốt những bài toán điền số đi kèm yếu tố phân biệt (ví dụ như sudoku, ma phương). Ở bài toán này, trở ngại lớn nhất khi áp dụng mô hình tối ưu nguyên là ràng buộc có dạng $|x-y|=z$ xuất phát từ yêu cầu của đề bài. Người đọc có thể tham khảo cách mô hình hóa điều kiện giá trị tuyệt đối trong [tài liệu này](https://github.com/thanhtung1005/Optimization-Homework/blob/main/Modeling_Constraint.pdf).
+
+Sau khi đã có mô hình tối ưu nguyên hoàn chỉnh, việc giải quyết bài toán chỉ còn là vấn đề liên quan tới kỹ thuật lập trình.
+
+## Liệt kê tất cả nghiệm với $1\le N\le 5$
+
+Có tất cả 12 nghiệm với những giá trị $N$ thỏa mãn $1\le N \le 5$. Những nghiệm đối xứng với nhau qua trục thẳng đứng được coi là giống nhau.
+
+Với $N = 1$, có duy nhất một nghiệm hiển nhiên `1`.
+
+Với $N = 2$, có chính xác hai nghiệm thỏa mãn yêu cầu của đề bài.
+
+```txt
+1 3
+ 2
+
+2 3
+ 1
+```
+
+Với $N = 3$, có tất cả bốn nghiệm thỏa mãn yêu cầu của đề bài.
+```
+1 6 4
+ 5 2
+  3
+
+2 6 5
+ 4 1
+  3
+
+4 1 6
+ 3 5
+  2
+
+5 2 6
+ 3 4
+  1
+```
+
+Với $N = 4$, có đúng bốn nghiệm thỏa mãn yêu cầu của đề bài.
+```txt
+6   1  10   8
+  5   9   2
+    4   7
+      3
+
+6  10   1   8
+  4   9   7
+    5   2
+      3
+
+8   3  10   9
+  5   7   1
+    2   6
+      4
+
+8  10   3   9
+  2   7   6
+    5   1
+      4
+```
+
+Với $N = 5$, có duy nhất một nghiệm thỏa mãn yêu cầu của đề bài.
+```txt
+6  14  15   3    13
+  8   1   12   10
+    7   11   2
+       4   9
+         5
+```
