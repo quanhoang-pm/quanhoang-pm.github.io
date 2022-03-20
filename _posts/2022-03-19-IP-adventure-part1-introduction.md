@@ -33,7 +33,7 @@ e) Trình bày mô hình tối ưu nguyên giải quyết bài toán đặt ra �
 f) (Câu hỏi nâng cao) Liệt kê tất cả các cách đặt 8 quân hậu trên bàn cờ vua tiêu chuẩn $8\times 8$ sao cho không có hai quân hậu nào tấn công nhau.
 
 ### Bình luận
-Bài toán gốc (đặt 8 quân hậu lên bần cờ) có thể giải quyết bởi một mô hình tương tự. Khi đó mô hình sử dụng ràng buộc tuyến tính tổng số quân hậu bằng 8 và không có hàm mục tiêu, thay vì tối đa hóa số quân hậu có trên bàn cờ như trong mô hình xây dựng ở trên.
+Bài toán gốc (đặt 8 quân hậu lên bàn cờ) có thể giải quyết bởi một mô hình tương tự. Khi đó mô hình sử dụng ràng buộc tuyến tính tổng số quân hậu bằng 8 và không có hàm mục tiêu, thay vì tối đa hóa số quân hậu có trên bàn cờ như trong mô hình xây dựng ở trên.
 
 Để mô tả chuyện "không có hàm mục tiêu" trong mô hình tối ưu, ta cực đại hóa hàm mục tiêu là một hàm hằng (thường quy ước là hàm nhận giá trị 0).
 
