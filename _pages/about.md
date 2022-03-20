@@ -15,3 +15,7 @@ The page is created to force me to write regularly, hence improving my writing a
 Hope you have some inspirations while being here.
 
 <div style="text-align: right"> Quan. </div>
+
+Contact info
+- Email: <a href=mailto:<quanhoang> quanhoang.pm@gmail.com>quanhoang.pm@gmail.com</a>
+- Github: [https://github.com/quanhoang-pm](https://github.com/quanhoang-pm)
