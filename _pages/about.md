@@ -17,5 +17,5 @@ Hope you have some inspirations while being here.
 <div style="text-align: right"> Quan. </div>
 
 Contact info
-- Email: <a href=mailto:<quanhoang> quanhoang.pm@gmail.com>quanhoang.pm@gmail.com</a>
+- Email: [quanhoang.pm@gmail.com](mailto:quanhoang.pm@gmail.com)
 - Github: [https://github.com/quanhoang-pm](https://github.com/quanhoang-pm)
