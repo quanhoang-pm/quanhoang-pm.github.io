@@ -173,6 +173,16 @@ Edited at 16h44
 ### Static link to a post
 [The article](/the-shortest-infinite-program-in-Python/)
 
+### Link to email
+
+[Ref1](https://github.com/github/markup/issues/1030)
+[Ref2](https://www.wikihow.com/Create-an-Email-Link-in-HTML)
+
+- Email: <a href=mailto:<quanhoang> quanhoang.pm@gmail.com>quanhoang.pm@gmail.com</a>
+- Email: [quanhoang.pm@gmail.com](mailto:quanhoang.pm@gmail.com)
+- Email: [quanhoang.pm@gmail.com](mailto:quanhoang.pm@gmail.com?subject=[Subject]%20Big%20Title%20Sans)
+
+
 ---
 
 [^footnote]: The detailed description in one paragraph.
