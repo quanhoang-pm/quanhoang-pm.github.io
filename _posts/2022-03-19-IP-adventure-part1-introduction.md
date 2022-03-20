@@ -1,9 +1,12 @@
 ---
 title: "IP Adventure. Part 1: Introduction"
-permalink: /foobar/
-layout: customPostLayout
+permalink: /ip-adventure-part1-introduction/
 date: 2022-03-19 02:00:00
 last_modified_at: 2022-03-19
+categories:
+  - mathematics
+tags:
+  - Python
 ---
 
 Mô hình hóa (modeling) là một trong ba kỹ năng quan trọng để giải quyết những vấn đề thực tế, bên cạnh mô phỏng (simulation) và tối ưu hóa (optimization). Kỹ năng mô hình hóa giúp chuyển một mô hình thực tế thành một mô hình toán học, từ đó cho phép áp dụng những công cụ toán học (ví dụ như tối ưu nguyên) để giải quyết vấn đề. Bài tập dưới đây giúp người đọc làm quen với những suy luận đặc trưng của mô hình hóa.

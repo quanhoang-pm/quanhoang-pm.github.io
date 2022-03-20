@@ -1,0 +1,13 @@
+---
+title: "IP"
+permalink: /ip/
+layout: customPostLayout
+date: 2022-03-21 02:00:00
+last_modified_at: 2022-03-21
+---
+
+Integer programming (IP) is a powerful tool of solving problems, especially when tackling with combinatorics ones. As far as I know, all problems with finite search spaces can be translated into IP models. Even in the worst case, we can cut off each candidate once at a time until we find a feasible solution or prove the infeasibility of the problem. Besides the various uses in different scenario, IP models can be efficiently solved by [the fastest solver](https://www.gurobi.com/).
+
+This page mainly contains my articles related to **Mixed-integer linear programming (MILP)**, a specific branch of IP. Hope that I can inspire you with my adventure of integer programming.
+
+[Part 1. Introduction](/ip-adventure-part1-introduction/)
