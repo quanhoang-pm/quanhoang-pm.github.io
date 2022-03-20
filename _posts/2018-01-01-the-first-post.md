@@ -178,6 +178,3 @@ Edited at 16h44
 [^footnote]: The detailed description in one paragraph.
 
 [^1]: The other footnote of emoji :joy:.
-
-
-# --------------------------------------------------------------------------- #
