@@ -178,7 +178,7 @@ Edited at 16h44
 [Ref1](https://github.com/github/markup/issues/1030)
 [Ref2](https://www.wikihow.com/Create-an-Email-Link-in-HTML)
 
-- Email: <a href=mailto:<quanhoang> quanhoang.pm@gmail.com>quanhoang.pm@gmail.com</a>
+- Email: <a href="mailto:quanhoang.pm@gmail.com">Send to my email</a>
 - Email: [quanhoang.pm@gmail.com](mailto:quanhoang.pm@gmail.com)
 - Email: [quanhoang.pm@gmail.com](mailto:quanhoang.pm@gmail.com?subject=[Subject]%20Big%20Title%20Sans)
 
