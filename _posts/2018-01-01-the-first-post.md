@@ -109,9 +109,23 @@ In `HTML`,
 >
 > --- Anonymous ---
 
-### Math equations
+## Code snippets
+```txt
+# white background by three quotes and "txt" header
+```
+
+```
+# black background by three quotes
+```
+
+### LaTeX snippets (mostly math equations)
 
 Example of inline equation with `$` symbol, $\frac{1}{2} + \frac{1}{3} = \frac{5}{6}$.
+
+Absolute value.
+- Correct `\lvert`: $\lvert x \rvert$
+- Wrong `| . |`: $|x|$
+Others: norm `\lVert`: $\lVert x \rVert$
 
 Example of an equation in a new line with `$$` symbol
 
@@ -180,7 +194,7 @@ Edited at 16h44
 
 - Email: <a href="mailto:quanhoang.pm@gmail.com">Send to my email</a>
 - Email: [quanhoang.pm@gmail.com](mailto:quanhoang.pm@gmail.com)
-- Email: [quanhoang.pm@gmail.com](mailto:quanhoang.pm@gmail.com?subject=[Subject]%20Big%20Title%20Sans)
+- Email: [quanhoang.pm@gmail.com](mailto:quanhoang.pm@gmail.com?subject=[Subject]%20Big%20Title)
 
 
 ---
