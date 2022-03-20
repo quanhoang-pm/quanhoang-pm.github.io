@@ -112,10 +112,12 @@ In `HTML`,
 ## Code snippets
 ```txt
 # white background by three quotes and "txt" header
+# Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 ```
 
 ```
 # black background by three quotes
+# Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 ```
 
 ### LaTeX snippets (mostly math equations)
@@ -123,9 +125,9 @@ In `HTML`,
 Example of inline equation with `$` symbol, $\frac{1}{2} + \frac{1}{3} = \frac{5}{6}$.
 
 Absolute value.
-- Correct `\lvert`: $\lvert x \rvert$
-- Wrong `| . |`: $|x|$
-Others: norm `\lVert`: $\lVert x \rVert$
+- Correct. method 1.  `\lvert`: $\lvert x \rvert$
+- Others. method 2. norm `\lVert`: $\lVert x \rVert$
+- Wrong (in some articles) `| . |`: $|x|$
 
 Example of an equation in a new line with `$$` symbol
 
