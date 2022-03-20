@@ -3,7 +3,7 @@ title: "Triangular differences"
 permalink: /problemOfTheWeek/
 layout: customPostLayout
 date: 2022-03-19 21:30:00
-last_modified_at: 2022-03-19
+last_modified_at: 2022-03-20
 ---
 
 Câu đố thứ 533 trong cuốn [The Big Book of Brain Games: 1,000 PlayThinks of Art, Mathematics & Science](https://www.amazon.com/Big-Book-Brain-Games-Mathematics/dp/0761134662) (tựa tiếng Việt: 1000 câu đó tự duy về Toán, Khoa học & Nghệ thuật) của tác giả Ivan Moscovich được tóm tắt như sau:
@@ -129,3 +129,15 @@ Với $N = 5$, có duy nhất một nghiệm thỏa mãn yêu cầu của đề 
       4    9
          5
 ```
+
+## Điền số trên ống trụ
+Thay vì điền số vào lưới tam giác như trên, ta có thể nghiên cứu bài toán điền số vào một ống trụ sao cho vẫn thỏa mãn yêu cầu của đề bài: số ở dưới bằng chênh lệch của hai số ở ngay trên. Một cách hình thức, bài toán yêu cầu điền số vào một bảng chữ nhật với các hàng so le nhau rồi dán chúng lên một ống trụ. Dưới đây là một lời giải cho trường hợp điền 6 số 1,2,3,4,5,6 vào ống trụ gồm hai hàng, mỗi hàng có ba số.
+```
+4 6 1\4
+ 2 5 3
+```
+
+---
+
+Edit
+- 20/03/2022. Bổ sung mục **Điền số trên ống trụ**
