@@ -2,7 +2,7 @@
 title: "IP Adventure. Part 1: Introduction"
 permalink: /ip-adventure-part1-introduction/
 date: 2022-03-19 02:00:00
-last_modified_at: 2022-03-19
+last_modified_at: 2022-03-22
 categories:
   - mathematics
 tags:
@@ -40,3 +40,5 @@ Bài toán gốc (đặt 8 quân hậu lên bàn cờ) có thể giải quyết 
 ### Lời giải
 
 Nhóm sinh viên [Quý Anh](https://github.com/QuyAnh2005), [Văn Quân](https://github.com/quanpersie2001), [Thanh Tùng](https://github.com/thanhtung1005) đã trả lời tương đối tốt những câu hỏi đặt ra ở trên. Phần trình bày của nhóm có thể xem tại [đây](https://github.com/thanhtung1005/Optimization-Homework).
+
+Hướng dẫn giải quyết bài toán trên bằng cách xây dựng mô hình IP trong Gurobi có thể xem tại [đây](https://gist.github.com/quanhoang-pm/e7643403bbdb370f661f9aa7c35c1991) (code Python).
