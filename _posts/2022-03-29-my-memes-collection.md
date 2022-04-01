@@ -8,4 +8,6 @@ tags:
   - meme
 ---
 
+![](/assets/images/spendTimeLearningAlgebraMeme.jpg)
+
 TBA
