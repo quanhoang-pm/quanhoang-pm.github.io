@@ -17,7 +17,7 @@ _Xin chào_, my name is Quan.
 
 This is the link to [my site](https://quanhoang-pm.github.io/).
 
-This is my avatar. ![](/assets/images/avatar.jpg)
+ This is my avatar. ![](/assets/images/avatar.jpg)
 
 A way to ~~alter~~ resize an image using `HTML`.
 ```html
@@ -138,6 +138,23 @@ and this one with `\begin{equation}` environment
 \begin{equation}
   \sum_{1}^{n} i = \dfrac{n(n+1)}{2}
 \end{equation}
+
+Raw matrix environment
+
+\begin{matrix}
+1 & 2 & 3\\
+a & b & c
+\end{matrix}
+
+Matrix environment inside equation environment
+
+\begin{equation}
+  \begin{matrix}
+  1 & 2 & 3\\
+  a & b & c
+  \end{matrix}
+\end{equation}
+
 
 We examine some environment in LaTeX below
 `align` environment (not working)
