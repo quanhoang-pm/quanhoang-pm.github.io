@@ -139,6 +139,16 @@ and this one with `\begin{equation}` environment
   \sum_{1}^{n} i = \dfrac{n(n+1)}{2}
 \end{equation}
 
+
+{% raw %}
+ $$a^2 + b^2 = c^2$$ --> hello
+
+ \begin{matrix}
+ 1 & 2 & 3\\
+ a & b & c
+ \end{matrix}
+{% endraw %}
+
 Raw matrix environment
 
 \begin{matrix}
