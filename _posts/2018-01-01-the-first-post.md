@@ -131,6 +131,10 @@ Absolute value.
 
 Example of an equation in a new line with `$$` symbol
 
+$$a^2 + b^2 = c^2$$
+
+space at the beginning
+
 $$ a^2 + b^2 = c^2$$
 
 and this one with `\begin{equation}` environment
