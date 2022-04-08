@@ -13,3 +13,5 @@ This page mainly contains my articles related to **Mixed-integer linear programm
 [Eight queens puzzle](/ip-adventure-part1-introduction/)
 
 [List of (solvable) puzzle in krazydad.com](/list-of-solvable-puzzles-in-krazydad-dot-com/)
+
+[Magic squares](/magic-squares/)
