@@ -210,6 +210,9 @@ What about an equation $a^2$? OK
 ![image](/assets/images/avatar.jpg)
 </details>
 
+
+Mouse over to reveal the content: <span class="spoiler">Hello World!</span>
+
 **Manual line breaks**
 
 End a line with  
