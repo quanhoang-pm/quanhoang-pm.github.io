@@ -208,10 +208,13 @@ Cannot render an image using markdown syntax here.
 What about an equation $a^2$? OK
 
 ![image](/assets/images/avatar.jpg)
+
+```txt
+A code snippet
+```
 </details>
 
-
-Mouse over to reveal the content: <span class="spoiler">Hello World!</span>
+Mouse over to reveal the content: <spoiler>Hello World!</spoiler>
 
 **Manual line breaks**
 
