@@ -209,12 +209,31 @@ What about an equation $a^2$? OK
 
 ![image](/assets/images/avatar.jpg)
 
+Not working
+
 ```txt
 A code snippet
 ```
 </details>
 
-Mouse over to reveal the content: <spoiler>Hello World!</spoiler>
+(not working) Mouse over to reveal the content: <spoiler>Hello World!</spoiler>
+
+
+
+
+
+**A collapsible section with markdown**
+<details>
+  <summary>Click to expand!</summary>
+
+  ## Heading
+  1. A numbered
+  2. list
+     * With some
+     * Sub bullets
+</details>
+
+
 
 **Manual line breaks**
 
