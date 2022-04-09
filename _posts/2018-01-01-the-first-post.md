@@ -218,29 +218,10 @@ A code snippet
 
 (not working) Mouse over to reveal the content: <spoiler>Hello World!</spoiler>
 
-
-
-
-
-**A collapsible section with markdown**
-<details>
-  <summary>Click to expand!</summary>
-
-  ## Heading
-  1. A numbered
-  2. list
-     * With some
-     * Sub bullets
-</details>
-
-
-
 **Manual line breaks**
 
 End a line with  
 two or more spaces
-
-Edited at 16h44
 
 ### Static link to a post
 [The article](/the-shortest-infinite-program-in-Python/)
