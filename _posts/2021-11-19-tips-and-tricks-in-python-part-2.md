@@ -1,7 +1,7 @@
 ---
 title: "Tips and tricks in Python (part 2)"
 date: 2021-11-19 21:30:00
-last_modified_at: 2022-01-15
+last_modified_at: 2022-04-11
 categories:
   - programming
 tags:
@@ -170,11 +170,18 @@ upperCaseCharacters = [chr(x) for x in range(ord('A'), ord('Z') + 1)]
 allCharacters = lowerCaseCharacters + upperCaseCharacters
 ```
 
-
 ### Intersection among lists
+```py
 def intersectionAmongLists(list_):
     return set(list_[0]).intersection(*list_[1:])
+```
 
+### Number of combinations
+```py
+import math
+math.comb(7, 2) # 21
+math.comb(7, 8) # 0
+```
 
 ### More tricks to be appended ...
 Hope you enjoyed the post. Please leave a comment if you have any useful tricks in Python to share with others.
