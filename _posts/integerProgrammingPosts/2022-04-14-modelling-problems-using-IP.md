@@ -36,7 +36,7 @@ $$x_i=
 \end{cases}
 $$
 
-Từ điều kiện đã cho, với mỗi bộ ba số $1\le a<b<c \le n$ thỏa mãn $a+b=c$, ta suy ra bộ $(x_a,x_b,x_c)$ không thể nhận giá trị $(0,0,0)$ hoặc $(1,1,1)$. Khi minh họa ba biến này trong không gian ba chiều, ta chỉ ra được hai điều kiện tuyến tính loại bỏ đi đúng hai trường hợp trên (trong số 8 trường hợp có thể của bộ $(x_a,x_b,x_c)$), đó là
+Từ điều kiện đã cho, với mỗi bộ ba số $1\le a<b<c \le n$ thỏa mãn $a+b=c$, ta suy ra bộ $(x_a,x_b,x_c)$ không thể nhận giá trị $(0,0,0)$ hoặc $(1,1,1)$. Khi minh họa ba biến này trong không gian ba chiều, ta chỉ ra được hai điều kiện tuyến tính loại bỏ đi đúng hai trường hợp trên trong số 8 trường hợp có thể của bộ $(x_a,x_b,x_c)$, đó là
 
 $$
 \left.
@@ -46,13 +46,20 @@ $$
   \end{array}
 \right.$$
 
-Mô hình này không có hàm mục tiêu.
+Chú ý rằng mô hình này không có hàm mục tiêu.
 
-**Bài toán 3.** Với mỗi $1 \le i,j \le 3$, ta đặt biến nguyên $x_{ij}$ thể hiện giá trị của số đặt trong ô ở hàng $i$, cột $j$. Với mỗi $1 \le i,j \le 3$ và $1\le k \le 9$, ta đặt biến nhị phân $x_{ijk}$ nhận giá trị bằng 1 khi và chỉ khi số $k$ đặt tại ô $(i,j)$. Các ràng buộc của bài toán này bao gồm:
+**Bài toán 3.** Với mỗi $1 \le i,j \le 3$, ta đặt biến nguyên $x_{ij}$ thể hiện giá trị của số đặt trong ô ở hàng $i$, cột $j$. Với mỗi $1 \le i,j \le 3$ và $1\le k \le 9$, ta đặt biến nhị phân $b_{ijk}$ nhận giá trị bằng 1 khi và chỉ khi số $k$ đặt tại ô $(i,j)$. Các ràng buộc của bài toán này bao gồm:
 
-- Mỗi ô chỉ chứa đúng một số.
-- Hai ô bất kì có giá trị khác nhau, hay nói cách khác, mỗi số chỉ xuất hiện tối đa một lần.
-- Tổng các số trên mỗi hàng ngang, cột dọc và đường chéo đều bằng 15.
+- Ràng buộc liên quan tới biến $b_{ijk}$
++ Mỗi ô chỉ chứa đúng một số.
++ Hai ô bất kì có giá trị khác nhau, hay nói cách khác, mỗi số chỉ xuất hiện tối đa một lần.
+
+- Ràng buộc liên quan tới biến $x_{ij}$
++ Tổng các số trên mỗi hàng ngang, cột dọc và đường chéo đều bằng 15.
+
+- Ràng buộc liên quan giữa $b_{ijk}$ và $x_{ij}$
+
+$$x_{ij} = \sum_{k=1}^{9} k\cdot b_{ijk} \quad \forall 1\le i,j\le 3$$
 
 Mô hình này không có hàm mục tiêu.
 
@@ -87,8 +94,8 @@ Mặc dù hai cách mô hình này cho ta lời giải _tương đương_, cách
 ## Bài tập nâng cao
 **Bài toán 5.** Đặt các quân hậu lên bàn cờ vua kích thước $8\times 8$ sao cho mỗi quân hậu tấn công tối đa một quân hậu khác. Số quân hậu tối đa có thể đặt lên bàn cờ là bao nhiêu?
 
-Gợi ý. Nếu ta đặt quân hậu lên một ô nào đó, thì tổng số quân hậu ở những ô _kề_ ô đó phải thỏa mãn điều kiện gì?
+Gợi ý. Nếu ta đặt quân hậu lên một ô nào đó, thì tổng số quân hậu ở những ô có thể tấn công từ ô đó phải thỏa mãn điều kiện gì?
 
 **Bài toán 6.** Điền các số nguyên từ 1 đến 27 vào các khối lập phương đơn vị trong khối lập phương kích thước $3\times 3\times 3$ và tính tổng các số trong mỗi bộ ba khối lập phương đơn vị phân biệt và thẳng hàng. Ba khối lập phương đơn vị được gọi là thẳng hàng nếu tâm của chúng cùng nằm trên một đường thẳng. Đặt $(s,k)$ là một cặp số nguyên thỏa mãn giá trị $s$ xuất hiện $k$ lần trong số những tổng vừa tính được. Tìm giá trị lớn nhất của $k$.
 
-Gợi ý. Sử dụng phương pháp vẽ hình để tìm ra mối quan hệ phù hợp liên quan tới biến nhị phân kiểm soát sự bằng nhau của giá trị một tổng và giá trị của $s$
+Gợi ý. Sử dụng phương pháp vẽ hình để tìm ra ràng buộc liên quan tới biến nhị phân kiểm soát sự bằng nhau của giá trị một tổng và giá trị của $s$.
