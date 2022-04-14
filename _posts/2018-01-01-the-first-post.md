@@ -120,10 +120,6 @@ In `HTML`,
 # Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 ```
 
-new
-
-$$a^2 + b^2 = c^2$$
-
 ### LaTeX snippets (mostly math equations)
 
 Example of inline equation with `$` symbol, $\frac{1}{2} + \frac{1}{3} = \frac{5}{6}$.
@@ -147,12 +143,32 @@ and this one with `\begin{equation}` environment
   \sum_{1}^{n} i = \dfrac{n(n+1)}{2}
 \end{equation}
 
+An equation with cases
+
+$$f(x)=
+\begin{cases}
+    \frac{x^2-x}{x}& \text{if } x\geq 1\\
+    0              & \text{otherwise}
+\end{cases}
+$$
+
+Another one
+
+$$f(x)=
+\left\{
+  \begin{array}{ c l }
+    \frac{x^2 - x}{2} & \quad \textrm{if } x \geq 1 \\
+    0                 & \quad \textrm{otherwise}
+  \end{array}
+\right.$$
+
+
 
 {% raw %}
  $$a^2 + b^2 = c^2$$ --> hello
 
  \begin{matrix}
- 1 & 2 & 3\\
+ 1 & 2 & 3 \\\\
  a & b & c
  \end{matrix}
 {% endraw %}
@@ -160,7 +176,7 @@ and this one with `\begin{equation}` environment
 Raw matrix environment
 
 \begin{matrix}
-1 & 2 & 3\\
+1 & 2 & 3 \\\\
 a & b & c
 \end{matrix}
 
@@ -168,10 +184,20 @@ Matrix environment inside equation environment
 
 \begin{equation}
   \begin{matrix}
-  1 & 2 & 3\\
+  1 & 2 & 3 \\\\
   a & b & c
   \end{matrix}
 \end{equation}
+
+Matrix using `array`
+
+$$
+\left\(
+  \begin{array}{ c c c }
+    1 & 2 & 3 \\
+    4 & 5 & 6 \\
+  \end{array}
+\right\)$$
 
 
 We examine some environment in LaTeX below
@@ -255,26 +281,9 @@ Xây dựng mô hình LP/IP giải quyết những bài toán sau:
 
 ## Lời giải
 
+**Bài toán 1.** Ta coi bàn cờ là một lưới vuông gồm các tọa độ $(i,j)$ thỏa mãn $1\le i,j \le 8$. Với mỗi tọa độ $(i,j)$ trong bàn cờ, ta sử dụng biến nhị phân $x_{ij}$ thể hiện việc có đặt quân hậu tại tọa độ đó hay không. Điều kiện không có hai quân hậu tấn công nhau tương đương với điều kiện: **có tối đa một quân hậu trong mỗi hàng, mỗi cột, hoặc mỗi đường chéo**.
 
-$$ f(x)=
-\begin{cases}
-    \frac{x^2-x}{x}& \text{if } x\geq 1\\
-    0              & \text{otherwise}
-\end{cases}
-$$
-
-other equation
-
-  $$\left\{
-  \begin{array}{ c l }
-    \frac{x^2 - x}{2} & \quad \textrm{if } x \geq 1 \\
-    0                 & \quad \textrm{otherwise}
-  \end{array}
-\right.$$
-
-**Bài toán 1.** Với mỗi cặp số $(i,j)$ thỏa mãn $1\le i,j \le 8$
-
-
+Mô hình này không có hàm mục tiêu, nói cách khác, thuật toán sẽ kết thúc khi tìm được một nghiệm thỏa mãn tất cả các ràng buộc kể trên (gọi là nghiệm chấp nhận được - feasible solution).
 
 ## Bài tập nâng cao
 **Bài toán 5.** Đặt các quân hậu lên bàn cờ vua kích thước $8\times 8$ sao cho mỗi quân hậu tấn công tối đa một quân hậu khác. Số quân hậu tối đa có thể đặt lên bàn cờ là bao nhiêu?
