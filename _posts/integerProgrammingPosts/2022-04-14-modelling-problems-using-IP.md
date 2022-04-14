@@ -51,11 +51,11 @@ Chú ý rằng mô hình này không có hàm mục tiêu.
 **Bài toán 3.** Với mỗi $1 \le i,j \le 3$, ta đặt biến nguyên $x_{ij}$ thể hiện giá trị của số đặt trong ô ở hàng $i$, cột $j$. Với mỗi $1 \le i,j \le 3$ và $1\le k \le 9$, ta đặt biến nhị phân $b_{ijk}$ nhận giá trị bằng 1 khi và chỉ khi số $k$ đặt tại ô $(i,j)$. Các ràng buộc của bài toán này bao gồm:
 
 - Ràng buộc liên quan tới biến $b_{ijk}$
-+ Mỗi ô chỉ chứa đúng một số.
-+ Hai ô bất kì có giá trị khác nhau, hay nói cách khác, mỗi số chỉ xuất hiện tối đa một lần.
+  + Mỗi ô chỉ chứa đúng một số.
+  + Hai ô bất kì có giá trị khác nhau, hay nói cách khác, mỗi số chỉ xuất hiện tối đa một lần.
 
 - Ràng buộc liên quan tới biến $x_{ij}$
-+ Tổng các số trên mỗi hàng ngang, cột dọc và đường chéo đều bằng 15.
+  + Tổng các số trên mỗi hàng ngang, cột dọc và đường chéo đều bằng 15.
 
 - Ràng buộc liên quan giữa $b_{ijk}$ và $x_{ij}$
 
