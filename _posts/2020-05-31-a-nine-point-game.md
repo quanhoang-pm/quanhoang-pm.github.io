@@ -52,7 +52,7 @@ Những biến thể của trò chơi này có thể được xây dựng bằng
 ### Chú thích
 Trò chơi này được mình sưu tầm.
 
-Những ảnh minh họa trong bài đăng này được vẽ bằng ngôn ngữ lập trình Python. Chương trình vẽ ảnh có thể được tìm thấy tại [đây](/assets/ninePointsGame/aNinePointGame.py)
+Những ảnh minh họa trong bài đăng này được vẽ bằng ngôn ngữ lập trình Python. Chương trình vẽ ảnh có thể được tìm thấy tại [đây](https://gist.github.com/quanhoang-pm/85cf7dad2b12eb405814fa877f078843).
 
 ### Câu hỏi mở
 Trong trò chơi này, người đi trước hay người đi sau là người có chiến thuật để luôn giành chiến thắng?
