@@ -192,13 +192,12 @@ Matrix environment inside equation environment
 Matrix using `array`
 
 $$
-\left\(
+\left(
   \begin{array}{ c c c }
     1 & 2 & 3 \\
     4 & 5 & 6 \\
   \end{array}
-\right\)$$
-
+\right)$$
 
 We examine some environment in LaTeX below
 `align` environment (not working)
@@ -279,11 +278,17 @@ Xây dựng mô hình LP/IP giải quyết những bài toán sau:
 
 **Bài toán 4.** Cho $n$ là một số nguyên dương. Đặt $2n$ điểm lên trên lưới vuông kích thước $n\times n$ sao cho không có ba điểm nào thẳng hàng. Mô tả chi tiết về bài toán có tại [Wikipedia](https://en.wikipedia.org/wiki/No-three-in-line_problem).
 
-## Lời giải
+## Lời giải & hướng dẫn
 
-**Bài toán 1.** Ta coi bàn cờ là một lưới vuông gồm các tọa độ $(i,j)$ thỏa mãn $1\le i,j \le 8$. Với mỗi tọa độ $(i,j)$ trong bàn cờ, ta sử dụng biến nhị phân $x_{ij}$ thể hiện việc có đặt quân hậu tại tọa độ đó hay không. Điều kiện không có hai quân hậu tấn công nhau tương đương với điều kiện: **có tối đa một quân hậu trong mỗi hàng, mỗi cột, hoặc mỗi đường chéo**.
+**Bài toán 1.** Ta coi bàn cờ là một lưới vuông gồm các tọa độ $(i,j)$ (ứng với hàng $i$, cột $j$) thỏa mãn $1\le i,j \le 8$. Với mỗi tọa độ $(i,j)$ trong bàn cờ, ta sử dụng biến nhị phân $x_{ij}$ thể hiện việc có đặt quân hậu tại tọa độ đó hay không. Điều kiện không có hai quân hậu tấn công nhau tương đương với điều kiện: **có tối đa một quân hậu trong mỗi hàng, mỗi cột, hoặc mỗi đường chéo**. Ví dụ, hệ điều kiện dưới đây mô tả việc mỗi cột có tối đa một quân hậu:
+
+$$\sum_{i=1}^{8} x_{ij} \le 1 \quad \forall j=1,2,\ldots,8$$
 
 Mô hình này không có hàm mục tiêu, nói cách khác, thuật toán sẽ kết thúc khi tìm được một nghiệm thỏa mãn tất cả các ràng buộc kể trên (gọi là nghiệm chấp nhận được - feasible solution).
+
+**Bài toán 2.**
+
+
 
 ## Bài tập nâng cao
 **Bài toán 5.** Đặt các quân hậu lên bàn cờ vua kích thước $8\times 8$ sao cho mỗi quân hậu tấn công tối đa một quân hậu khác. Số quân hậu tối đa có thể đặt lên bàn cờ là bao nhiêu?
