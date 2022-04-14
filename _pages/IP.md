@@ -15,3 +15,5 @@ This page mainly contains my articles related to **Mixed-integer linear programm
 [List of (solvable) puzzle in krazydad.com](/list-of-solvable-puzzles-in-krazydad-dot-com/)
 
 [Magic squares](/magic-squares/)
+
+[Modelling problems using IP](/modelling-problems-using-IP/)
