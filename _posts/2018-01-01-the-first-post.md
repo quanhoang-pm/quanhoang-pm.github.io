@@ -278,7 +278,7 @@ Xây dựng mô hình LP/IP giải quyết những bài toán sau:
 
 **Bài toán 4.** Cho $n$ là một số nguyên dương. Đặt $2n$ điểm lên trên lưới vuông kích thước $n\times n$ sao cho không có ba điểm nào thẳng hàng. Mô tả chi tiết về bài toán có tại [Wikipedia](https://en.wikipedia.org/wiki/No-three-in-line_problem).
 
-## Lời giải & hướng dẫn
+## Hướng dẫn
 
 **Bài toán 1.** Ta coi bàn cờ là một lưới vuông gồm các tọa độ $(i,j)$ (ứng với hàng $i$, cột $j$) thỏa mãn $1\le i,j \le 8$. Với mỗi tọa độ $(i,j)$ trong bàn cờ, ta sử dụng biến nhị phân $x_{ij}$ thể hiện việc có đặt quân hậu tại tọa độ đó hay không. Điều kiện không có hai quân hậu tấn công nhau tương đương với điều kiện: **có tối đa một quân hậu trong mỗi hàng, mỗi cột, hoặc mỗi đường chéo**. Ví dụ, hệ điều kiện dưới đây mô tả việc mỗi cột có tối đa một quân hậu:
 
@@ -286,7 +286,35 @@ $$\sum_{i=1}^{8} x_{ij} \le 1 \quad \forall j=1,2,\ldots,8$$
 
 Mô hình này không có hàm mục tiêu, nói cách khác, thuật toán sẽ kết thúc khi tìm được một nghiệm thỏa mãn tất cả các ràng buộc kể trên (gọi là nghiệm chấp nhận được - feasible solution).
 
-**Bài toán 2.**
+**Bài toán 2.** Đặt hai màu có thể tô là xanh và đỏ. Với mỗi $i$ thỏa mãn $1\le i \le n$, ta đặt biến nhị phân $x_i$ thể hiện màu tô cho số $i$
+$$x_i=
+\begin{cases}
+    1 & \text{if } i \text{is red} \\
+    0 & \text{if } i \text{is blue} \\
+\end{cases}
+$$
+Từ điều kiện đã cho, với mỗi bộ ba số $1\le a<b<c \le n$ thỏa mãn $a+b=c$, ta suy ra bộ $(x_a,x_b,x_c)$ không thể nhận giá trị $(0,0,0)$ hoặc $(1,1,1)$. Khi minh họa ba biến này trong không gian ba chiều, ta chỉ ra được hai điều kiện tuyến tính loại bỏ đi đúng hai trường hợp trên (trong số 8 trường hợp có thể của bộ $(x_a,x_b,x_c)$), đó là
+
+$$
+\left.
+  \begin{array}{ c c }
+    x_a + x_b + x_c & \ge 1 \\
+    x_a + x_b + x_c & \le 2 \\
+  \end{array}
+\right.$$
+
+Mô hình này không có hàm mục tiêu.
+
+
+**Bài toán 3.** Điền các số nguyên từ 1 đến 9 vào một bảng vuông có kích thước $3\times 3$ sao cho tổng các số trên mỗi hàng ngang, cột dọc và đường chéo đều bằng nhau và bằng 15.
+
+**Bài toán 4.** Cho $n$ là một số nguyên dương. Đặt $2n$ điểm lên trên lưới vuông kích thước $n\times n$ sao cho không có ba điểm nào thẳng hàng. Mô tả chi tiết về bài toán có tại [Wikipedia](https://en.wikipedia.org/wiki/No-three-in-line_problem).
+
+
+
+
+
+
 
 
 
