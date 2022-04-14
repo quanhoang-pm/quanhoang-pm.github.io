@@ -1,7 +1,7 @@
 ---
 title: "Modelling problems using IP"
 permalink: /modelling-problems-using-IP/
-date: 2022-04-15 00:15:00
+date: 2022-04-15 00:15:00 +07:00
 last_modified_at: 2022-04-15
 categories:
   - mathematics
