@@ -120,6 +120,8 @@ In `HTML`,
 # Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 ```
 
+$$a^2 + b^2 = c^2$$
+
 ### LaTeX snippets (mostly math equations)
 
 Example of inline equation with `$` symbol, $\frac{1}{2} + \frac{1}{3} = \frac{5}{6}$.
@@ -241,18 +243,41 @@ two or more spaces
 
 Xây dựng mô hình LP/IP giải quyết những bài toán sau:
 
-Bài toán 1. Đặt 8 quân hậu lên bàn cờ vua kích thước $8\times 8$ sao cho không có hai quân hậu nào tấn công nhau.
+**Bài toán 1.** Đặt 8 quân hậu lên bàn cờ vua kích thước $8\times 8$ sao cho không có hai quân hậu nào tấn công nhau.
 
-Bài toán 2. Cho $n$ là một số nguyên dương. Tô màu mỗi số nguyên $1,2,\ldots,n$ bởi một trong hai màu sao cho không tồn tại ba số nguyên $a<b<c$ thỏa mãn $a+b=c$ được tô cùng màu.
+**Bài toán 2.** Cho $n$ là một số nguyên dương. Tô màu mỗi số nguyên $1,2,\ldots,n$ bởi một trong hai màu sao cho không tồn tại ba số nguyên $a<b<c$ thỏa mãn $a+b=c$ được tô cùng màu.
 
-Bài toán 3. Điền các số nguyên từ 1 đến 9 vào một bảng vuông có kích thước $3\times 3$ sao cho tổng các số trên mỗi hàng ngang, cột dọc và đường chéo đều bằng nhau và bằng 15.
+**Bài toán 3.** Điền các số nguyên từ 1 đến 9 vào một bảng vuông có kích thước $3\times 3$ sao cho tổng các số trên mỗi hàng ngang, cột dọc và đường chéo đều bằng nhau và bằng 15.
 
-Bài toán 4. [Wikipedia](https://en.wikipedia.org/wiki/No-three-in-line_problem) Cho $n$ là một số nguyên dương. Đặt $2n$ điểm lên trên lưới vuông kích thước $n\times n$ sao cho không có ba điểm nào thẳng hàng.
+**Bài toán 4.** Cho $n$ là một số nguyên dương. Đặt $2n$ điểm lên trên lưới vuông kích thước $n\times n$ sao cho không có ba điểm nào thẳng hàng. Mô tả chi tiết về bài toán có tại [Wikipedia](https://en.wikipedia.org/wiki/No-three-in-line_problem).
+
+## Lời giải
+
+
+$$ f(x)=
+\begin{cases}
+    \frac{x^2-x}{x},& \text{if } x\geq 1\\
+    0,              & \text{otherwise}
+\end{cases}
+$$
+
+
+
+$\left\{
+  \begin{array}{ c l }
+    \frac{x^2 - x}{2} & \quad \textrm{if } x \geq 1 \\
+    0                 & \quad \textrm{otherwise}
+  \end{array}
+\right.$
+
+**Bài toán 1.** Với mỗi cặp số $(i,j)$ thỏa mãn $1\ge
+
+
 
 ## Bài tập nâng cao
-Bài toán 5. Đặt các quân hậu lên bàn cờ vua kích thước $8\times 8$ sao cho mỗi quân hậu tấn công tối đa một quân hậu khác. Số quân hậu tối đa có thể đặt lên bàn cờ là bao nhiêu?
+**Bài toán 5.** Đặt các quân hậu lên bàn cờ vua kích thước $8\times 8$ sao cho mỗi quân hậu tấn công tối đa một quân hậu khác. Số quân hậu tối đa có thể đặt lên bàn cờ là bao nhiêu?
 
-Bài toán 6. Điền các số nguyên từ 1 đến 27 vào các khối lập phương đơn vị trong khối lập phương kích thước $3\times 3\times 3$ và tính tổng các số trong mỗi bộ ba khối lập phương đơn vị phân biệt và thẳng hàng. Ba khối lập phương đơn vị được gọi là thẳng hàng nếu tâm của chúng cùng nằm trên một đường thẳng. Đặt $(s,k)$ là một cặp số nguyên thỏa mãn giá trị $s$ xuất hiện $k$ lần trong số những tổng vừa tính được. Tìm giá trị lớn nhất của $k$.
+**Bài toán 6.** Điền các số nguyên từ 1 đến 27 vào các khối lập phương đơn vị trong khối lập phương kích thước $3\times 3\times 3$ và tính tổng các số trong mỗi bộ ba khối lập phương đơn vị phân biệt và thẳng hàng. Ba khối lập phương đơn vị được gọi là thẳng hàng nếu tâm của chúng cùng nằm trên một đường thẳng. Đặt $(s,k)$ là một cặp số nguyên thỏa mãn giá trị $s$ xuất hiện $k$ lần trong số những tổng vừa tính được. Tìm giá trị lớn nhất của $k$.
 
 ---
 
