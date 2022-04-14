@@ -120,6 +120,8 @@ In `HTML`,
 # Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 ```
 
+new
+
 $$a^2 + b^2 = c^2$$
 
 ### LaTeX snippets (mostly math equations)
@@ -256,21 +258,21 @@ Xây dựng mô hình LP/IP giải quyết những bài toán sau:
 
 $$ f(x)=
 \begin{cases}
-    \frac{x^2-x}{x},& \text{if } x\geq 1\\
-    0,              & \text{otherwise}
+    \frac{x^2-x}{x}& \text{if } x\geq 1\\
+    0              & \text{otherwise}
 \end{cases}
 $$
 
+other equation
 
-
-$\left\{
+  $$\left\{
   \begin{array}{ c l }
     \frac{x^2 - x}{2} & \quad \textrm{if } x \geq 1 \\
     0                 & \quad \textrm{otherwise}
   \end{array}
-\right.$
+\right.$$
 
-**Bài toán 1.** Với mỗi cặp số $(i,j)$ thỏa mãn $1\ge
+**Bài toán 1.** Với mỗi cặp số $(i,j)$ thỏa mãn $1\le i,j \le 8$
 
 
 
