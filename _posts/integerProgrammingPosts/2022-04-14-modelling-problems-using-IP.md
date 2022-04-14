@@ -77,10 +77,10 @@ ta suy ra hệ điều kiện tương ứng là
 $$
 \left.
   \begin{array}{ c c }
-    x_A + x_B + x_C & \le 2 \\
-    x_B + x_C + x_D & \le 2 \\
-    x_C + x_D + x_A & \le 2 \\
-    x_D + x_A + x_B & \le 2 \\
+    x_A + x_B + x_C & \le 2, \\
+    x_B + x_C + x_D & \le 2, \\
+    x_C + x_D + x_A & \le 2, \\
+    x_D + x_A + x_B & \le 2. \\
   \end{array}
 \right.$$
 
