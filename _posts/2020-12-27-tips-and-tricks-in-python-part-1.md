@@ -1,7 +1,7 @@
 ---
 title: "Tips and tricks in Python (part 1)"
 date: 2020-12-27 21:50:00
-last_modified_at: 2021-11-06 15:00:00
+last_modified_at: 2022-05-02
 categories:
   - programming
 tags:
@@ -19,8 +19,11 @@ np.isclose(a, b) # avoid numerical errors
 I read two tricks about number formatting in a [Medium article](https://levelup.gitconnected.com/10-python-tips-for-better-code-1bbffde3b44d). The first trick is that underscores can be placed anywhere you prefer in a given number, but of course you should use them to separate the number the every three digits for better readability. The second one is a way to add commas in f-string literals. Here are how the tricks work.
 ```python
 value = 12_34_5678_9
+print(f'{value:,}') # 123,456,789
+print(f'{value:_}') # 123_456_789
 value = 123_456.789_789
-print(f'{value:,}')
+print(f'{value:,}') # 123,456.789789
+print(f'{value:_}') # 123_456.789789
 ```
 
 ### Virtual environments in Python
