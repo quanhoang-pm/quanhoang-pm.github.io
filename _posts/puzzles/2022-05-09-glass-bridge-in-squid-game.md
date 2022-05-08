@@ -44,7 +44,7 @@ Danh sách dưới đây liệt kê các biến thể của luật chơi đượ
 ### Câu hỏi
 Trong vai trò là một người tham gia trò chơi, câu hỏi quan trọng nhất cần trả lời là:
 
-**Câu hỏi 1. Chiến thuật tối đa hóa khả năng giành chiến thắng là gì?**
+**Câu hỏi 1. Chiến thuật nào tối đa hóa khả năng giành chiến thắng?**
 
 Trong các biến thể 0, 1, 2, 3 và 4, chiến thuật chỉ là việc chọn số thứ tự xuất phát, vì trong quá trình chơi mọi người chỉ cần tránh những tấm kính đã vỡ và chỉ có thể chọn ngẫu nhiên trong (những) tấm kính lành lặn. Riêng đối với biến thể 5, chiến thuật còn bao gồm việc lựa chọn khi đứng trước một hàng kính.
 
