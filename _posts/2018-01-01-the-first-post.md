@@ -1,7 +1,7 @@
 ---
 title: "The first post"
 date: 2018-01-01 00:00:00
-last_modified_at: 2020-07-30 00:00:00
+last_modified_at: 2022-05-09
 categories:
   - common
 tags:
@@ -224,6 +224,8 @@ We examine some environment in LaTeX below
 \end{enumerate}
 
 ### Test diff blocks
+
+[References](https://stackoverflow.com/questions/41395000/strikethrough-code-in-markdown-on-github)
 
 ```diff
   Unchanged Line
