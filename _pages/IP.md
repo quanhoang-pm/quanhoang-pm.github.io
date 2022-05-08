@@ -17,3 +17,12 @@ This page mainly contains my articles related to **Mixed-integer linear programm
 [Magic squares](/magic-squares/)
 
 [Modelling problems using IP](/modelling-problems-using-IP/)
+
+
+## Random thoughts
+
+As [Bland's rules](https://en.wikipedia.org/wiki/Bland%27s_rule) stated:
+
+> If the minimum ratio is shared by several rows, choose the row with the lowest-numbered column (variable) basic in it.
+
+In the past, I applied the rules by choosing the row of constraint with the lowest-numbered index. It turns out to be wrong.
