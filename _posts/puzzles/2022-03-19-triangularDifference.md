@@ -1,7 +1,7 @@
 ---
 title: "Triangular differences"
-date: 2022-03-19 21:30:00
-last_modified_at: 2022-05-09
+date: 2022-03-19 21:30:00 +07:00
+last_modified_at: 2022-05-09 00:00:00 +07:00
 categories:
   - puzzle
 tags:
@@ -20,7 +20,6 @@ Bằng những kỹ thuật đơn giản, tất cả nghiệm của bài toán t
 
 ~Bài toán đặt ra là hãy tìm nghiệm hoặc chỉ ra sự vô nghiệm trong những trường hợp lớn hơn, cụ thể là $N\ge 6$. Với mỗi giá trị của tham số $N \ge 6$, một phần thưởng sẽ được trao cho cá nhân/nhóm đầu tiên chỉ ra được một nghiệm của bài toán.~
 
-Không có giới hạn đối với những phương pháp được phép sử dụng để giải quyết bài toán này. Đặc biệt, được phép sử dụng kết quả của người khác (cần trích dẫn nguồn đầy đủ).
 
 ## Một số cách tiếp cận bài toán
 
