@@ -21,10 +21,10 @@ Khi có người đầu tiên tới được đầu bên kia của cây cầu, t
 Dưới đây là một số nhận xét liên quan tới trò chơi:
 - Những người đi sau có thể dựa vào lựa chọn của người đi trước để suy luận ra đâu là kính thường, đâu là kính cường lực ở mỗi hàng kính.
 - Sau khi người thứ nhất thực hiện bước nhảy lên hàng kính đầu tiên, bất kể kết quả ra sao, những người ở sau sẽ biết chắc chắn đâu là kính cường lực ở hàng kính đầu tiên này.
-- Nếu trò chơi vẫn tiếp tục sau khi có người qua được đầu bên kia, những người chơi từ vị trí n+1 trở đi chắc chắn sẽ an toàn nhảy qua hết n hàng kính trên cầu.
-- Với luật chơi được mô tả bên trên, những người chơi từ vị trí n+2 trở đi chắc chắn không thể dành chiến thắng.
+- Nếu trò chơi vẫn tiếp tục sau khi có người qua được đầu bên kia, những người chơi từ vị trí $n+1$ trở đi chắc chắn sẽ an toàn nhảy qua hết $n$ hàng kính trên cầu.
+- Với luật chơi được mô tả bên trên, những người chơi từ vị trí $n+2$ trở đi chắc chắn không thể dành chiến thắng.
 - Trò chơi chắc chắn sẽ kết thúc sau một khoảng thời gian hữu hạn.
-- Khi n = 2, xác suất chiến thắng của ba người đầu tiên lần lượt là 25%, 50%, 25%, những người còn lại không thể chiến thắng.
+- Khi $n = 2$, xác suất chiến thắng của ba người đầu tiên lần lượt là $25\%$, $50\%$, $25\%$, những người còn lại không thể chiến thắng.
 
 | ![](/assets/images/SquidGameGlassBridge.png) |
 |:---:|
@@ -36,8 +36,8 @@ Danh sách dưới đây liệt kê các biến thể của luật chơi đượ
 - Biến thể 0. Luật chơi giữ nguyên như mô tả bên trên.
 - Biến thể 1 (thay đổi điều kiện chiến thắng). Hai người đầu tiên đến đích là những người chiến thắng. Trò chơi kết thúc ngay sau đó.
 - Biến thể 2 (thay đổi số kính ở mỗi hàng). Mỗi hàng kính có 2 kính thường và 1 kính cường lực.
-- Biến thể 3 (đặt giới hạn thời gian). Thời gian được tính từ bước nhảy đầu tiên, nếu quá giới hạn thời gian cho trước (đặt là m giây) mà chưa xác định được người chiến thắng thì tất cả người chơi bị loại.
-- Biến thể 4 (hạn chế thông tin truyền lại từ người chơi trước). Người sau không trực tiếp nhìn thấy lựa chọn của người đi trước. Cú nhảy của một người sẽ làm vỡ kính thường, do đó người đến sau có thể nhận ra và tránh. Còn nếu người đó nhảy lên kính cường lực thì tấm kính không thay đổi và người đến sau không có thông tin gì về hai tấm kính. Ví dụ với n = 2, xác suất chiến thắng của ba người đầu tiên lần lượt là 25%, 37.5%, 37.5%, những người còn lại không thể chiến thắng.
+- Biến thể 3 (đặt giới hạn thời gian). Thời gian được tính từ bước nhảy đầu tiên, nếu quá giới hạn thời gian cho trước (đặt là $m$ giây) mà chưa xác định được người chiến thắng thì tất cả người chơi bị loại.
+- Biến thể 4 (hạn chế thông tin truyền lại từ người chơi trước). Người sau không trực tiếp nhìn thấy lựa chọn của người đi trước. Cú nhảy của một người sẽ làm vỡ kính thường, do đó người đến sau có thể nhận ra và tránh. Còn nếu người đó nhảy lên kính cường lực thì tấm kính không thay đổi và người đến sau không có thông tin gì về hai tấm kính. Ví dụ với $n = 2$, xác suất chiến thắng của ba người đầu tiên lần lượt là $25\%$, $37.5\%$, $37.5\%$, những người còn lại không thể chiến thắng.
 - Biến thể 5 (yêu cầu chiến thuật phù hợp mỗi khi nhảy). Khi tới một cửa bất kỳ, người chơi chỉ có thể biết số lượng người đi trước đã nhảy lên mỗi tấm kính, chứ không biết trạng thái của các tấm kính (vỡ hay lành, thường hay cường lực). Đâu là chiến thuật tối ưu: nhảy lên tấm kính ít người chọn hay nhảy lên tấm kính nhiều người chọn? Chiến thuật có thay đổi giữa các người chơi hay không?
 
 
