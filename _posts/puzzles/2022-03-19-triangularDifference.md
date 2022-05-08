@@ -1,9 +1,11 @@
 ---
 title: "Triangular differences"
-permalink: /problemOfTheWeek/
-layout: customPostLayout
 date: 2022-03-19 21:30:00
-last_modified_at: 2022-03-20
+last_modified_at: 2022-05-09
+categories:
+  - puzzle
+tags:
+  - Python
 ---
 
 Câu đố thứ 533 trong cuốn [The Big Book of Brain Games: 1,000 PlayThinks of Art, Mathematics & Science](https://www.amazon.com/Big-Book-Brain-Games-Mathematics/dp/0761134662) (tựa tiếng Việt: 1000 câu đó tự duy về Toán, Khoa học & Nghệ thuật) của tác giả Ivan Moscovich được tóm tắt như sau:
@@ -14,22 +16,11 @@ Câu đố thứ 533 trong cuốn [The Big Book of Brain Games: 1,000 PlayThinks
 
 Một cách tổng quát, ta có thể đặt câu hỏi tương tự cho mọi lưới tam giác có độ dài cạnh bằng một số nguyên dương $N$.
 
-Bằng những kỹ thuật đơn giản, tất cả nghiệm của bài toán trong trường hợp $N \le 5$ đã được xác định đầy đủ và liệt kê trong phần cuối của bài viết này. Bài toán đặt ra là hãy tìm nghiệm hoặc chỉ ra sự vô nghiệm trong những trường hợp lớn hơn, cụ thể là $N\ge 6$. **Với mỗi giá trị của tham số $N \ge 6$, một phần thưởng sẽ được trao cho cá nhân/nhóm đầu tiên chỉ ra được một nghiệm của bài toán.**
+Bằng những kỹ thuật đơn giản, tất cả nghiệm của bài toán trong trường hợp $N \le 5$ đã được xác định đầy đủ và liệt kê trong phần cuối của bài viết này.
+
+~Bài toán đặt ra là hãy tìm nghiệm hoặc chỉ ra sự vô nghiệm trong những trường hợp lớn hơn, cụ thể là $N\ge 6$. Với mỗi giá trị của tham số $N \ge 6$, một phần thưởng sẽ được trao cho cá nhân/nhóm đầu tiên chỉ ra được một nghiệm của bài toán.~
 
 Không có giới hạn đối với những phương pháp được phép sử dụng để giải quyết bài toán này. Đặc biệt, được phép sử dụng kết quả của người khác (cần trích dẫn nguồn đầy đủ).
-
-Bảng dưới đây theo dõi trạng thái của bài toán đối với những giá trị $N$ cụ thể
-
-| $N$ | #solutions | Credit   |
-|:----|-----------:|:---------|
-| 1   |          1 | obivious |
-| 2   |          2 | obivious |
-| 3   |          4 | obivious |
-| 4   |          4 | obivious |
-| 5   |          1 | obivious |
-| ... |        ... | ...      |
-| ... |        ... | ...      |
-
 
 ## Một số cách tiếp cận bài toán
 
