@@ -16,14 +16,9 @@ Câu đố thứ 533 trong cuốn [The Big Book of Brain Games: 1,000 PlayThinks
 
 Một cách tổng quát, ta có thể đặt câu hỏi tương tự cho mọi lưới tam giác có độ dài cạnh bằng một số nguyên dương $N$.
 
-Bằng những kỹ thuật đơn giản, tất cả nghiệm của bài toán trong trường hợp $N \le 5$ đã được xác định đầy đủ và liệt kê trong phần cuối của bài viết này.
-
-~Bài toán đặt ra là hãy tìm nghiệm hoặc chỉ ra sự vô nghiệm trong những trường hợp lớn hơn, cụ thể là $N\ge 6$. Với mỗi giá trị của tham số $N \ge 6$, một phần thưởng sẽ được trao cho cá nhân/nhóm đầu tiên chỉ ra được một nghiệm của bài toán.~
-
-
 ## Một số cách tiếp cận bài toán
 
-Trong phần này, tác giả liệt kê hai cách tiếp cận bài toán. Đây chỉ là gợi ý, có thể có nhiều cách tiếp cận khác hiệu quả hơn.
+Trong phần này, tác giả liệt kê hai cách tiếp cận bài toán.Với cách tiếp cận này, tất cả nghiệm của bài toán trong trường hợp $N \le 5$ đã được xác định đầy đủ và liệt kê trong phần cuối của bài viết.
 
 ### Phương pháp vét cạn (exhaustive search)
 
@@ -120,7 +115,10 @@ Với $N = 5$, có duy nhất một nghiệm thỏa mãn yêu cầu của đề 
          5
 ```
 
-## Điền số trên ống trụ
+## Những trường hợp tổng quát
+Sau khi bài viết được đăng tải, bạn P. C. Tài đã tìm được [một bài báo](/assets/documents/EXACT DIFFERENCE TRIANGLES.pdf) chứng minh sự vô nghiệm của bài toán trong trường hợp $N \ge 6$. Với giả định bài báo là chính xác, như vậy bài toán được nêu ra ở đầu bài viết đã được giải quyết trọn vẹn.
+
+## Mở rộng: Điền số trên ống trụ
 Thay vì điền số vào lưới tam giác như trên, ta có thể nghiên cứu bài toán điền số vào một ống trụ sao cho vẫn thỏa mãn yêu cầu của đề bài: số ở dưới bằng chênh lệch của hai số ở ngay trên. Một cách hình thức, bài toán yêu cầu điền số vào một bảng chữ nhật với các hàng so le nhau rồi dán chúng lên một ống trụ. Dưới đây là một lời giải cho trường hợp điền 6 số 1,2,3,4,5,6 vào ống trụ gồm hai hàng, mỗi hàng có ba số.
 ```
 4 6 1\4
@@ -130,4 +128,5 @@ Thay vì điền số vào lưới tam giác như trên, ta có thể nghiên c�
 ---
 
 Edit
-- 20/03/2022. Bổ sung mục **Điền số trên ống trụ**
+- 20/03/2022. Bổ sung mục **Điền số trên ống trụ**.
+- 09/05/2022. Trích dẫn bài báo chỉ ra sự vô nghiệm của bài toán với $N \ge 6$.
