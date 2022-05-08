@@ -223,6 +223,13 @@ We examine some environment in LaTeX below
   \item SageMath
 \end{enumerate}
 
+### Test diff blocks
+
+```diff
+  Unchanged Line
+- Removed Line
++ Added Line
+```
 
 ### Final section
 
