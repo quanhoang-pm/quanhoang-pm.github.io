@@ -1,7 +1,7 @@
 ---
 title: "Tips and tricks in Python (part 2)"
 date: 2021-11-19 21:30:00
-last_modified_at: 2022-04-11
+last_modified_at: 2022-05-09
 categories:
   - programming
 tags:
@@ -182,6 +182,29 @@ import math
 math.comb(7, 2) # 21
 math.comb(7, 8) # 0
 ```
+
+### The complex way and the intuitive way
+
+```py
+# it took me one day to be able to write this code snippet
+value = (True, False)
+if all(value):
+    pass
+elif not any(value):
+    pass
+else:
+    pass
+
+# but it took me one year to know the code below is much clearer
+value = (True, False)
+if value == (True, True):
+    pass
+elif value == (False, False):
+    pass
+else:
+    pass
+```
+
 
 ### More tricks to be appended ...
 Hope you enjoyed the post. Please leave a comment if you have any useful tricks in Python to share with others.

@@ -66,7 +66,9 @@ Reference-style:
 
 [logo]: /assets/images/avatar.jpg
 
-Link to an amazing song [![Remember When - Alan Jackson](/assets/images/avatar.jpg)](https://www.youtube.com/watch?v=TOmZ66lIzJA)
+Link to an amazing song with a not-so-related image [![Remember When - Alan Jackson](/assets/images/avatar.jpg)](https://www.youtube.com/watch?v=TOmZ66lIzJA)
+
+The recommended way to include a YouTube video
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/N4o0qnSeVQQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
