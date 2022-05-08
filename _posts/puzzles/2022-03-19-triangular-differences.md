@@ -1,7 +1,7 @@
 ---
 title: "Triangular differences"
 date: 2022-03-19 21:30:00 +07:00
-last_modified_at: 2022-05-09 00:00:00 +07:00
+last_modified_at: 2022-05-09
 categories:
   - puzzle
 tags:
