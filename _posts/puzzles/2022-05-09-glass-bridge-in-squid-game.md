@@ -28,7 +28,7 @@ Dưới đây là một số nhận xét liên quan tới trò chơi:
 
 | ![](/assets/images/SquidGameGlassBridge.png) |
 |:---:|
-| Cây cầu kính trong series Squid game |
+| Cây cầu kính trong series Squid Game |
 
 
 ### Các biến thể
@@ -43,19 +43,17 @@ Danh sách dưới đây liệt kê các biến thể của luật chơi đượ
 
 ### Câu hỏi
 Trong vai trò là một người tham gia trò chơi, câu hỏi quan trọng nhất cần trả lời là:
-Câu hỏi 1. Chiến thuật tối đa hóa khả năng giành chiến thắng là gì?
+
+**Câu hỏi 1. Chiến thuật tối đa hóa khả năng giành chiến thắng là gì?**
+
 Trong các biến thể 0, 1, 2, 3 và 4, chiến thuật chỉ là việc chọn số thứ tự xuất phát, vì trong quá trình chơi mọi người chỉ cần tránh những tấm kính đã vỡ và chỉ có thể chọn ngẫu nhiên trong (những) tấm kính lành lặn. Riêng đối với biến thể 5, chiến thuật còn bao gồm việc lựa chọn khi đứng trước một hàng kính.
 
-Ngoài ra, một câu hỏi khác có liên quan tới câu đố trên là
-Câu hỏi 2. Trung bình một lần chơi diễn ra trong bao lâu?
+Một câu hỏi khác có liên quan là
 
-### Phần thưởng
-Đối với mỗi biến thể, phần thưởng dành cho người trả lời Câu hỏi 1 chính xác và sớm nhất là 4560 WON = 83000 VND.
-Em/mình rất vui nếu nhận được tài trợ phần thưởng cho câu đố này (và cả những câu đố trong thời gian tới đây). Xin vui lòng liên hệ nếu cần thêm thông tin.
+**Câu hỏi 2. Trung bình một lần chơi diễn ra trong bao lâu?**
 
 
-
-# --------------------------------------------------------------------------- #
+### Lời giải
 
 Lời giải: đệ quy
 - có 50% người 1 chọn đúng ô đầu tiên -> coi như là xác suất với bài toán n-1 ô
@@ -73,5 +71,3 @@ Ví dụ:
 
 Với n chẵn = 2k, chọn k+1
 Với n lẻ = 2k+1, chọn k+1 hoặc k+2
-
-# --------------------------------------------------------------------------- #
