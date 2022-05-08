@@ -53,21 +53,10 @@ Một câu hỏi khác có liên quan là
 **Câu hỏi 2. Trung bình một lần chơi diễn ra trong bao lâu?**
 
 
-### Lời giải
+### Hướng dẫn giải
 
-Lời giải: đệ quy
-- có 50% người 1 chọn đúng ô đầu tiên -> coi như là xác suất với bài toán n-1 ô
-- có 50% người 1 chọn sai --> là bài toăn n-1 ô, nhưng mà hàng đợi tịnh tiến 1.
-Với trường hợp có 1 ô, xác suất thắng của người 1,2,3,... là A = [1/2,1/2,0,0,...]
-Do đó với trường hợp 2 ô, công thức sẽ là
-1/2 * A + 1/2 * [0, A] = [1/4, 1/2, 1/4, 0, 0, ...] ---> tam giác pascal chuẩn hóa
---> chọn thứ tự (n+1)/2
-Ví dụ:
-- với n = 1, chọn 1 hoặc 2
-- với n = 2, chọn 2
-- với n = 3, chọn 2 hoặc 3, vì xác suất là [1/8, 3/8, 3/8, 1/8, 0, 0, ...]
-- với n = 4, chọn 3
-- với n = 5, chọn 3 hoặc 4
+<details>
+<summary>Gợi ý</summary>
 
-Với n chẵn = 2k, chọn k+1
-Với n lẻ = 2k+1, chọn k+1 hoặc k+2
+Xét bài toán gốc với cây cầu gồm $n$ hàng kính, sử dụng phương pháp đệ quy để chỉ ra chỉ có $n+1$ người đầu tiên có cơ hội giành chiến thắng với xác suất là giá trị chuẩn hóa của dòng thứ $n+1$ trong tam giác Pascal.
+</details>
