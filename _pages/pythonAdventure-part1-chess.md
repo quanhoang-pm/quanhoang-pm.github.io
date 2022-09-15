@@ -3,32 +3,24 @@ title: "Chess-related problems"
 permalink: /pythonAdventure-part1-chess/
 layout: customPostLayout
 date: 2022-03-01 21:45:00
-last_modified_at: 2022-03-16
+last_modified_at: 2022-09-15
 ---
 
 [Cờ vua](https://en.wikipedia.org/wiki/Chess) là một trò chơi hai người trên một bàn cờ hình vuông kích thước $8\times 8$ với các quân cờ có đặc điểm khác nhau. Luật chơi cờ vua có thể xem tại [đây](https://en.wikipedia.org/wiki/Rules_of_chess).
 
-Mục tiêu của chuỗi bài tập dưới đây, ngoài việc là bài tập lần thứ hai của [lớp Tối ưu hóa HKII 2021-2022](http://seminar.optima.vn/opt), còn là một dịp để giới thiệu về một câu đố liên quan tới cờ vua:
+Chuỗi bài tập dưới đây là phiếu bài tập đầu tiên của [lớp Tối ưu hóa MAT2407](http://seminar.optima.vn/opt). Nó cung cấp công cụ giúp trả lời một câu hỏi không quá hiển nhiên liên quan tới cờ vua:
 
 > Khi đặt đủ 8 quân cờ bao gồm 1 vua, 1 hậu, 2 xe, 2 tượng (khác màu), 2 mã lên trên bàn cờ thì số ô không bị tấn công cực đại/cực tiểu là bao nhiêu?
 
 
 ## Yêu cầu chung
-- Trình bày tất cả câu trả lời của những bài tập dưới đây trong **một file jupyter notebook duy nhất** với phần mở đầu ghi đầy đủ thông tin sinh viên (họ và tên, mã sinh viên, lớp đại học, lớp học phần) và mục lục liệt kê những bài tập đã làm được. Tên file đặt theo đúng hướng dẫn, chỉ thay đổi phần đuôi từ `pdf` sang `ipynb`.
-- Nhóm sinh viên đạt **điểm tối đa** cho bài tập lần này nếu **làm trọn vẹn 5 bài đầu tiên của chuỗi bài, bỏ qua những ý bonus**. Có những cách khác để đạt điểm tối đa.
-- Cần đặt tên hàm trong lời giải một cách phù hợp. Tên hàm trong ví dụ chỉ mang tính chất minh hoạ.
+- Trình bày tất cả câu trả lời của những bài tập dưới đây trong **một file jupyter notebook (hoặc một file py) duy nhất** với phần mở đầu ghi đầy đủ thông tin sinh viên (họ và tên, mã sinh viên, lớp đại học, lớp học phần) và mục lục liệt kê những bài tập đã làm được. Tên file đặt theo mẫu `NhomX_BaiTap01.ipynb` hoặc `NhomX_BaiTap01.py`, ví dụ `Nhom07_BaiTap01.py`.
+- Nhóm sinh viên đạt **điểm tối đa** cho bài tập lần này nếu **làm trọn vẹn 5 bài đầu tiên của chuỗi bài, bỏ qua những câu hỏi thêm**. Có thể thực hiện những ý còn lại để nhận điểm thưởng.
+- Cần lựa chọn tên hàm phù hợp. Tên hàm có trong ví dụ (`foo, bar, ham, ...`) chỉ mang tính chất minh hoạ.
 - Chỉ thực hiện hàm `print()` nếu có yêu cầu. Hầu hết các hàm trong chuỗi bài đều yêu cầu trả về đối tượng (kiểu `list`, `string`, `int`, ...)
 - Trong quá trình làm bài, nên sử dụng lại những hàm đã viết trước đó để tránh trùng lặp code.
-- Phải **bổ sung ví dụ** sau khi viết một hàm theo yêu cầu của đề bài để **kiểm tra tính đúng đắn của hàm**. Ví dụ như:
+- Cần **bổ sung ví dụ** sau khi viết một hàm theo yêu cầu của đề bài để kiểm tra tính đúng đắn của chương trình. Xem mục **Minh họa lời giải của một bài tập** phía cuối bài viết này.
 
-```py
-def getArea(length, width):
-    return length * width
-
-print(getArea(10, 4)) # 40
-print(getArea(7, 5)) # 35
-print(getArea(6, 6)) # 36
-```
 
 
 ## Bài 1. Tọa độ trên bàn cờ
@@ -36,11 +28,11 @@ Tọa độ trên bàn cờ vua được quy ước dựa trên chỉ số hàng
 - ký tự đầu tiên chỉ thứ tự cột, nhận một trong các giá trị `a`, `b`, `c`,  `d`, `e`, `f`, `g`, `h`.
 - ký tự thứ hai chỉ thứ tự hàng, nhận một trong các giá trị `1`, `2`, `3`, `4`, `5`, `6`, `7`, `8`.
 
-1. Viết một hàm kiểm tra tính hợp lệ của tọa độ trên bàn cờ vua với mô tả sau:
-- Input: một `string`
-- Output: `True` / `False`
-- Ví dụ:
+Viết một hàm kiểm tra tính hợp lệ của tọa độ trên bàn cờ vua với input/output như sau:
 ```py
+# Input: một string
+# Output: True / False
+# Ví dụ
 foo('Aone') # False
 foo('A1') # False
 foo('1a') # False
@@ -48,15 +40,16 @@ foo('a1.') # False
 foo('a1') # True
 ```
 
-2. (Bonus) Viết một hàm với yêu cầu như trên, trong đó _không khai báo_ các string chữ cái. Gợi ý: sử dụng ASCII code.
+(Câu hỏi thêm) Viết một hàm với yêu cầu như trên, trong đó _không khai báo_ 8 string chữ cái từ `a` đến `h` mà chỉ khai báo hai string `a` và `h`. Gợi ý: sử dụng bảng mã ASCII.
 
 
 ## Bài 2. Tọa độ trên bàn cờ
-1. Viết một hàm trả về tọa độ của những quân xe trong [vị trí khởi đầu tiêu chuẩn](https://lichess.org/editor) của một ván cờ vua.
+1. Viết một hàm trả về tọa độ của bốn quân xe trong [vị trí khởi đầu tiêu chuẩn](https://lichess.org/editor) của một ván cờ vua, đặt trong một list (hoặc một tuple).
 2. Viết một hàm trả về tọa độ của 64 ô trên bàn cờ.
 3. Viết một hàm trả về tọa độ của 32 ô trắng trên bàn cờ.
-4. (Bonus) Viết một hàm **in ra màn hình** tọa độ của tất cả các ô trên bàn cờ, sắp xếp theo góc nhìn của bên cầm quân trắng. Thông tin in ra màn hình có dạng
-```txt
+4. (Câu hỏi thêm) Viết một hàm **in ra màn hình** (sử dụng hàm `print`) tọa độ của tất cả các ô trên bàn cờ, sắp xếp theo góc nhìn của bên cầm quân trắng. Thông tin in ra màn hình có dạng
+
+```
 a8 b8 ... g8 h8
 .. .. ... .. ..
 .. .. ... .. ..
@@ -75,16 +68,17 @@ Viết một hàm kiểm tra xem hai ô đưa vào có cùng hàng ngang hoặc 
 - Output: `True` / `False`
 - Ví dụ:
 ```py
+bar('a1', 'a1') # True
 bar('a1', 'c2') # False
 bar('a1', 'a8') # True
 bar('c3', 'e3') # True
 ```
 
-Bonus. Bổ sung vào hàm vừa viết tính năng báo lỗi khi input không hợp lệ.
+(Câu hỏi thêm) Bổ sung vào hàm vừa viết tính năng báo lỗi khi giá trị truyền vào không hợp lệ.
 
 
-## Bài 4. Nước đi của quân xe (rook's moves)
-Ta quan tâm tới các quân cờ, bắt đầu với quân xe. Đặt một quân xe lên một bài cờ trống, ta cần liệt kê tất cả những tọa độ mà quân xe này có thể di chuyển tới trong một nước đi hợp lệ. Hãy viết một hàm thực hiện việc này với mô tả như sau:
+## Bài 4. Nước đi của quân xe (rooks' moves)
+Ta quan tâm tới các quân cờ, bắt đầu với quân xe. Đặt một quân xe lên một bài cờ trống, hãy viết một hàm liệt kê tất cả những tọa độ mà quân xe này có thể di chuyển tới trong một nước đi hợp lệ.
 - Input: một `string` gồm ba ký tự, ký tự đầu là `R` và hai ký tự sau là tọa độ hiện tại của quân xe.
 - Output: một `list` các ô mà quân xe có thể di chuyển tới trong một nước đi hợp lệ.
 - Ví dụ:
@@ -92,12 +86,12 @@ Ta quan tâm tới các quân cờ, bắt đầu với quân xe. Đặt một qu
 ham('Ra2') # ['a1', 'a3', 'a4', 'a5', 'a6', 'a7', 'a8', 'b2', 'c2', 'd2', 'e2', 'f2', 'g2', 'h2']
 ```
 
-Bonus. Sắp xếp các tọa độ trả về của hàm này theo khoảng cách Euclid tăng dần từ ô xuất phát tới ô đang xét. Trong hai ô có cùng khoảng cách tới ô xuất phát, ô nào có chỉ số hàng thấp hơn thì xếp trước.
+(Câu hỏi thêm) Sắp xếp các tọa độ trả về của hàm này theo khoảng cách Euclid tăng dần từ ô xuất phát tới ô đang xét. Trong hai ô có cùng khoảng cách tới ô xuất phát, ô nào có chỉ số hàng thấp hơn thì xếp trước.
 
 
-## Bài 5. Nước đi của quân tượng (bishop's moves)
+## Bài 5. Nước đi của quân tượng (bishops' moves)
 
-Đặt một quân tượng lên một bàn cờ trống. Hãy viết một hàm liệt kê các vị trí mà quân tượng này có thể di chuyển tới, hàm cần viết có mô tả như sau:
+Đặt một quân tượng lên một bàn cờ trống. Hãy viết một hàm liệt kê các vị trí mà quân tượng này có thể di chuyển tới trong một nước đi (hợp lệ).
 - Input: một string gồm ba ký tự, ký tự đầu là `B` và hai ký tự sau là tọa độ hiện tại của quân tượng.
 - Output: một `list` các ô mà quân tượng có thể di chuyển tới trong một nước đi hợp lệ.
 - Ví dụ:
@@ -108,12 +102,12 @@ ham('Ba2') # ['b1', 'b3', 'c4', 'd5', 'e6', 'f7', 'g8']
 Gợi ý. Dựa theo ý tưởng của bài 3 và bài 4.
 
 
-## Bài 6. Những quân cờ còn lại (king, queen, knight)
-Ngoài xe và tượng, cờ vua còn có ba loại quân khác, lần lượt là vua, hậu, và mã. Hãy viết hàm với yêu cầu tương tự bài 5 cho từng quân trong số ba quân cờ này.
+## Bài 6. Những quân cờ còn lại
+Ngoài xe và tượng, cờ vua còn có ba loại quân khác, lần lượt là vua (king), hậu (queen), và mã (knight). Hãy viết hàm với yêu cầu tương tự bài 5 cho từng quân cờ trong số ba quân cờ này.
 ```py
-bar('Kf4')
-sor('Qa1')
-zer('Nb2')
+bar('Kf4') # ...
+sor('Qa1') # ...
+zer('Nb2') # ...
 ```
 
 ## Bài 7. Sự liên kết giữa các tọa độ
@@ -132,8 +126,11 @@ egg2('a1', 'a2') # []
 ```
 
 
-## Bài 8. Free squares enumeration
-Một ô bị tấn công nếu nó trống và một quân cờ có thể thực hiện một nước đi hợp lệ để di chuyển đến ô đó. Cần chú ý tình huống khi các hướng tấn công/di chuyển của một quân cờ bị chặn bởi một quân cờ khác. Ta quy ước một quân cờ luôn có thể tấn công chính ô nó đang đứng.
+## Bài 8. Đếm số ô cờ không bị tấn công
+Một ô cờ được gọi là bị tấn công nếu thỏa mãn một trong hai điều kiện sau:
+- Có một quân cờ tại vị trí đó.
+- Ô đó trống và một quân cờ có thể thực hiện một nước đi hợp lệ để di chuyển đến ô đó.
+Cần chú ý tình huống khi các hướng tấn công/di chuyển của một quân cờ bị chặn bởi một quân cờ khác.
 
 Đặt các quân cờ _cùng màu_ vào các tọa độ trên một bàn cờ trống. Viết hàm tính số lượng các ô không bị tấn công trên bàn cờ này.
 - Input: một `list` các quân cờ kèm theo tọa độ của chúng
@@ -147,14 +144,12 @@ qux(['Qa1', 'Ra2', 'Rb1']) # 42
 ```
 
 
-## Bài 9. The last question
+## Bài 9. Câu hỏi cuối cùng
 > Khi đặt đủ 8 quân cờ bao gồm 1 vua, 1 hậu, 2 xe, 2 tượng (khác màu), 2 mã lên trên bàn cờ thì số ô không bị tấn công cực đại/cực tiểu là bao nhiêu?
 
 Đặt 8 quân cờ như mô tả trong câu hỏi trên lên một bàn cờ trống sao cho mỗi ô có tối đa một quân cờ. Tìm giá trị lớn nhất và giá trị nhỏ nhất của số ô không bị tấn công trên bàn cờ.
 
-**Ghi chú.** Bài toán này _có thể được giải quyết_ bởi mô hình tối ưu nguyên (IP model).
-
-Với câu hỏi này, bạn có thể thử nghiệm với bàn cờ tại [đây](https://lichess.org/editor). Khi đã hài lòng với cách sắp xếp các quân cờ, hãy sao chép [FEN notation](https://en.wikipedia.org/wiki/Forsyth%E2%80%93Edwards_Notation) ở ngay dưới bàn cờ, rồi dán `string` này vào đoạn code Python dưới đây
+Với câu hỏi này, bạn có thể thử nghiệm với bàn cờ tại [đây](https://lichess.org/editor). Khi đã hài lòng với cách sắp xếp các quân cờ, hãy sao chép [FEN notation](https://en.wikipedia.org/wiki/Forsyth%E2%80%93Edwards_Notation) phía dưới bàn cờ, rồi dán `string` này vào đoạn code Python dưới đây
 
 ```py
 import chess
@@ -163,18 +158,46 @@ import chess.svg
 FENNotationStr = '8/8/8/8/8/8/8/RNBQKBNR w - - 0 1'
 board = chess.Board(FENNotationStr)
 boardsvg = chess.svg.board(board = board)
-with open('foobar.svg', 'w') as f:
+with open('image.svg', 'w') as f:
     f.write(boardsvg)
 ```
+
+**Ghi chú.** Bài toán này _có thể được giải quyết_ bởi mô hình tối ưu nguyên (IP model).
 
 
 ## Tài liệu tham khảo
 Chuỗi bài tập này được truyền cảm hứng từ mục **7.4 War Story: Covering Chessboards** trong cuốn sách _The algorithm design manual_ (2nd edition, 2008, Springer-Verlag London) của tác giả Steven S. Skiena.
 
-Chúc mọi người tìm được cảm hứng với toán học, Python, và cờ vua.
 
+### Minh họa lời giải của một bài tập
+Giả sử đề bài yêu cầu viết một hàm tính diện tích hình chữ nhật cho trước chiều dài và chiều rộng. Xét lời giải sau đây
 
-### Update 2022/03/05
-- Bổ sung điều kiện _hai quân tượng khác màu_ trong bài 9.
-- Thay đổi cách hỏi trong bài 9, vẫn giữ nguyên ý nghĩa về cực trị của số ô không bị tấn công.
-- Bổ sung ghi chú trong bài 9
+```py
+def foo(a, b):
+    print(a * b)
+value = foo(5, 4)
+```
+
+Đây là một lời giải _tồi_ với hai lý do sau đây
+- Tên biến, tên hàm (foo, a, b) không có ý nghĩa.
+- Hàm này không có tác dụng trong chương trình thực tế. Khi sử dụng hàm này, ta chỉ _nhìn thấy_ giá trị diện tích mà không có được giá trị này để thực hiện các bước tiếp theo. Trong ví dụ trên, giá trị của biến `value` là `None` chứ không phải là 20.
+
+Ta viết lại hàm tính diện tích như sau
+
+```py
+def getArea(length, width):
+    return length * width
+```
+
+Đoạn code trên đã sử dụng tên biến phù hợp, đồng thời _trả về_ giá trị diện tích. Tuy nhiên nó chưa có những ví dụ để thể hiện tính đúng đắn của chương trình. Cách đơn giản nhất là sử dụng hàm đã cho với một số bộ giá trị đầu vào cho trước, rồi in ra kết quả để so sánh. Chương trình đầy đủ sẽ là
+
+```py
+def getArea(length, width):
+    return length * width
+
+print(getArea(10, 4)) # 40
+print(getArea(7, 5)) # 35
+print(getArea(6, 6)) # 36
+```
+
+Nâng cao hơn một chút, ta có thể sử dụng hàm `assert` hoặc thư viện `pytest` để chuẩn hóa quy trình kiểm thử chương trình.
