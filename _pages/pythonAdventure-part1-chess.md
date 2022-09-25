@@ -40,7 +40,7 @@ Tọa độ trên bàn cờ vua được quy ước dựa trên chỉ số hàng
 - ký tự thứ hai chỉ thứ tự hàng, nhận một trong các giá trị `1`, `2`, `3`, `4`, `5`, `6`, `7`, `8`.
 
 1. Viết một hàm trả về tọa độ của 64 ô trên bàn cờ.
-2. (Điểm thưởng) Viết một hàm trả về tọa độ của 32 ô trắng trên bàn cờ.
+2. (Điểm thưởng) Viết một hàm trả về tọa độ của 32 ô trắng của bàn cờ.
 3. Viết một hàm **in ra terminal** tọa độ của tất cả các ô trên bàn cờ, sắp xếp theo góc nhìn của bên cầm quân trắng. Thông tin in ra màn hình có dạng
 
 ```
@@ -70,12 +70,12 @@ foo(['a1', 'a2', 'b3', 'c4']) # 'b3`
 
 Bài tập này _có thể_ thực hiện theo các bước như sau:
 - Tính độ dài $n$ của `list` truyền vào
-- Lấy một chỉ số ngẫu nhiên $i$ trong đoạn $[0,n-1]$
-- Trả về phần tử tại chỉ số $i$ trong danh sách truyền vào
+- Lấy chỉ số $i$ là một số nguyên ngẫu nhiên trong đoạn $[0,n-1]$
+- Trả về phần tử tại chỉ số $i$ của danh sách truyền vào
 
 
 ## Bài 3. Lọc phần tử
-Viết một hàm nhận vào hai `list` $A$ và $B$ và trả về `list` $C$ chứa các phần tử thuộc $A$ nhưng không thuộc $B$.
+Viết một hàm nhận vào hai `list` $A$, `list` $B$ và trả về `list` $C$ chứa các phần tử thuộc $A$ nhưng không thuộc $B$.
 
 
 
@@ -85,6 +85,9 @@ Quân hậu trong cờ vua di chuyển theo hàng ngang, hàng dọc hoặc đư
 ```py
 bar('a1') # ['a2', ..., 'a8', 'b1', ..., 'h1', 'b2', ..., 'h8']
 ```
+
+
+------ Kết thúc phần bài tập ------
 
 
 ### Minh họa lời giải của một bài tập
