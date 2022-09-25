@@ -25,8 +25,8 @@ Chuỗi bài tập dưới đây là phiếu bài tập thứ hai của [lớp T
     - Bài 2. getRandomElement()
     ...
     """
-
     ```
+
 - Tên file đặt theo mẫu `NhomX_BaiTap02.py`, ví dụ `Nhom07_BaiTap02.py`.
 - Cần lựa chọn tên hàm phù hợp. Tên hàm có trong ví dụ (`foo, bar, ham, ...`) chỉ mang tính chất minh hoạ.
 - Chỉ nên sử dụng hàm `print(), input()` nếu có yêu cầu. Hầu hết các hàm trong chuỗi bài đều yêu cầu trả về đối tượng cơ bản (kiểu `list`, `string`, `int`, ...).
