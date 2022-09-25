@@ -87,7 +87,9 @@ bar('a1') # ['a2', ..., 'a8', 'b1', ..., 'h1', 'b2', ..., 'h8']
 ```
 
 
------- Kết thúc phần bài tập ------
+<center>
+    ------ Kết thúc phần bài tập ------
+</center>
 
 
 ### Minh họa lời giải của một bài tập
