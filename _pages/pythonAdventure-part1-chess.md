@@ -13,7 +13,20 @@ Chuỗi bài tập dưới đây là phiếu bài tập thứ hai của [lớp T
 
 ## Yêu cầu chung
 - Trình bày tất cả câu trả lời của những bài tập dưới đây trong **một file py duy nhất**. Nếu sử dụng jupyter notebook thì cần chuyển đổi sang file py trước khi nộp bài.
-- Phần mở đầu phải có thông tin sinh viên (họ và tên, mã sinh viên, lớp đại học, lớp học phần) và danh sách những bài tập đã làm được.
+- Phần mở đầu phải có thông tin sinh viên (họ và tên, mã sinh viên, lớp đại học, lớp học phần) và danh sách những bài tập đã làm được, ví dụ như
+
+    ```py
+    """
+    Thông tin nhóm
+    Nguyễn Văn A, 19001234, K64...
+
+    Danh sách bài tập
+    - Bài 1. getAllCells(), printChessboard()
+    - Bài 2. getRandomElement()
+    ...
+    """
+
+    ```
 - Tên file đặt theo mẫu `NhomX_BaiTap02.py`, ví dụ `Nhom07_BaiTap02.py`.
 - Cần lựa chọn tên hàm phù hợp. Tên hàm có trong ví dụ (`foo, bar, ham, ...`) chỉ mang tính chất minh hoạ.
 - Chỉ nên sử dụng hàm `print(), input()` nếu có yêu cầu. Hầu hết các hàm trong chuỗi bài đều yêu cầu trả về đối tượng cơ bản (kiểu `list`, `string`, `int`, ...).
