@@ -1,5 +1,5 @@
 ---
-title: "Chess-related problems"
+title: "Bài tập lập trình: cờ vua"
 permalink: /pythonAdventure-part1-chess/
 layout: customPostLayout
 date: 2022-03-01 21:45:00
