@@ -2,7 +2,7 @@
 title: "Ubuntu installation in dual boot mode"
 permalink: /ubuntu-installation/
 date: 2020-05-10
-last_modified_at: 2020-06-06 21:30:00
+last_modified_at: 2022-10-02
 categories:
   - ubuntu
 tags:
@@ -12,6 +12,8 @@ tags:
 ---
 
 Ubuntu 20.04 LTS has been released since April 2020. The post is about what should be taken into account during installation process. This is mostly written for my own reference in the future.
+
+Update: one should download the latest Ubuntu version on [the website](https://ubuntu.com/) (which is Ubuntu 22.04 LTS as of October 2022).
 
 #### Things to backup
 
@@ -35,20 +37,21 @@ My custom setting worth noticing is shown in the table below. Neglect Atom setti
 #### Installation process
 
 The overall process might be as follows:
-- [Create a live USB stick][link:create-live-usb] by Startup Disk Creator (in Ubuntu OS).
+- [Create a live USB stick][link:create-live-usb] by Startup Disk Creator (in Ubuntu OS). The USB will be renamed _automatically_.
+- Plug in the USB, restart your computer, press `Esc` then `F9` to access Boot device option.
 - [Remove / resize the obsolete operating systems][link:GParted] (e.g., Windows OS) by GParted.
-- Install the new Ubuntu OS by following [the instruction][link:install-OS].
-
-Just in case Startup Disk Creator is not installed by default, you can install it by running the command below.
-```sh
-sudo apt install usb-creator-gtk
-```
+- Install the new Ubuntu OS by following [the instruction][link:install-OS]. Always choose **Something else** to manually set up your partition.
 
 [link:create-live-usb]: https://ubuntu.com/tutorials/tutorial-create-a-usb-stick-on-ubuntu
 [link:GParted]: https://www.howtogeek.com/114503/how-to-resize-your-ubuntu-partitions/
 [link:install-OS]: https://itsfoss.com/install-ubuntu-dual-boot-mode-windows/
 
 #### Side notes
+
+Just in case Startup Disk Creator is not installed by default, you can install it by running the command below.
+```sh
+sudo apt install usb-creator-gtk
+```
 
 Before installation, it's best to know which partitions are mounted to which directories (`/`, `/boot`, `/home`, etc). You can acquire that kind of information via File Systems panel in System Monitor.
 
@@ -57,6 +60,8 @@ If you're not sure about the guide provided in English, here is [an article writ
 You might want to name your USB with something like `Ubuntu20.04LTS`. It is relatively easy to rename a USB on a Windows OS. As for this action on an Ubuntu OS, you can use Disks application as mentioned in [this question][link:rename-USB] in askubuntu forum.
 
 After rebooting, your computer may go directly to the Windows OS already existed instead of prompting you to choose between Ubuntu and Windows. You need to get into the BIOS and make sure that the *ubuntu* device is above the *Windows* device in the OS boot manager. The detailed steps are in [an answer][link:OS-boot-manager] in askubuntu forum.
+
+Choose "Do not use the partition" during installation process to create buffers between partitions. It'll come in handy in case you want to increase volume of some partitions.
 
 As for the layout on the desktop, software icons on the left side bar are taken from `Show Applications` (the button in the bottom left corner of the screen), you just need to drag and drop them to appropriate locations. Moreover, for a clean desktop, the trash icon can be hidden by an option in GNOME Tweaks.
 
