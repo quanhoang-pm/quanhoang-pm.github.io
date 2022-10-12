@@ -1,8 +1,7 @@
 ---
 title: "List of (solvable) puzzles in krazydad.com"
-permalink: /list-of-solvable-puzzles-in-krazydad-dot-com/
 date: 2022-03-19 02:00:00
-last_modified_at: 2022-03-22
+last_modified_at: 2022-10-12
 categories:
   - mathematics
 tags:
