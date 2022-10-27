@@ -1,7 +1,7 @@
 ---
 title: "Modelling problems using IP"
 date: 2022-04-15 00:15:00 +07:00
-last_modified_at: 2022-10-12
+last_modified_at: 2022-10-27
 categories:
   - mathematics
 tags:
@@ -16,7 +16,7 @@ tags:
 
 **Bài toán 3.** Điền các số nguyên từ 1 đến 9 vào một bảng vuông có kích thước $3\times 3$ sao cho tổng các số trên mỗi hàng ngang, cột dọc và đường chéo đều bằng nhau và bằng 15.
 
-**Bài toán 4.** Cho $n$ là một số nguyên dương. Đặt $2n$ điểm lên trên lưới vuông kích thước $n\times n$ sao cho không có ba điểm nào thẳng hàng. Mô tả chi tiết về bài toán có tại [Wikipedia](https://en.wikipedia.org/wiki/No-three-in-line_problem).
+**Bài toán 4.** Cho $n$ là một số nguyên dương. Đặt $2n$ điểm lên trên lưới vuông kích thước $n\times n$ sao cho không có ba điểm nào thẳng hàng. [Bài toán này](https://en.wikipedia.org/wiki/No-three-in-line_problem) là một câu hỏi mở. Tính đến tháng 10/2022, câu hỏi trên đã được giải quyết cho mọi giá trị $n$ thỏa mãn $n\le 46$ nhờ việc chỉ ra ít nhất một cách đặt thỏa mãn (gọi là cấu hình) cho mỗi giá trị của $n$.
 
 ## Hướng dẫn
 
