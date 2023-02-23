@@ -3,12 +3,14 @@ title: "Bài tập lập trình: cờ vua"
 permalink: /pythonAdventure-part1-chess/
 layout: customPostLayout
 date: 2022-03-01 21:45:00
-last_modified_at: 2022-09-25
+last_modified_at: 2023-02-23
 ---
 
 [Cờ vua](https://en.wikipedia.org/wiki/Chess) là một trò chơi hai người trên một bàn cờ hình vuông kích thước $8\times 8$ sử dụng các quân cờ có đặc điểm khác nhau. Luật chơi cờ vua có thể xem tại [đây](https://en.wikipedia.org/wiki/Rules_of_chess).
 
-Chuỗi bài tập dưới đây là phiếu bài tập thứ hai của [lớp Tối ưu hóa MAT2407](http://seminar.optima.vn/opt). Thời hạn nộp bài là **15h30 30/09/2022**.
+Chuỗi bài tập dưới đây là phiếu bài tập thứ hai của [lớp Tối ưu hóa MAT2407](http://seminar.optima.vn/opt). Thời hạn nộp bài:
+- MAT2407 (T3 & T4): **05h30 01/03/2023**
+- MAT2407 (T3 & T5): **09h30 02/03/2023**
 
 
 ## Yêu cầu chung
@@ -18,7 +20,8 @@ Chuỗi bài tập dưới đây là phiếu bài tập thứ hai của [lớp T
     ```py
     """
     Thông tin nhóm
-    Nguyễn Văn A, 19001234, K64...
+    Lê Phúc A, 20001234, K64TH
+    Lê Nhật B, 20005678, K64TT
 
     Danh sách bài tập
     - Bài 1. getAllCells(), printChessboard()
@@ -27,7 +30,9 @@ Chuỗi bài tập dưới đây là phiếu bài tập thứ hai của [lớp T
     """
     ```
 
-- Tên file đặt theo mẫu `NhomX_BaiTap02.py`, ví dụ `Nhom07_BaiTap02.py`.
+- Tên file đặt theo mẫu `NhomXX_BaiTap02_TenThanhVien.py` với `XX` là số thứ tự của nhóm và `TenThanhVien` là tên các thành viên viết liền không dấu, ví dụ
+    + `Nhom07_BaiTap02_AnBinhChi.py`
+    + `Nhom12_BaiTap02_AnBinhChi.py`
 - Cần lựa chọn tên hàm phù hợp. Tên hàm có trong ví dụ (`foo, bar, ham, ...`) chỉ mang tính chất minh hoạ.
 - Chỉ nên sử dụng hàm `print(), input()` nếu có yêu cầu. Hầu hết các hàm trong chuỗi bài đều yêu cầu trả về đối tượng cơ bản (kiểu `list`, `string`, `int`, ...).
 - Trong quá trình làm bài, nên sử dụng lại những hàm đã viết trước đó để tránh trùng lặp code.
@@ -54,7 +59,7 @@ Gợi ý công cụ
 - Vòng lặp `for` lồng nhau (nested for-loops)
 - Tham số `end` trong hàm `print`
     ```py
-    print('foobar', end = '')
+    print('foobar', end='')
     ```
 - [List comprehension](https://realpython.com/list-comprehension-python/)
 - Thư viện [itertools](https://docs.python.org/3/library/itertools.html)
@@ -64,8 +69,10 @@ Gợi ý công cụ
 Viết một hàm nhận vào một `list` và trả về một phần tử ngẫu nhiên trong danh sách đó.
 
 ```py
-foo(['a1', 'a2', 'b3', 'c4']) # 'a1`
-foo(['a1', 'a2', 'b3', 'c4']) # 'b3`
+# first run
+foo(['a1', 'a2', 'b3', 'c4']) # 'a1'
+# second run
+foo(['a1', 'a2', 'b3', 'c4']) # 'b3'
 ```
 
 Bài tập này _có thể_ thực hiện theo các bước như sau:
@@ -83,7 +90,7 @@ Viết một hàm nhận vào hai `list` $A$, `list` $B$ và trả về `list` $
 Quân hậu trong cờ vua di chuyển theo hàng ngang, hàng dọc hoặc đường chéo. Viết một hàm nhận vào một tọa độ trên bàn cờ vua thể hiện cho vị trí của một quân hậu và trả về một `list` những ô mà quân hậu đó có thể di chuyển tới trong một nước đi hợp lệ.
 
 ```py
-bar('a1') # ['a2', ..., 'a8', 'b1', ..., 'h1', 'b2', ..., 'h8']
+bar('a1') # ['a2', 'a3', 'a4', 'a5', 'a6', 'a7', 'a8', 'b1', 'c1', 'd1', 'e1', 'f1', 'g1', 'h1', 'b2', 'c3', 'd4', 'e5', 'f6', 'g7', 'h8']
 ```
 
 
@@ -102,7 +109,7 @@ value = foo(5, 4)
 ```
 
 Đây là một lời giải _tồi_ với hai lý do sau đây
-- Tên biến, tên hàm (foo, a, b) không có ý nghĩa.
+- Tên biến, tên hàm (`foo`, `a`, `b`) không có ý nghĩa.
 - Hàm này không có tác dụng trong chương trình thực tế. Khi sử dụng hàm này, ta chỉ _nhìn thấy_ giá trị diện tích mà không có được giá trị này để thực hiện các bước tiếp theo. Trong ví dụ trên, giá trị của biến `value` là `None` chứ không phải là 20.
 
 Ta viết lại hàm tính diện tích như sau
@@ -112,7 +119,7 @@ def getArea(length, width):
     return length * width
 ```
 
-Đoạn code trên đã sử dụng tên biến phù hợp, đồng thời _trả về_ giá trị diện tích. Tuy nhiên nó chưa có những ví dụ để thể hiện tính đúng đắn của chương trình. Cách đơn giản nhất là sử dụng hàm đã cho với một số bộ giá trị đầu vào cho trước, rồi in ra kết quả để so sánh. Chương trình đầy đủ sẽ là
+Đoạn code trên đã sử dụng tên biến phù hợp, đồng thời _trả về_ giá trị diện tích. Tuy nhiên nó thiếu những ví dụ để thể hiện tính đúng đắn của chương trình. Cách đơn giản nhất là sử dụng hàm đã cho với một số bộ giá trị đầu vào cho trước, rồi in ra kết quả để so sánh. Chương trình đầy đủ sẽ là
 
 ```py
 def getArea(length, width):
