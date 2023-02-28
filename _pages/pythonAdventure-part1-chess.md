@@ -3,14 +3,15 @@ title: "Bài tập lập trình: cờ vua"
 permalink: /pythonAdventure-part1-chess/
 layout: customPostLayout
 date: 2022-03-01 21:45:00
-last_modified_at: 2023-02-23
+last_modified_at: 2023-03-01
 ---
 
 [Cờ vua](https://en.wikipedia.org/wiki/Chess) là một trò chơi hai người trên một bàn cờ hình vuông kích thước $8\times 8$ sử dụng các quân cờ có đặc điểm khác nhau. Luật chơi cờ vua có thể xem tại [đây](https://en.wikipedia.org/wiki/Rules_of_chess).
 
 Chuỗi bài tập dưới đây là phiếu bài tập thứ hai của [lớp Tối ưu hóa MAT2407](http://seminar.optima.vn/opt). Thời hạn nộp bài:
-- MAT2407 (T3 & T4): **05h30 01/03/2023**
-- MAT2407 (T3 & T5): **09h30 02/03/2023**
+- MAT2407 2 (T3 & T5): **09h30 02/03/2023**
+- MAT2407 3 (T3 & T4): **05h30 01/03/2023**
+- MAT2407 4 TNT (T4 & T5): **05h30 09/03/2023**
 
 
 ## Yêu cầu chung
@@ -93,6 +94,14 @@ Quân hậu trong cờ vua di chuyển theo hàng ngang, hàng dọc hoặc đư
 bar('a1') # ['a2', 'a3', 'a4', 'a5', 'a6', 'a7', 'a8', 'b1', 'c1', 'd1', 'e1', 'f1', 'g1', 'h1', 'b2', 'c3', 'd4', 'e5', 'f6', 'g7', 'h8']
 ```
 
+## Bài 5. (điểm thưởng) FEN
+Viết hàm nhận vào một Forsyth-Edwards Notation (FEN) và biểu diễn nó một cách phù hợp. Có thể sử dụng các thư viện hỗ trợ.
+
+```py
+ham('rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1') # ...
+```
+
+Nguồn tham khảo: [Wikipedia](https://en.wikipedia.org/wiki/Forsyth%E2%80%93Edwards_Notation) và [Lichess](https://lichess.org/editor).
 
 <center>
     ------ Kết thúc phần bài tập ------
