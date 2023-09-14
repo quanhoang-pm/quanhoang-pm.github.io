@@ -1,7 +1,7 @@
 ---
 title: "Triangular differences"
 date: 2022-03-19 21:30:00 +07:00
-last_modified_at: 2022-05-09
+last_modified_at: 2023-09-14
 categories:
   - puzzle
 tags:
@@ -121,8 +121,8 @@ Sau khi bài viết được đăng tải, bạn P. C. Tài đã tìm được [
 ## Mở rộng: Điền số trên ống trụ
 Thay vì điền số vào lưới tam giác như trên, ta có thể nghiên cứu bài toán điền số vào một ống trụ sao cho vẫn thỏa mãn yêu cầu của đề bài: số ở dưới bằng chênh lệch của hai số ở ngay trên. Một cách hình thức, bài toán yêu cầu điền số vào một bảng chữ nhật với các hàng so le nhau rồi dán chúng lên một ống trụ. Dưới đây là một lời giải cho trường hợp điền 6 số 1,2,3,4,5,6 vào ống trụ gồm hai hàng, mỗi hàng có ba số.
 ```
-4 6 1\4
- 2 5 3
+4 6 1\4 6 1\. . .
+ 2 5 3\2 5 3\. . .
 ```
 
 ---
@@ -130,3 +130,4 @@ Thay vì điền số vào lưới tam giác như trên, ta có thể nghiên c�
 Edit
 - 20/03/2022. Bổ sung mục **Điền số trên ống trụ**.
 - 09/05/2022. Trích dẫn bài báo chỉ ra sự vô nghiệm của bài toán với $N \ge 6$.
+- 14/09/2023. Làm rõ cách điền số trong mục **Điền số trên ống trụ**.
