@@ -28,7 +28,7 @@ Về phần thực thi chương trình, thư viện [itertools](https://docs.pyt
 ```py
 import itertools
 
-for bar in itertools.permutations([4, 5, 6], r = 2):
+for bar in itertools.permutations([4, 5, 6], r=2):
     print(bar)
 # (4, 5)
 # (4, 6)
@@ -57,56 +57,31 @@ Với $N = 1$, có duy nhất một nghiệm hiển nhiên.
 
 Với $N = 2$, có chính xác hai nghiệm thỏa mãn yêu cầu của đề bài.
 ```
-1 3
- 2
-
-2 3
- 1
+1 3  |  2 3
+ 2   |   1
 ```
 
 Với $N = 3$, có tất cả bốn nghiệm thỏa mãn yêu cầu của đề bài.
 ```
-1 6 4
- 5 2
-  3
-
-2 6 5
- 4 1
-  3
-
-4 1 6
- 3 5
-  2
-
-5 2 6
- 3 4
-  1
+1 6 4  |  2 6 5  |  4 1 6  |  5 2 6
+ 5 2   |   4 1   |   3 5   |   3 4
+  3    |    3    |    2    |    1
 ```
 
 Với $N = 4$, có đúng bốn nghiệm thỏa mãn yêu cầu của đề bài.
 ```
-6   1  10   8
-  5   9   2
-    4   7
-      3
+6   1  10   8  |  6  10   1   8
+  5   9   2    |    4   9   7
+    4   7      |      5   2
+      3        |        3
 
-6  10   1   8
-  4   9   7
-    5   2
-      3
-
-8   3  10   9
-  5   7   1
-    2   6
-      4
-
-8  10   3   9
-  2   7   6
-    5   1
-      4
+8   3  10   9  |  8  10   3   9
+  5   7   1    |    2   7   6
+    2   6      |      5   1
+      4        |        4
 ```
 
-Với $N = 5$, có duy nhất một nghiệm thỏa mãn yêu cầu của đề bài.
+Với $N = 5$, chỉ có một nghiệm thỏa mãn yêu cầu của đề bài.
 ```
 6  14   15   3   13
   8   1   12   10
@@ -130,4 +105,4 @@ Thay vì điền số vào lưới tam giác như trên, ta có thể nghiên c�
 Edit
 - 20/03/2022. Bổ sung mục **Điền số trên ống trụ**.
 - 09/05/2022. Trích dẫn bài báo chỉ ra sự vô nghiệm của bài toán với $N \ge 6$.
-- 14/09/2023. Làm rõ cách điền số trong mục **Điền số trên ống trụ**.
+- 14/09/2023. Sắp xếp lại các lời giải từ $N=1$ đến $N=5$, làm rõ cách điền số trong mục **Điền số trên ống trụ**.
