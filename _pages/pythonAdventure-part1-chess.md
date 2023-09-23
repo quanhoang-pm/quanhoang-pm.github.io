@@ -3,26 +3,22 @@ title: "Bài tập lập trình: cờ vua"
 permalink: /pythonAdventure-part1-chess/
 layout: customPostLayout
 date: 2022-03-01 21:45:00
-last_modified_at: 2023-03-01
+last_modified_at: 2023-09-23
 ---
 
 [Cờ vua](https://en.wikipedia.org/wiki/Chess) là một trò chơi hai người trên một bàn cờ hình vuông kích thước $8\times 8$ sử dụng các quân cờ có đặc điểm khác nhau. Luật chơi cờ vua có thể xem tại [đây](https://en.wikipedia.org/wiki/Rules_of_chess).
 
-Chuỗi bài tập dưới đây là phiếu bài tập thứ hai của [lớp Tối ưu hóa MAT2407](http://seminar.optima.vn/opt). Thời hạn nộp bài:
-- MAT2407 2 (T3 & T5): **09h30 02/03/2023**
-- MAT2407 3 (T3 & T4): **05h30 01/03/2023**
-- MAT2407 4 TNT (T4 & T5): **05h30 09/03/2023**
-
+Chuỗi bài tập dưới đây là phiếu bài tập thứ hai của [lớp Tối ưu hóa MAT2407](http://seminar.optima.vn/opt).
 
 ## Yêu cầu chung
-- Trình bày tất cả câu trả lời của những bài tập dưới đây trong **một file py duy nhất**. Nếu sử dụng jupyter notebook thì cần chuyển đổi sang file py trước khi nộp bài.
+- Trình bày tất cả câu trả lời của những bài tập dưới đây trong **một file `.py` duy nhất**. Nếu sử dụng jupyter notebook thì cần chuyển đổi sang file `.py` trước khi nộp bài.
 - Phần mở đầu phải có thông tin sinh viên (họ và tên, mã sinh viên, lớp đại học, lớp học phần) và danh sách những bài tập đã làm được, ví dụ như
 
     ```py
     """
     Thông tin nhóm
-    Lê Phúc A, 20001234, K64TH
-    Lê Nhật B, 20005678, K64TT
+    Lê Phúc A, 21001234, K65TH
+    Lê Nhật B, 21005678, K65TT
 
     Danh sách bài tập
     - Bài 1. getAllCells(), printChessboard()
@@ -31,7 +27,7 @@ Chuỗi bài tập dưới đây là phiếu bài tập thứ hai của [lớp T
     """
     ```
 
-- Tên file đặt theo mẫu `NhomXX_BaiTap02_TenThanhVien.py` với `XX` là số thứ tự của nhóm và `TenThanhVien` là tên các thành viên viết liền không dấu, ví dụ
+- Tên file đặt theo mẫu `NhomXX_BaiTap02_TenCacThanhVien.py` với `XX` là số thứ tự của nhóm và `TenCacThanhVien` là tên các thành viên viết liền không dấu, ví dụ
     + `Nhom07_BaiTap02_AnBinhChi.py`
     + `Nhom12_BaiTap02_AnBinhChi.py`
 - Cần lựa chọn tên hàm phù hợp. Tên hàm có trong ví dụ (`foo, bar, ham, ...`) chỉ mang tính chất minh hoạ.
@@ -86,7 +82,6 @@ Bài tập này _có thể_ thực hiện theo các bước như sau:
 Viết một hàm nhận vào hai `list` $A$, `list` $B$ và trả về `list` $C$ chứa các phần tử thuộc $A$ nhưng không thuộc $B$.
 
 
-
 ## Bài 4. (điểm thưởng) Nước đi của quân hậu
 Quân hậu trong cờ vua di chuyển theo hàng ngang, hàng dọc hoặc đường chéo. Viết một hàm nhận vào một tọa độ trên bàn cờ vua thể hiện cho vị trí của một quân hậu và trả về một `list` những ô mà quân hậu đó có thể di chuyển tới trong một nước đi hợp lệ.
 
@@ -138,5 +133,3 @@ print(getArea(10, 4)) # 40
 print(getArea(7, 5)) # 35
 print(getArea(6, 6)) # 36
 ```
-
-Nâng cao hơn một chút, ta có thể sử dụng hàm `assert` hoặc thư viện `pytest` để chuẩn hóa quy trình kiểm thử chương trình.
