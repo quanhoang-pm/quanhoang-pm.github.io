@@ -3,7 +3,7 @@ title: "Bài tập lập trình: cờ vua"
 permalink: /pythonAdventure-part1-chess/
 layout: customPostLayout
 date: 2022-03-01 21:45:00
-last_modified_at: 2023-09-23
+last_modified_at: 2023-10-03
 ---
 
 [Cờ vua](https://en.wikipedia.org/wiki/Chess) là một trò chơi hai người trên một bàn cờ hình vuông kích thước $8\times 8$ sử dụng các quân cờ có đặc điểm khác nhau. Luật chơi cờ vua có thể xem tại [đây](https://en.wikipedia.org/wiki/Rules_of_chess).
@@ -63,7 +63,7 @@ Gợi ý công cụ
 
 
 ## Bài 2. Lấy phần tử ngẫu nhiên
-Viết một hàm nhận vào một `list` và trả về một phần tử ngẫu nhiên trong danh sách đó.
+Viết một hàm nhận vào một `list` và trả về một phần tử ngẫu nhiên trong danh sách đó. Cần đưa ra phương án xử lý phù hợp khi `list` đưa vào là rỗng.
 
 ```py
 # first run
