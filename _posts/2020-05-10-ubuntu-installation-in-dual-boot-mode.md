@@ -2,7 +2,7 @@
 title: "Ubuntu installation in dual boot mode"
 permalink: /ubuntu-installation/
 date: 2020-05-10
-last_modified_at: 2022-10-02
+last_modified_at: 2023-10-17
 categories:
   - ubuntu
 tags:
@@ -13,7 +13,7 @@ tags:
 
 Ubuntu 20.04 LTS has been released since April 2020. The post is about what should be taken into account during installation process. This is mostly written for my own reference in the future.
 
-Update: one should download the latest Ubuntu version on [the website](https://ubuntu.com/) (which is Ubuntu 22.04 LTS as of October 2022).
+Update: one should download the latest Ubuntu version on [the website](https://ubuntu.com/) (which is Ubuntu 22.04.3 LTS as of October 2023).
 
 #### Things to backup
 
@@ -38,7 +38,9 @@ My custom setting worth noticing is shown in the table below. Neglect Atom setti
 
 The overall process might be as follows:
 - [Create a live USB stick][link:create-live-usb] by Startup Disk Creator (in Ubuntu OS). The USB will be renamed _automatically_.
-- Plug in the USB, restart your computer, press `Esc` then `F9` to access Boot device option.
+- Plug in the USB, access UEFI/BIOS by one of following methods:
+  + (Windows) Settings / Update & Security / Recovery / Advanced start-up / Restart Now,
+  + Restart your computer, press `Esc` / `F2` / `F9`  to access Boot device option (based on desktop's manufacturers).
 - [Remove / resize the obsolete operating systems][link:GParted] (e.g., Windows OS) by GParted.
 - Install the new Ubuntu OS by following [the instruction][link:install-OS]. Always choose **Something else** to manually set up your partition.
 
