@@ -3,7 +3,7 @@ title: "Bài tập lập trình: cờ vua"
 permalink: /pythonAdventure-part1-chess/
 layout: customPostLayout
 date: 2022-03-01 21:45:00
-last_modified_at: 2023-10-03
+last_modified_at: 2023-11-14
 ---
 
 [Cờ vua](https://en.wikipedia.org/wiki/Chess) là một trò chơi hai người trên một bàn cờ hình vuông kích thước $8\times 8$ sử dụng các quân cờ có đặc điểm khác nhau. Luật chơi cờ vua có thể xem tại [đây](https://en.wikipedia.org/wiki/Rules_of_chess).
@@ -76,6 +76,8 @@ Bài tập này _có thể_ thực hiện theo các bước như sau:
 - Tính độ dài $n$ của `list` truyền vào
 - Lấy chỉ số $i$ là một số nguyên ngẫu nhiên trong đoạn $[0,n-1]$
 - Trả về phần tử tại chỉ số $i$ của danh sách truyền vào
+
+Câu hỏi thêm: cách thiết kế "trả về `None` khi `list` truyền vào là rỗng" có vấn đề gì?
 
 
 ## Bài 3. Lọc phần tử
