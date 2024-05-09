@@ -1,7 +1,7 @@
 ---
 title: "Hướng dẫn lấy Gurobi academic license"
 date: 2024-05-09
-last_modified_at: 2024-05-09 22:50:00
+last_modified_at: 2024-05-09 22:59:00
 categories:
   - programming
 tags:
@@ -25,6 +25,8 @@ Bước 1. Sử dụng email `.edu` **chính chủ** (mà đại học cung cấ
     padding-bottom:20px;">
 </div>
 
+<center> Source: Gurobi Optimization </center>
+
 Bước 2. Đăng nhập vào tài khoản vừa tạo. Trên thanh hỗ trợ, chọn **Support/Help center**.
 
 <div>
@@ -38,6 +40,8 @@ Bước 2. Đăng nhập vào tài khoản vừa tạo. Trên thanh hỗ trợ, 
     padding-bottom:20px;">
 </div>
 
+<center> Source: Gurobi Optimization </center>
+
 Bước 3. Tại Gurobi Help Center, chọn **Submit a Request**.
 
 <div>
@@ -50,6 +54,8 @@ Bước 3. Tại Gurobi Help Center, chọn **Submit a Request**.
     padding-top:20px;
     padding-bottom:20px;">
 </div>
+
+<center> Source: Gurobi Optimization </center>
 
 Bước 4. Điền thông tin cần thiết, gồm có
 - Request type: Academic and/or Research
@@ -69,6 +75,8 @@ Bước 5. Chọn **Submit** ở cuối trang.
     padding-top:20px;
     padding-bottom:20px;">
 </div>
+
+<center> Source: Gurobi Optimization </center>
 
 Bước 6. Đợi phản hồi từ đội hỗ trợ. Bạn sẽ được yêu cầu gửi thông tin cá nhân.
 - Nếu là sinh viên: ảnh chụp thẻ sinh viên (còn hạn)
