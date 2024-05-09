@@ -1,7 +1,7 @@
 ---
 title: "The first post"
 date: 2018-01-01 00:00:00
-last_modified_at: 2022-05-09
+last_modified_at: 2024-05-09 22:43:00
 categories:
   - common
 tags:
@@ -287,6 +287,8 @@ A code snippet
 
 End a line with  
 two or more spaces
+
+(this is uncomfortable while editing the file using vscode since the redundant spaces are automatically discarded)
 
 ### Static link to a post
 [The article](/the-shortest-infinite-program-in-Python/)
