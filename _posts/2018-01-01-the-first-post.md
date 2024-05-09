@@ -19,11 +19,38 @@ This is the link to [my site](https://quanhoang-pm.github.io/).
 
  This is my avatar. ![](/assets/images/avatar.jpg)
 
-A way to ~~alter~~ resize an image using `HTML`.
+A way to ~~alter~~ resize an image using `HTML` (without justification).
 ```html
 <img src="/assets/images/avatar.jpg" width="150" height="100" />
 ```
 <img src="/assets/images/avatar.jpg" width="150" height="100" />
+
+
+```html
+<div>
+    <img src="/assets/images/avatar.jpg"
+    style="width:70%;
+    max-width:700px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top:20px;
+    padding-bottom:20px;">
+</div>
+```
+
+<div>
+    <img src="/assets/images/avatar.jpg"
+    style="width:70%;
+    max-width:700px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top:20px;
+    padding-bottom:20px;">
+</div>
+
+<center> Center setting </center>
 
 <!--
 multiple lines comment
