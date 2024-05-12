@@ -2,7 +2,7 @@
 title: "Ubuntu installation in dual boot mode"
 permalink: /ubuntu-installation/
 date: 2020-05-10
-last_modified_at: 2023-10-17
+last_modified_at: 2024-05-12 21:55:00
 categories:
   - ubuntu
 tags:
@@ -13,31 +13,30 @@ tags:
 
 Ubuntu 20.04 LTS has been released since April 2020. The post is about what should be taken into account during installation process. This is mostly written for my own reference in the future.
 
-Update: one should download the latest Ubuntu version on [the website](https://ubuntu.com/) (which is Ubuntu 22.04.3 LTS as of October 2023).
+Update: one should download the latest Ubuntu version on [the website](https://ubuntu.com/) (which is Ubuntu 24.04 LTS as of May 2024).
 
 #### Things to backup
 
 Personally, I prefer a new fresh operating system for a new start. Therefore I backup only four directories Documents, Musics, Pictures, and Templates. Softwares can be installed after the installation has finished.
 
-My custom setting worth noticing is shown in the table below. Neglect Atom settings if you are not a fan of Atom like me.
+My custom setting worth noticing is shown in the table below. Neglect VS Code settings if you are not using that text editor.
 
 | Setting                              | Directory                                                                 |
 |:-------------------------------------|:--------------------------------------------------------------------------|
 | Bookmark folders                     | ~/.config/gtk-3.0/bookmarks (pointed out [here][link:nautilus-bookmarks]) |
-| Custom keywords in Atom              | ~/.atom/packages/language-todo-extra-words/grammars/todo-extra-words.cson |
 | Custom shortcuts in Jupyter notebook | None                                                                      |
 | Git global configuration             | ~/.gitconfig                                                              |
-| Configuration in Atom                | ~/.atom/config.cson                                                       |
-| Keyboards remapping in Atom          | ~/.atom/keymap.cson                                                       |
-| Code snippets in Atom                | ~/.atom/snippets.cson                                                     |
 | Startup Applications                 | None                                                                      |
+| VS Code snippets                     | ~/.config/Code/User/snippets/                                             |
+| VS Code settings                     | ~/.config/Code/User/settings.json                                         |
+| VS Code keybindings                  | ~/.config/Code/User/keybindings.json                                      |
 
 [link:nautilus-bookmarks]: https://askubuntu.com/questions/503162/where-does-nautilus-store-its-bookmarks
 
 #### Installation process
 
 The overall process might be as follows:
-- [Create a live USB stick][link:create-live-usb] by Startup Disk Creator (in Ubuntu OS). The USB will be renamed _automatically_.
+- [Create a live USB stick][link:create-live-usb] by Startup Disk Creator (in Ubuntu OS). The process takes approximately 15 minutes. Be aware that the USB will be renamed _automatically_.
 - Plug in the USB, access UEFI/BIOS by one of following methods:
   + (Windows) Settings / Update & Security / Recovery / Advanced start-up / Restart Now,
   + Restart your computer, press `Esc` / `F2` / `F9`  to access Boot device option (based on desktop's manufacturers).
