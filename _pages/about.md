@@ -1,6 +1,6 @@
 ---
 permalink: /about/
-title: "About"
+title: "About me"
 ---
 
 Hi everyone,
@@ -25,5 +25,5 @@ Hope you have some inspirations while being here.
 My CV can be found [here](/assets/documents/20230103_QuanHoangCV.pdf).
 
 Contact info
-- Email: [quanhoang.pm@gmail.com](mailto:quanhoang.pm@gmail.com)
+- Email: quanhoang _dot_ pm _at_ gmail _dot_ com
 - Github: [https://github.com/quanhoang-pm](https://github.com/quanhoang-pm)
