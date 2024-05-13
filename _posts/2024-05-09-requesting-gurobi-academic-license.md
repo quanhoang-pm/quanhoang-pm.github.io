@@ -1,7 +1,7 @@
 ---
 title: "Hướng dẫn lấy Gurobi academic license"
 date: 2024-05-09
-last_modified_at: 2024-05-09 22:59:00
+last_modified_at: 2024-05-13 16:03:00
 categories:
   - programming
 tags:
@@ -78,11 +78,13 @@ Bước 5. Chọn **Submit** ở cuối trang.
 
 <center> Source: Gurobi Optimization </center>
 
-Bước 6. Đợi phản hồi từ đội hỗ trợ. Bạn sẽ được yêu cầu gửi thông tin cá nhân.
+Bước 6. Bạn sẽ nhận được email thông báo khi có phản hồi từ đội ngũ hỗ trợ. Thực hiện theo hướng dẫn để cung cấp thông tin cá nhân
 - Nếu là sinh viên: ảnh chụp thẻ sinh viên (còn hạn)
 - Nếu là giảng viên: đường dẫn tới trang web cá nhân tại trường đại học
 
-Sau khi thực hiện các bước trên, đội ngũ hỗ trợ sẽ cung cấp một license key cho bạn (format `xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx`). Một số điểm cần lưu ý:
+Tài liệu bổ sung sẽ cần được gửi qua phần **Add file or drop files here**.
+
+Sau khi thực hiện các bước trên, bạn sẽ được cấp một license key với format `xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx`. Một số điểm cần lưu ý:
 - Cần sử dụng license key để kích hoạt Gurobi phiên bản đầy đủ (xem mục dưới).
 - Sau khi kích hoạt, license key trở nên vô giá trị.
 - Thời hạn sử dụng phiên bản đầy đủ (thường) là một năm.
