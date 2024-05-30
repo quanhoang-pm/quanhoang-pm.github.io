@@ -1,7 +1,7 @@
 ---
 title: "Hướng dẫn lấy Gurobi academic license"
 date: 2024-05-09
-last_modified_at: 2024-05-13 16:03:00
+last_modified_at: 2024-05-30 09:30:00
 categories:
   - programming
 tags:
@@ -9,6 +9,8 @@ tags:
 ---
 
 TLDR: Người dùng với mục đích học thuật được phép sử dụng [Gurobi Optimizer](https://www.gurobi.com/) miễn phí với [academic license](https://www.gurobi.com/academia/academic-program-and-licenses/). Tuy nhiên [cách nhận giấy phép phổ biến nhất](https://support.gurobi.com/hc/en-us/articles/360040541251-How-do-I-obtain-a-free-academic-license) có vẻ như không khả thi tại Việt Nam. Bài viết này hướng dẫn mọi người một cách khác.
+
+Bạn dọc có thể xem một số ví dụ mô hình hóa sử dụng Gurobi tại [đây](/ip/).
 
 ### Các bước để lấy license key
 
