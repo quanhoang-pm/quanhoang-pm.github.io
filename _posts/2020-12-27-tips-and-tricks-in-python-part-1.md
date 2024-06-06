@@ -1,7 +1,7 @@
 ---
 title: "Tips and tricks in Python (part 1)"
 date: 2020-12-27 21:50:00
-last_modified_at: 2022-05-02
+last_modified_at: 2024-06-07
 categories:
   - programming
 tags:
@@ -157,7 +157,8 @@ withoutIfStatements(True)
 ```py
 import argparse
 parser = argparse.ArgumentParser()
-parser.add_argument('-n', '--nItems', type = int, default = 12, help = 'TBA')
+# parser.add_argument('--nItems', type=int, default=12, help='TBA') # method 1
+parser.add_argument('-n', '--nItems', type=int, default=12, help='TBA') # method 2
 args = parser.parse_args()
 print(args.nItems)
 ```
