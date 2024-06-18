@@ -1,7 +1,7 @@
 ---
 title: "List of (solvable) puzzles in krazydad.com"
 date: 2022-03-19 02:00:00
-last_modified_at: 2022-10-12
+last_modified_at: 2024-06-18 17:07:00
 categories:
   - mathematics
 tags:
@@ -42,7 +42,7 @@ Generally, they are as hard as TSP in the sense of cutting off disconnected comp
 ### Should-not-try-IP puzzles
 - Mazes (it should be solved by BFS)
 - Area 51 (connected components)
-- Cow & Cactus (connected components)
+- Cow & Cactus (connected components, hint: binary variables for statuses of edges and cells)
 - Ripple effect (no idea to model it efficiently)
 - Cross Figures (dealing with operators other than addition)
 - Krypto Inkies (the method handling Inkies does not work well here)
