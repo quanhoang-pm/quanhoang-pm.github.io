@@ -1,7 +1,7 @@
 ---
 title: "Hướng dẫn lấy Gurobi academic license"
 date: 2024-05-09
-last_modified_at: 2024-05-30 09:44:44
+last_modified_at: 2024-11-30 23:30:00
 categories:
   - programming
 tags:
@@ -89,7 +89,7 @@ Tài liệu bổ sung sẽ cần được gửi qua phần **Add file or drop fi
 Sau khi thực hiện các bước trên, bạn sẽ được cấp một license key với format `xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx`. Một số điểm cần lưu ý:
 - Cần sử dụng license key để kích hoạt Gurobi phiên bản đầy đủ (xem mục dưới).
 - Sau khi kích hoạt thành công, license key trở nên vô giá trị.
-- Thời hạn sử dụng phiên bản đầy đủ (thường) là một năm.
+- Thời hạn sử dụng phiên bản đầy đủ với license dạng này thường là một năm.
 - Mỗi license key chỉ có thể kích hoạt trên **một user** của **một máy tính**. Hai hệ điều hành trên cùng một máy tính (dual boot) được tính là hai user khác nhau.
 
 ### Hoàn thiện cài đặt nào!
@@ -98,4 +98,6 @@ Khi có được license key, bạn đã hoàn thành 99% công việc rồi. Ch
 - Cài đặt `grbgetkey` (tùy thuộc vào hệ điều hành bạn sử dụng).
 - Tạo file `gurobi.lic` với license key ở trên.
 
-### Happy modeling!
+Với người dùng muốn gia hạn license (thay vì tạo mới license), hiện tại (2024) họ có thể tải file `gurobi.lic` từ [User Portal](https://portal.gurobi.com/iam/licenses/list/) mà không cần sử dụng câu lệnh `grbgetkey`. Khá tiện!
+
+**Happy modeling!**
