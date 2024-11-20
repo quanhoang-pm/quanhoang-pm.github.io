@@ -1,7 +1,7 @@
 ---
 title: "Hướng dẫn lấy Gurobi academic license"
 date: 2024-05-09
-last_modified_at: 2024-11-30 23:30:00
+last_modified_at: 2024-11-20 23:30:00
 categories:
   - programming
 tags:
