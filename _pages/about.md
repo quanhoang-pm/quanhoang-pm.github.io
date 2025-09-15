@@ -5,7 +5,7 @@ title: "About me"
 
 Hi everyone,
 
-I'm Hoàng Anh Quân (Quan Hoang for short), a graduate at the [VNU University of Science](http://hus.vnu.edu.vn/) in Vietnam. I'm currently a teaching assistant/instructor in the Faculty of Mathematics, Mechanics and Informatics at the VNU University of Science. Yep, that's where I graduated from.
+I'm Hoàng Anh Quân (Quan Hoang for short), a graduate at the [VNU University of Science](http://hus.vnu.edu.vn/) in Vietnam, where I also served as a teaching assistant and instructor in the Faculty of Mathematics, Mechanics and Informatics. I'm currently pursuing a Mathematics PhD at the [National University of Singapore](https://nus.edu.sg/).
 
 My main interest is Mathematics because of its beauty and rigorous. I also enjoy other things, but that is the story for another time.
 
