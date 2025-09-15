@@ -22,7 +22,7 @@ Hope you have some inspirations while being here.
 
 <div style="text-align: right"> Quan. </div>
 
-My CV can be found [here](/assets/documents/20230103_QuanHoangCV.pdf).
+My CV can be found [here](/assets/documents/20250915_HoangAnhQuan_CurriculumVitae.pdf).
 
 Contact info
 - Email: quanhoang _dot_ pm _at_ gmail _dot_ com
