@@ -1,7 +1,7 @@
 ---
 title: "List of (solvable) puzzles in krazydad.com"
 date: 2022-03-19 02:00:00
-last_modified_at: 2024-06-18 17:07:00
+last_modified_at: 2026-04-02 16:00:00
 categories:
   - mathematics
 tags:
@@ -47,5 +47,7 @@ Generally, they are as hard as TSP in the sense of cutting off disconnected comp
 - Cross Figures (dealing with operators other than addition)
 - Krypto Inkies (the method handling Inkies does not work well here)
 
-
+### Epilogue
 Hope I will find time to implement solvers for some kind of puzzles listed above. In the meantime, I'll be more than happy if you spend time making use of my ideas to write a program by yourself. Don't hesitate to let me know if you have anything to show.
+
+Big kudos to Tùng for sharing his approaches to solving these puzzles through his extremely helpful blog posts - for example, this one on [Galaxies](https://www.tungtt.dev/en/blog/logic-puzzle-modeling-galaxies).
