@@ -2,7 +2,7 @@
 title: "A nine-point game"
 permalink: /a-nine-point-game/
 date: 2020-05-31 20:00:00
-last_modified_at: 2020-06-07 14:30:00
+last_modified_at: 2026-04-02 15:45:00
 categories:
   - mathematics
 tags:
