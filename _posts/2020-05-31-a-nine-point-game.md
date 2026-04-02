@@ -11,17 +11,17 @@ tags:
   - puzzle
 ---
 
-Một trò chơi chiến thuật đơn giản dành cho hai người. Trải nghiệm tại [đây](/assets/ninePointsGame/ninePointsGame.html)!.
+Một trò chơi chiến thuật đơn giản dành cho hai người. Trải nghiệm tại [đây](/assets/ninePointGame/ninePointGame.html)!.
 
 ### Chuẩn bị
 - Hai bộ quân cờ, mỗi bộ gồm ba quân cờ có cùng màu.
 - Một sơ đồ như ảnh dưới.
-![](/assets/ninePointsGame/ninePointsGame_move_0.png)
+![](/assets/ninePointGame/ninePointGame_move_0.png)
 
 ### Luật chơi
 Sáu quân cờ của hai người chơi được đặt vào sơ đồ theo vị trí được mô tả trong ảnh dưới.
 
-| ![](/assets/ninePointsGame/ninePointsGame_move_1.png) |
+| ![](/assets/ninePointGame/ninePointGame_move_1.png) |
 |:-----------------------------------------------------:|
 |           Vị trí khởi đầu của những quân cờ           |
 
@@ -35,12 +35,12 @@ Chú ý, trò chơi có thể không kết thúc khi hai điều kiện trên kh
 
 Những ảnh dưới đây thể hiện một lần chơi kết thúc sau 5 nước đi với chiến thắng thuộc về người đi sau (với quân cờ màu xanh).
 
-![](/assets/ninePointsGame/ninePointsGame_move_1.png)
-![](/assets/ninePointsGame/ninePointsGame_move_2.png)
-![](/assets/ninePointsGame/ninePointsGame_move_3.png)
-![](/assets/ninePointsGame/ninePointsGame_move_4.png)
-![](/assets/ninePointsGame/ninePointsGame_move_5.png)
-![](/assets/ninePointsGame/ninePointsGame_move_6.png)
+![](/assets/ninePointGame/ninePointGame_move_1.png)
+![](/assets/ninePointGame/ninePointGame_move_2.png)
+![](/assets/ninePointGame/ninePointGame_move_3.png)
+![](/assets/ninePointGame/ninePointGame_move_4.png)
+![](/assets/ninePointGame/ninePointGame_move_5.png)
+![](/assets/ninePointGame/ninePointGame_move_6.png)
 
 ### Những biến thể của trò chơi
 Những biến thể của trò chơi này có thể được xây dựng bằng cách thay đổi những yếu tố sau:
