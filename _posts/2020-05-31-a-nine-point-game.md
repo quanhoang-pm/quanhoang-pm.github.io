@@ -11,7 +11,7 @@ tags:
   - puzzle
 ---
 
-Một trò chơi chiến thuật đơn giản dành cho hai người.
+Một trò chơi chiến thuật đơn giản dành cho hai người. Trải nghiệm tại [đây](/assets/ninePointsGame/ninePointsGame.html)!.
 
 ### Chuẩn bị
 - Hai bộ quân cờ, mỗi bộ gồm ba quân cờ có cùng màu.
