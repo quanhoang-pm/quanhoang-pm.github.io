@@ -2,7 +2,7 @@
 title: "Ubuntu installation in dual boot mode"
 permalink: /ubuntu-installation/
 date: 2020-05-10
-last_modified_at: 2024-05-12 21:55:00
+last_modified_at: 2026-06-15 11:25:42
 categories:
   - ubuntu
 tags:
@@ -43,7 +43,7 @@ The overall process might be as follows:
 - [Remove / resize the obsolete operating systems][link:GParted] (e.g., Windows OS) by GParted.
 - Install the new Ubuntu OS by following [the instruction][link:install-OS]. Always choose **Something else** to manually set up your partition.
 
-[link:create-live-usb]: https://ubuntu.com/tutorials/tutorial-create-a-usb-stick-on-ubuntu
+[link:create-live-usb]: https://ubuntu.com/desktop/docs/en/latest/how-to/create-a-bootable-usb-stick/
 [link:GParted]: https://www.howtogeek.com/114503/how-to-resize-your-ubuntu-partitions/
 [link:install-OS]: https://itsfoss.com/install-ubuntu-dual-boot-mode-windows/
 
