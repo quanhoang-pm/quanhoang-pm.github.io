@@ -2,7 +2,7 @@
 title: "Ubuntu installation in dual boot mode"
 permalink: /ubuntu-installation/
 date: 2020-05-10
-last_modified_at: 2026-06-15 11:25:42
+last_modified_at: 2026-06-15 11:30:42
 categories:
   - ubuntu
 tags:
@@ -13,7 +13,7 @@ tags:
 
 Ubuntu 20.04 LTS has been released since April 2020. The post is about what should be taken into account during installation process. This is mostly written for my own reference in the future.
 
-Update: one should download the latest Ubuntu version on [the website](https://ubuntu.com/) (which is Ubuntu 24.04 LTS as of May 2024).
+Update: one should download the latest Ubuntu version on [the website](https://ubuntu.com/download) (which is Ubuntu 26.04 LTS as of June 2026).
 
 #### Things to backup
 
